@@ -1,0 +1,37 @@
+state = {
+	id = 954
+	name = "STATE_954"
+	manpower = 132000
+	
+	state_category = pastoral
+	
+	resources={
+		oil = 2
+	}
+
+	history = {
+
+		owner = ARG
+		add_core_of = ARG
+		1936.01.02 = {
+			add_core_of = WLA
+			#add_core_of =
+			#add_core_of = 
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			5173 1 
+		}
+		
+	}
+
+	provinces = {
+		2169 5173 12946 12952 13305
+	}
+
+	local_supplies = 0.0 
+}

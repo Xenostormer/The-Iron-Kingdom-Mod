@@ -1,0 +1,39 @@
+
+state={
+	id=309
+	name="STATE_309"
+	manpower = 152000
+
+	resources={
+		rubber = 10
+	}	
+	
+	state_category = rural
+
+	history={
+		owner = HOL
+		add_core_of = VEN
+		1936.01.02 = {
+			add_core_of = SUR
+			#add_core_of = 
+			#add_core_of = 
+			#add_claim_by =  
+		}
+		victory_points = {
+			10906 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			12828 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1928 10906 12828 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,41 @@
+state={
+	id=517
+	name="STATE_517"
+
+	resources={
+		tungsten = 95
+		steel = 4 
+	}
+	
+	provinces={
+		1759 7755 7798 10553 10581 10622 10637 12576 13530 
+	}
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 2
+			dockyard = 1 
+			industrial_complex = 22
+			air_base = 3
+			7798 = {
+				naval_base = 4
+				coastal_bunker = 1
+
+			}
+
+		}
+		victory_points = {
+			7798 20 
+		}
+		victory_points = {
+			13530 1 
+		}
+		add_core_of = AST
+
+	}
+	manpower= 954367
+	buildings_max_level_factor=1.000
+	state_category= large_city
+	local_supplies=0.000
+}

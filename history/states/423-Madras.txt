@@ -1,0 +1,30 @@
+state={
+	id=423
+	name="STATE_423"
+
+	provinces={
+		1238 1268 1381 4327 4416 4420 7265 7363 7391 7436 7447 8067 10130 10190 10246 10274 10278 10808 12164 12275 13485 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+			arms_factory = 3
+			dockyard = 1 
+		}
+		victory_points = {
+			10246 3 # Madurai
+		}
+		victory_points = {
+			10278 5 # Madras
+		}
+		victory_points = {
+			13485 1  
+		}
+	}
+	manpower=17990937
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

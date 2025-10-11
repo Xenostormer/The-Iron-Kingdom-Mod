@@ -1,0 +1,40 @@
+state={
+	id=429
+	name="STATE_429"
+
+	provinces={
+		1349 4072 4187 4353 7013 7119 7150 7177 7232 10019 10210 10270 11952 12142 12182 12269 13487 
+	}
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		1936.01.02 = {
+			add_core_of = KHL
+			#add_core_of = 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 6
+			dockyard = 1 
+			arms_factory = 4
+			air_base = 2
+			1349 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			1349 25
+		}
+		victory_points = {
+			9975 10 
+		}
+		victory_points = {
+			13487 1  
+		}
+
+	}
+	manpower=18928000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

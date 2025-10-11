@@ -1,0 +1,19 @@
+resource_storage = {
+	icon = GFX_decision_category_generic_trade
+	picture = GFX_decision_cat_picture_resource_storage
+	allowed = {
+		has_capitulated = no
+	}
+	priority = {
+		base = 2
+	}
+	visible = {
+		OR = {
+			tungsten_storage > 0
+			rubber_storage > 0 
+			steel_storage > 0 
+			chromium_storage > 0 
+			aluminium_storage > 0  
+		}
+	}
+}

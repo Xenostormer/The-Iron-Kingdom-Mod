@@ -1,0 +1,49 @@
+state={
+	id=605
+	name="STATE_605"
+
+	provinces={
+		1367 1395 4925 6999 7240 8026 10132 12705 12767 13501 13503 13504 13505 13506 13508 13509 13511 13512 13513 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+			arms_factory = 15
+			industrial_complex = 11
+			air_base = 2
+		}
+		victory_points = {
+			4925 5 
+		}
+		victory_points = {
+			6999 20 
+		}
+		victory_points = {
+			13511 1 
+		}
+		victory_points = {
+			13505 1  
+		}
+		victory_points = {
+			13501 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 6
+				infrastructure = 3 #was: 6
+				air_base = 3
+				arms_factory = 3
+
+			}
+
+		}
+
+	}
+	manpower=35722475
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

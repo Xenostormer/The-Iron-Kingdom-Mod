@@ -1,0 +1,28 @@
+state={
+	id=513
+	name="STATE_513"
+	provinces={
+		1126 1967 2049 4018 4903 4970 5035 5053 7149 8061 8077 9943 9960 12018 12842 12888 13074 13376 13388 13389 13390 13391 13393 
+	}
+	history={
+		owner = FRA
+
+		add_core_of = ISR
+		1936.01.02 = {
+			add_core_of = ALG
+			#add_core_of = 
+			#add_core_of = 
+			#add_claim_by =  
+		}
+		victory_points = {
+			12034 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=811486
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

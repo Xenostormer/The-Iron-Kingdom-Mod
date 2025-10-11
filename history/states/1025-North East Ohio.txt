@@ -1,0 +1,26 @@
+state={
+	id=1025
+	name="STATE_1025"
+	provinces={
+		882 4442 6890 13584 13154 6874 9808  
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 22
+			arms_factory = 3
+		}
+		victory_points = {
+			6890 10 
+		}
+		victory_points = {
+			13584 1
+		}
+	}
+	manpower=3084192
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

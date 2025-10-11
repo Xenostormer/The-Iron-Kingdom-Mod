@@ -1,0 +1,47 @@
+
+state={
+	id=304
+	name="STATE_304"
+	manpower = 467459
+	resources={
+		oil=1 # was: 1
+	}
+	
+	state_category = town
+	
+	history={
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			7630 = {
+				naval_base = 4
+			}
+			4611 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7630 5 
+		}
+		victory_points = {
+			4611 1
+		}
+
+		owner = CHL
+		add_core_of = CHL
+
+		1936.01.02 = {
+			owner = PAN
+			add_core_of = PAN
+			#add_core_of = 
+		}
+
+	}
+
+	provinces={
+		1633 4611 4624 7630 10482 
+	}
+
+	local_supplies=0.0 
+}

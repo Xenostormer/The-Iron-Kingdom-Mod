@@ -1,0 +1,30 @@
+state={
+	id=1034
+	name="STATE_1034"
+	provinces={
+		3546 3560 5291 6545 9472 9505 13011 
+	}
+
+	resources = {
+		steel = 4 
+	}
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 9
+		}
+		victory_points = {
+			3560 1
+		}
+		victory_points = {
+			13011 5
+		}
+	}
+	manpower=1580000
+	state_category= large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

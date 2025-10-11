@@ -1,0 +1,41 @@
+state={
+	id=430
+	name="STATE_430"
+	provinces={
+		2843 4162 4616 7078 7124 7179 7662 9935 9991 9993 10035 10389 10416 10443 11911 11929 11968 12010 12423 13489 13553 13557 13560 13561 
+	}
+
+	resources = {
+		oil = 13
+	}
+
+	history={
+		owner = RAJ
+		1936.01.02 = {
+			add_core_of = BAN
+			add_core_of = PAK
+		}
+		victory_points = {
+			11929 15
+		}
+		victory_points = {
+			13489 1  
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 20
+			arms_factory = 8
+			11968 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = RAJ
+
+	}
+	manpower=31973300
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=1.000
+}

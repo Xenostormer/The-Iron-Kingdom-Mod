@@ -1,0 +1,62 @@
+state={
+	id=594
+	name="STATE_594"
+	resources={
+		tungsten= 19
+		steel = 10
+	}
+	provinces={
+		1018 4023 4121 4177 7044 7137 7192 10004 10050 10105 11926 11983 12023 13497 
+	}
+	history = {
+
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+
+		set_demilitarized_zone = yes
+
+		1936.01.02 = {
+			set_demilitarized_zone = no
+			owner = GXC
+			add_core_of = GXC 
+			add_core_of = CHI
+			add_core_of = PRC
+		}
+
+		buildings = {
+			infrastructure = 2
+			10004 = { # Fangcheng
+				naval_base = 1
+				coastal_bunker = 1
+			}
+		}
+
+		victory_points = { 
+			7137 10 # Nanning
+		}
+
+		victory_points = {
+			13497 1  
+		}
+
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
+			JAP = {
+				set_province_controller = 1018
+				set_province_controller = 4023
+				set_province_controller = 10004
+			} 			
+		}
+	}
+	manpower=6550000
+	buildings_max_level_factor=1.000
+	state_category= city
+	local_supplies=1.000
+}

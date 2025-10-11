@@ -1,0 +1,31 @@
+state={
+	id=1066
+	name="STATE_1066"
+
+	resources={
+		tungsten = 3
+	}
+
+	provinces={
+		1773 5211 5225 7567 10925 12910 12918 12924 13533 
+	}
+	history={
+		owner = AST
+		add_core_of = AST
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 21
+			12910 = {
+				naval_base = 2
+			}
+
+		}
+		victory_points = {
+			12910 15 
+		}
+	}
+	manpower= 172114
+	state_category= city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

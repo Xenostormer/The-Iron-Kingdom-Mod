@@ -1,0 +1,577 @@
+missionsoperations = {
+	#conquest_of_china = {
+	#	icon = decision_icon_conquest_of_china
+	#}
+	#Russia invades Easter Poland
+	occupation_of_saudi_arabia = {
+		icon = 
+		allowed = { original_tag = ENG }
+		visible = { original_tag = ENG }
+		cost = 20
+		available = {
+			OR = {
+				NOT = {
+					controls_state = 446
+				}
+				NOT = {
+					controls_state = 1014
+				}
+				NOT = {
+					controls_state = 765
+				}
+				any_enemy_country = {
+					controls_state = 658
+					controls_state = 294
+					controls_state = 1015
+					controls_state = 1016
+					controls_state = 659
+					controls_state = 992
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					SAU = {
+						is_ai = yes 
+					}
+				}
+				annex_country = {
+				    target = SAU
+				    transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					SAU = {
+						is_ai = no
+					}
+				}
+				puppet = SAU
+			}
+		}
+	}
+	invasion_of_spain = {
+		icon = 
+		allowed = { original_tag = ENG }
+		visible = { original_tag = ENG }
+		cost = 20
+		available = {
+			SOV = {
+				has_defensive_war_with = GER
+				surrender_progress > 0.5
+			}
+			SPR = {
+				has_government = fascism
+			}
+		}
+		complete_effect = {
+			create_wargoal = {
+			    type = liberate_wargoal
+			    target = SPR
+			}
+		}
+	}
+	invasion_of_turkey = {
+		icon = 
+		allowed = { original_tag = GER }
+		visible = { original_tag = GER }
+		cost = 20
+		available = {
+			OR = {
+				AND = {
+					has_offensive_war_with = SOV
+					any_allied_country = {
+						controls_state = 680
+						controls_state = 877
+						controls_state = 183
+						controls_state = 164
+						controls_state = 187
+						controls_state = 184
+						controls_state = 211
+					}	
+				}
+				AND = {
+					NOT = {
+						has_war_with = SOV
+					}
+					OR = {
+						ITA = {
+							has_idea = IKM_ITA_imperial_integrity
+						}
+						ITA = {
+							has_idea = IKM_ITA_imperial_integrity_1
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			create_wargoal = {
+			    type = independence_wargoal
+			    target = TUR
+			}
+			if = {
+				limit = {
+					has_offensive_war_with = SOV
+					any_allied_country = {
+						controls_state = 680
+						controls_state = 877
+						controls_state = 183
+						controls_state = 164
+						controls_state = 187
+						controls_state = 184
+						controls_state = 211
+					}
+				}
+				SOV = {
+					give_guarantee = TUR
+				}
+				TUR = {
+					give_military_access = SOV
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = SOV
+					}
+					OR = {
+						ITA = {
+							has_idea = IKM_ITA_imperial_integrity
+						}
+						ITA = {
+							has_idea = IKM_ITA_imperial_integrity_1
+						}
+					}
+				}
+				ENG = {
+					give_guarantee = TUR
+				}
+				TUR = {
+					give_military_access = ENG
+					give_military_access = FRA
+					give_military_access = CAN
+					give_military_access = SAF
+					give_military_access = RAJ
+					give_military_access = AST
+				}
+			}
+		}
+	}
+	soviet_polish_war = {
+		icon = GFX_decision_generic_ignite_civil_war
+		days_mission_timeout = 365
+		allowed = { always = no }
+		is_good = no
+		available = {
+			GER = {
+				has_war_with = POL
+				has_war_with = ENG
+			}
+			POL = {
+				is_in_faction_with = ENG
+				#has_idea = 
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				divisions_in_border_state = {
+				    size > 3
+				    state = 207
+				    border_state = 96
+				}
+				divisions_in_border_state = {
+				    size > 3
+				    state = 206
+				    border_state = 96
+				}
+				divisions_in_border_state = {
+				    size > 2
+				    state = 204
+				    border_state = 95
+				}
+				divisions_in_border_state = {
+				    size > 2
+				    state = 194
+				    border_state = 94
+				}
+				divisions_in_border_state = {
+				    size > 2
+				    state = 201
+				    border_state = 93
+				}
+				divisions_in_border_state = {
+				    size > 4
+				    state = 199
+				    border_state = 91
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			declare_war_on = {
+	            target = POL
+	            type = take_state_focus
+	            generator = { 96 784 95 97 94 93 91 89 }
+	        }
+		}
+		timeout_effect = {
+			complete_national_focus = SOV_demand_eastern_poland
+		}
+		cancel_trigger = {
+			OR = {
+				has_civil_war = yes
+				has_war_with = POL
+				is_in_faction_with = POL
+				POL = {
+					surrender_progress > 0.75
+				}
+				POL = {
+					has_capitulated = yes
+				}
+				has_completed_focus = SOV_demand_eastern_poland
+				has_completed_focus = SOV_offer_poland_protection
+			}
+		}
+	}
+	#Second Italio-Ethiopian War Mission
+	second_italoethiopian_war = { 
+		icon = GFX_decision_ITA_italian_east_africa
+		days_mission_timeout = 396 
+		allowed = { tag = ITA }
+		is_good = no
+		activation = {
+			tag = ITA
+			has_war_with = ETH
+			date < 1936.02.01
+	    }
+	    available = {
+	        OR = {
+	        	ETH = {
+		        	surrender_progress > 0.8
+		        }
+		        AND = {
+		        	ETH = {
+			        	surrender_progress > 0.6
+			        }
+			        date > 1936.06.01
+		        }
+	        }
+	    }
+	    timeout_effect = {
+	    	add_stability = -0.2
+	    	add_war_support = -0.1
+	    	add_popularity = {
+			    ideology = fascism
+			    popularity = -0.1
+			}
+			ITA = {
+				create_faction = ITA_italian_league
+				white_peace = ETH
+				add_to_faction = ALB
+				set_truce = {
+				    target = ETH
+				    days = 365
+				}
+				create_wargoal = {
+				    type = puppet_wargoal_focus
+				    target = ETH
+				}
+			}
+	    }
+	    complete_effect = {
+	    	add_stability = 0.2
+	    	add_war_support = 0.1
+	    	add_popularity = {
+			    ideology = fascism
+			    popularity = 0.02
+			}
+	    	if = {
+	    		limit = {
+	    			ETH = {
+	    				is_ai = yes
+	    			}
+	    		}
+	    		ITA = {
+	    			create_faction = ITA_italian_league
+	    			add_to_faction = ALB
+	    			annex_country = {
+					    target = ETH
+					    transfer_troops = no
+					}	
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			ETH = {
+	    				is_ai = no
+	    			}
+	    		}
+	    		ITA = {
+	    			create_faction = ITA_italian_league
+	    			white_peace = ETH
+	    			add_to_faction = ALB
+	    			set_autonomy = {
+					    target = ETH
+					    autonomous_state = autonomy_personal_union
+					    end_wars = yes
+					    end_civil_wars = yes
+					}	
+	    		}
+	    		ETH = {
+	    			transfer_state = 550
+	    			transfer_state = 559
+	    			transfer_state = 844
+	    		}
+	    	}
+	    }
+	    cancel_trigger = {
+	        OR = {
+	        	has_civil_war = yes
+	        	ETH = {
+	        		surrender_progress < 0.01
+	        		controls_state = 550
+	        		controls_state = 559
+	        		controls_state = 844
+	        	}
+	        }
+	    }
+	}
+	#second_sinojapanese_war = {
+	#	icon = decision_icon_second_sinojapanese_war
+	#}
+	#Russian invastion of China
+	soviet_invasion_of_china = {
+		icon = GFX_decision_generic_ignite_civil_war
+		cost = 25
+		fire_only_once = yes
+		visible = {
+			tag = SOV
+			CHI = {
+				has_defensive_war_with = JAP
+				is_faction_leader = yes
+			}
+			NOT = {
+				CHI = {
+					is_guaranteed_by = USA
+				}
+			}
+			NOT = {
+				CHI = {
+					is_in_faction_with = USA
+				}
+			}
+		}
+		available = {
+	        OR = {
+	        	date > 1939.06.01
+	        	AND = {
+	        		date > 1939.01.01
+	        		CHI = {
+	        			surrender_progress < 0.5
+	        		}
+	        	}
+	        	AND = {
+	        		date > 1938.06.01
+	        		CHI = {
+	        			surrender_progress < 0.3
+	        		}
+	        	}
+	        	AND = {
+	        		date > 1938.01.01
+	        		CHI = {
+	        			surrender_progress < 0.1
+	        		}
+	        	}
+	        }
+	    }
+	    complete_effect = {
+	    	if = {
+	    		limit = {
+	    			NOT = {
+	    				621 = {
+	    					is_controlled_by = PRC
+	    				}
+	    			}
+	    		}
+	    		621 = {
+	    			transfer_state_to = MAN
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			NOT = {
+	    				615 = {
+	    					is_controlled_by = PRC
+	    				}
+	    			}
+	    		}
+	    		615 = {
+	    			transfer_state_to = MAN
+	    		}
+	    	}
+	    	set_autonomy = {
+			    target = PRC
+			    autonomous_state = autonomy_supervised_state
+			    end_wars = yes
+			    end_civil_wars = yes
+			}
+	    	create_wargoal = {
+			    type = liberate_wargoal
+			    target = CHI
+			}
+	    }
+	}
+	french_communist_protest = {
+		icon = GFX_decision_generic_political_rally
+		days_mission_timeout = 90
+		allowed = { always = no }
+		is_good = yes
+	    available = {
+	        surrender_progress > 0.1
+	    }
+	    timeout_effect = {
+	    	add_war_support = 0.2
+	    	add_popularity = {
+			    ideology = communism
+			    popularity = -0.1
+			}
+	    }
+	    complete_effect = {
+	    	add_war_support = -0.1
+	    	add_popularity = {
+			    ideology = communism
+			    popularity = 0.15
+			}
+	    	activate_mission = french_communist_revolution
+	    }
+	    cancel_trigger = {
+	        NOT = {
+	        	has_government = democratic
+	        }
+	    }
+	}
+	french_communist_revolution = {
+		icon = GFX_decision_generic_ignite_civil_war
+		days_mission_timeout = 90
+		allowed = { always = no }
+	    available = {
+	        OR = {
+	        	has_capitulated = yes
+	        	surrender_progress > 0.6
+	        	surrender_progress < 0.02
+	        	GER = {
+	        		surrender_progress > 0.1
+	        	}
+	        }
+	    }
+	    timeout_effect = {
+	    	add_war_support = -0.1
+	    	set_political_party = {
+			    ideology = communism
+			    popularity = 0
+			}
+			custom_effect_tooltip = FRA_communist_uprising_tt
+	    	hidden_effect = {
+	    		20 = {
+		    		transfer_state_to = ALG
+		    		add_core_of = ALG
+		    	}
+		    	22 = {
+		    		transfer_state_to = ALG
+		    		add_core_of = ALG
+		    	}
+		    	1036 = {
+		    		transfer_state_to = ALG
+		    		add_core_of = ALG
+		    	}
+		    	31 = {
+		    		transfer_state_to = ALG
+		    		add_core_of = ALG
+		    	}
+		    	25 = {
+		    		transfer_state_to = ALG
+		    		add_core_of = ALG
+		    	}
+		    	26 = {
+		    		transfer_state_to = ALG
+		    		add_core_of = ALG
+		    	}
+		    	transfer_units_fraction = {
+		    		target = ALG
+					size = 0.4
+					navy_ratio = 0
+					air_ratio = 0
+					keep_unit_leaders_trigger = {
+
+					}
+		    	}
+		    	ALG = {
+		    		set_politics = {
+					    ruling_party = communism
+					    elections_allowed = no
+					    last_election = "1935.12.17"
+					    election_frequency = 48
+					    long_name = TAG_party_long
+					    name = TAG_party
+					}
+		    		set_popularities = {
+						democratic = 5
+						neutrality = 0
+						fascism = 5
+						communism = 90
+					}
+					set_capital = {
+					  state = 20
+					  remember_old_capital = no
+					}
+					activate_mission = french_communist_war 	
+		    	}
+	    	}
+	    }
+	    complete_effect = {
+	    	add_war_support = 0.05
+	    	add_popularity = {
+			    ideology = communism
+			    popularity = -0.1
+			}
+	    }
+	    cancel_trigger = {
+	        NOT = {
+	        	has_government = democratic
+	        }
+	    }
+	}
+	french_communist_war = {
+		icon = GFX_decision_generic_ignite_civil_war
+		days_mission_timeout = 7
+		allowed = { always = no }
+		is_good = yes
+	    available = {
+	        OR = {
+	        	FRA = {
+	        		has_capitulated = yes
+	        	}
+	        	FRA = {
+	        		surrender_progress > 0.6
+	        	}
+	        }
+	    }
+	    timeout_effect = {
+	    	declare_war_on = {
+			    target = FRA
+			    type = annex_everything
+			}
+	    }
+	    complete_effect = {
+	    	GER = {
+	    		annex_country = {
+				    target = ALG
+				    transfer_troops = no
+				}
+	    	}
+	    }
+	}
+}

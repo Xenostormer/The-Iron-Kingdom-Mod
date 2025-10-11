@@ -1,0 +1,238 @@
+﻿
+add_namespace = state_fix
+
+country_event = {
+    id = state_fix.1
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = GER
+    	51 = {
+    		is_demilitarized_zone = no
+    	}
+    	42 = {
+    		is_demilitarized_zone = no
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    immediate = {
+        1042 = {
+            set_demilitarized_zone = no
+        }
+        1041 = {
+            set_demilitarized_zone = no
+        }
+    }
+}
+
+country_event = {
+    id = state_fix.2
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = GER
+        GER = {
+            has_completed_focus = GER_fate_of_czechoslovakia
+        }
+        OR = {
+            country_exists = SLO
+            HUN = {
+                owns_state = 70
+            }
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                HUN = {
+                   owns_state = 70
+                }
+            }
+            1072 = {
+                transfer_state_to = HUN
+            }
+        }
+        if = {
+            limit = {
+                SLO = {
+                   owns_state = 70
+                }
+            }
+            1072 = {
+                transfer_state_to = SLO
+            }
+        }
+    }
+}
+
+country_event = {
+    id = state_fix.3
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = POL
+        GER = {
+            has_completed_focus = GER_danzig_for_slovakia
+        }
+        POL = {
+            owns_state = 70
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    immediate = {
+        1072 = {
+            transfer_state_to = POL
+        }
+    }
+}
+
+country_event = {
+    id = state_fix.4
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = GER
+        GER = {
+           has_war_with = FRA 
+        }
+        FRA = {
+            has_capitulated = yes
+        }
+        26 = {
+            is_capital = yes
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                D02 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D02
+            }
+        }
+        if = {
+            limit = {
+                D03 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D03
+            }
+        }
+        if = {
+            limit = {
+                D04 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D04
+            }
+        }
+        if = {
+            limit = {
+                D05 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D05
+            }
+        }
+        if = {
+            limit = {
+                D06 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D06
+            }
+        }
+        if = {
+            limit = {
+                D07 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D07
+            }
+        }
+        if = {
+            limit = {
+                D08 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D08
+            }
+        }
+        if = {
+            limit = {
+                D09 = {
+                   owns_state = 26 
+                }
+            }
+            1036 = {
+                transfer_state_to = D09
+            }
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+spriteTypes = { 
+	##Icon For Category: International Policies
+	SpriteType = { 
+		name = "decision_category_icon_international_policies"
+		texturefile = "gfx/interface/decisions/decision_category_icon_international_policies.dds"
+	}
+
+	##Picture For: International Policies
+	SpriteType = { 
+		name = "decision_category_picture_international_policies"
+		texturefile = "gfx/interface/decisions/decision_category_picture_international_policies.dds"
+	}
+
+	##Icon For: Request a British Loan
+	SpriteType = { 
+		name = "decision_icon_request_a_british_loan"
+		texturefile = "gfx/interface/decisions/decision_icon_request_a_british_loan.dds"
+	}
+
+	##Icon For: Request a French Loan
+	SpriteType = { 
+		name = "decision_icon_request_a_french_loan"
+		texturefile = "gfx/interface/decisions/decision_icon_request_a_french_loan.dds"
+	}
+
+	##Icon For: Request an American Loan
+	SpriteType = { 
+		name = "decision_icon_request_an_american_loan"
+		texturefile = "gfx/interface/decisions/decision_icon_request_an_american_loan.dds"
+	}
+
+}

@@ -1,0 +1,1891 @@
+civil_unrest = {
+	opposition_launches_civil_war = {
+		icon = GFX_decision_SWI_consolidate_council_power
+		days_mission_timeout = 15
+		is_good = no
+		cancel_trigger = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.6
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.6
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.6
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.6
+			}
+		}
+		activation = {
+			is_ai = no
+			NOT = {
+				has_idea = SPR_political_violence
+				has_idea = AUS_treaty_of_saint_germain_en_laye
+				has_idea = GRE_political_instability
+				has_idea = BUL_second_national_catastrophe
+				has_idea = HUN_treaty_of_triannon_aat_wuw
+			}
+			OR = {
+				AND = {
+					has_government = democratic
+					OR = {
+						democratic < party_popularity@communism
+						democratic < party_popularity@fascism
+						democratic < party_popularity@neutrality
+					}
+				}
+				AND = {
+					has_government = neutrality
+					OR = {
+						neutrality < party_popularity@communism
+						neutrality < party_popularity@fascism
+						neutrality < party_popularity@democratic 
+					}
+				}
+				AND = {
+					has_government = fascism
+					OR = {
+						fascism < party_popularity@communism
+						fascism < party_popularity@neutrality
+						fascism < party_popularity@democratic 
+					}
+				}
+				AND = {
+					has_government = communism
+					OR = {
+						communism < party_popularity@fascism 
+						communism < party_popularity@neutrality
+						communism < party_popularity@democratic 
+					}
+				}
+			}
+	    }
+		available = {
+	        OR = {
+				AND = {
+					has_government = democratic
+					democratic > party_popularity@communism
+					democratic > party_popularity@fascism
+					democratic > party_popularity@neutrality
+				}
+				AND = {
+					has_government = neutrality
+					neutrality > party_popularity@communism
+					neutrality > party_popularity@fascism
+					neutrality > party_popularity@democratic 
+				}
+				AND = {
+					has_government = fascism
+					fascism > party_popularity@communism
+					fascism > party_popularity@neutrality
+					fascism > party_popularity@democratic 
+				}
+				AND = {
+					has_government = communism
+					communism > party_popularity@fascism 
+					communism > party_popularity@neutrality
+					communism > party_popularity@democratic 
+				}
+			}
+	    }
+	    complete_effect = {
+	    	add_stability = 0.2
+	    	add_war_support = 0.2
+	    	if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = 0.05
+				}
+			}
+	    }
+	    timeout_effect = {
+	    	if = {
+	    		limit = {
+	    			has_government = democratic
+	    			democratic < party_popularity@neutrality
+	    		}
+	    		set_political_party = {
+				    ideology = neutrality
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = neutrality
+	    			ruling_party = democratic
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = democratic
+	    			democratic < party_popularity@fascism
+	    		}
+	    		set_political_party = {
+				    ideology = fascism
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = fascism
+	    			ruling_party = democratic
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = democratic
+	    			democratic < party_popularity@communism
+	    		}
+	    		set_political_party = {
+				    ideology = communism
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = communism
+	    			ruling_party = democratic
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = neutrality
+	    			neutrality < party_popularity@democratic
+	    		}
+	    		set_political_party = {
+				    ideology = democratic
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = democratic
+	    			ruling_party = neutrality
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = neutrality
+	    			neutrality < party_popularity@fascism
+	    		}
+	    		set_political_party = {
+				    ideology = fascism
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = fascism
+	    			ruling_party = neutrality
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = neutrality
+	    			neutrality < party_popularity@communism
+	    		}
+	    		set_political_party = {
+				    ideology = communism
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = communism
+	    			ruling_party = neutrality
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = fascism
+	    			fascism < party_popularity@democratic
+	    		}
+	    		set_political_party = {
+				    ideology = democratic
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = democratic
+	    			ruling_party = fascism
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = fascism
+	    			fascism < party_popularity@neutrality
+	    		}
+	    		set_political_party = {
+				    ideology = neutrality
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = neutrality
+	    			ruling_party = fascism
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = fascism
+	    			fascism < party_popularity@communism
+	    		}
+	    		set_political_party = {
+				    ideology = communism
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = communism
+	    			ruling_party = fascism
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = communism
+	    			communism < party_popularity@democratic
+	    		}
+	    		set_political_party = {
+				    ideology = democratic
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = democratic
+	    			ruling_party = communism
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = communism
+	    			communism < party_popularity@neutrality
+	    		}
+	    		set_political_party = {
+				    ideology = neutrality
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = neutrality
+	    			ruling_party = communism
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    	if = {
+	    		limit = {
+	    			has_government = communism
+	    			communism < party_popularity@fascism
+	    		}
+	    		set_political_party = {
+				    ideology = fascism
+				    popularity = 0
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.25
+				}
+	    		start_civil_war = {
+	    			ideology = fascism
+	    			ruling_party = communism
+	    			size = 0.4
+	    			navy_ratio = 0.1
+	    			air_ratio = 0.2
+	    		}
+	    	}
+	    }
+	}
+	national_anti_government_protest = {
+		icon = GFX_decision_generic_political_rally
+		days_mission_timeout = 60
+		is_good = no
+		cancel_trigger = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.6
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.6
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.6
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.6
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = HUN
+						original_tag = ROM
+						original_tag = BUL
+						original_tag = FIN
+					}
+					fascism > 0.6
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = MEX
+						original_tag = BRA
+					}
+					OR = {
+						democratic > 0.6
+						communism > 0.6
+					}
+				}
+			}
+		}
+		activation = {
+			is_ai = no
+			NOT = {
+				has_idea = SPR_political_violence
+				has_idea = AUS_treaty_of_saint_germain_en_laye
+				has_idea = GRE_political_instability
+				has_idea = BUL_second_national_catastrophe
+			}
+			OR = {
+				AND = {
+					has_government = democratic
+					democratic < 0.6
+					OR = {
+						has_stability < 0.4
+						has_war_support < 0.2
+						AND = {
+							has_war = yes 
+							has_war_support < 0.4
+						}
+					}
+				}
+				AND = {
+					has_government = neutrality
+					neutrality < 0.6
+					OR = {
+						has_stability < 0.5
+						has_war_support < 0.25
+						AND = {
+							has_war = yes 
+							has_war_support < 0.5
+						}
+					}
+				}
+				AND = {
+					has_government = fascism
+					fascism < 0.6
+					OR = {
+						has_stability < 0.3
+						has_war_support < 0.25
+						AND = {
+							has_war = yes 
+							has_war_support < 0.5
+						}
+					}
+				}
+				AND = {
+					has_government = communism
+					communism < 0.6
+					OR = {
+						has_stability < 0.5
+						has_war_support < 0.15
+						AND = {
+							has_war = yes 
+							has_war_support < 0.3
+						}
+					}
+				}
+			}
+	    }
+		available = {
+	        if = {
+	        	limit = {
+	        		has_government = democratic
+	        	}
+				has_stability > 0.4
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.2
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.4
+					}
+	        	}
+	        }
+	        if = {
+	        	limit = {
+	        		has_government = neutrality
+	        	}
+				has_stability > 0.5
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.25
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.5
+					}
+	        	}
+	        }
+	        if = {
+	        	limit = {
+	        		has_government = fascism
+	        	}
+	        	has_stability > 0.3
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.25
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.5
+					}
+	        	}
+	        }
+	        if = {
+	        	limit = {
+	        		has_government = communism
+	        	}
+	        	has_stability > 0.5
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.25
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.5
+					}
+	        	}
+	        }
+	    }
+	    complete_effect = {
+	    	add_stability = 0.1
+	    	add_war_support = 0.1
+	    	if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.025
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.025
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.025
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.025
+				}
+			}
+	    }
+	    timeout_effect = {
+	    	add_stability = 0.05
+	    	add_war_support = 0.05
+	    	if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.1
+				}
+			}
+	    }
+	}
+	national_anarchist_riots = {
+		icon = GFX_decision_generic_scorched_earth
+		days_mission_timeout = 30
+		is_good = no
+		cancel_trigger = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.6
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.6
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.6
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.6
+			}
+		}
+		activation = {
+			is_ai = no
+			NOT = {
+				has_idea = SPR_political_violence
+				has_idea = AUS_treaty_of_saint_germain_en_laye
+				has_idea = GRE_political_instability
+				has_idea = BUL_second_national_catastrophe
+			}
+			OR = {
+				AND = {
+					has_government = democratic
+					democratic < 0.6
+					OR = {
+						neutrality > 0.3
+						fascism > 0.3
+						communism > 0.3
+					}
+					OR = {
+						has_stability < 0.3
+						has_war_support < 0.1
+						AND = {
+							has_war = yes 
+							has_war_support < 0.2
+						}
+					}
+				}
+				AND = {
+					has_government = neutrality
+					neutrality < 0.6
+					OR = {
+						democratic > 0.3
+						fascism > 0.3
+						communism > 0.3
+					}
+					OR = {
+						has_stability < 0.4
+						has_war_support < 0.15
+						AND = {
+							has_war = yes 
+							has_war_support < 0.4
+						}
+					}
+				}
+				AND = {
+					has_government = fascism
+					fascism < 0.6
+					OR = {
+						democratic > 0.3
+						neutrality > 0.3
+						communism > 0.3
+					}
+					OR = {
+						has_stability < 0.2
+						has_war_support < 0.15
+						AND = {
+							has_war = yes 
+							has_war_support < 0.4
+						}
+					}
+				}
+				AND = {
+					has_government = communism
+					communism < 0.6
+					OR = {
+						democratic > 0.3
+						neutrality > 0.3
+						fascism > 0.3
+					}
+					OR = {
+						has_stability < 0.4
+						has_war_support < 0.05
+						AND = {
+							has_war = yes 
+							has_war_support < 0.15
+						}
+					}
+				}
+			}
+	    }
+		available = {
+	        if = {
+	        	limit = {
+	        		has_government = democratic
+	        	}
+	        	neutrality < 0.3
+				fascism < 0.3
+				communism < 0.3
+				has_stability > 0.3
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.1
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.2
+					}
+	        	}
+	        }
+	        if = {
+	        	limit = {
+	        		has_government = neutrality
+	        	}
+	        	democratic < 0.3
+				fascism < 0.3
+				communism < 0.3
+				has_stability > 0.4
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.15
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.4
+					}
+	        	}
+	        }
+	        if = {
+	        	limit = {
+	        		has_government = fascism
+	        	}
+	        	democratic < 0.3
+				neutrality < 0.3
+				communism < 0.3
+	        	has_stability > 0.2
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.15
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.4
+					}
+	        	}
+	        }
+	        if = {
+	        	limit = {
+	        		has_government = communism
+	        	}
+	        	democratic < 0.3
+				neutrality < 0.3
+				fascism < 0.3
+	        	has_stability > 0.4
+	        	OR = {
+	        		AND = {
+						has_war = no 
+						has_war_support > 0.05
+					}
+					AND = {
+						has_war = yes 
+						has_war_support > 0.15
+					}
+	        	}
+	        }
+	    }
+	    complete_effect = {
+	    	add_stability = 0.05
+	    	add_war_support = 0.05
+	    	if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+	    }
+	    timeout_effect = {
+	    	random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 0 
+					arms_factory > 0
+				}
+				damage_building = {
+				  type = industrial_complex
+				  damage = 4
+				  repair_speed_modifier = -0.2
+				}
+				damage_building = {
+				  type = arms_factory
+				  damage = 4
+				  repair_speed_modifier = -0.2
+				}
+				damage_building = {
+				  type = infrastructure
+				  damage = 1
+				  repair_speed_modifier = -0.1
+				}
+			}
+	    	add_stability = 0.025
+	    	add_war_support = 0.025
+	    	if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.075
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.075
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.075
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.075
+				}
+			}
+	    }
+	}
+	terrorize_bourgeoisie_buisnesses = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_oppression
+		days_re_enable = 90
+		ai_will_do = {
+			base = 10
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			democratic > 0.1
+			NOT = {
+				has_government = democratic 
+			}
+		}
+		complete_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 0 
+				}
+				damage_building = {
+				  type = industrial_complex
+				  damage = 2
+				  repair_speed_modifier = -0.8
+				}
+			}
+			add_stability = 0.025
+			add_war_support = 0.025
+			add_popularity = {
+			    ideology = democratic
+			    popularity = -0.1
+			}
+		}
+	}
+	exile_aristocratic_family = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_SWI_dismiss_council
+		days_re_enable = 90
+		ai_will_do = {
+			base = 10
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			neutrality > 0.1
+			NOT = {
+				has_government = neutrality
+			}
+		}
+		complete_effect = {
+			add_political_power = -90
+			add_stability = 0.025
+			add_war_support = 0.025
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = -0.1
+			}
+		}
+	}
+	breakup_unionized_factories = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_generic_police_action
+		days_re_enable = 90
+		ai_will_do = {
+			base = 10
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			communism > 0.1
+			NOT = {
+				has_government = communism
+			}
+		}
+		complete_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					arms_factory > 0 
+				}
+				damage_building = {
+				  type = arms_factory
+				  damage = 2
+				  repair_speed_modifier = -0.8
+				}
+			}
+			add_stability = 0.025
+			add_war_support = 0.025
+			add_popularity = {
+			    ideology = communism
+			    popularity = -0.1
+			}
+		}
+	}
+	purge_disloyal_officers = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_generic_assassination
+		days_re_enable = 90
+		ai_will_do = {
+			base = 10
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			fascism > 0.1
+			NOT = {
+				has_government = fascism
+			}
+		}
+		complete_effect = {
+			army_experience = -50
+			navy_experience = -50
+			air_experience = -50
+			add_command_power = -25
+			add_stability = 0.025
+			add_war_support = 0.025
+			add_popularity = {
+			    ideology = fascism
+			    popularity = -0.1
+			}
+		}
+	}
+	exaggerate_capitalist_hypocracy = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_eng_propaganda_campaigns
+		days_re_enable = 180
+		days_remove = 180
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			democratic > 0.15
+		}
+
+		modifier = {
+			democratic_drift = -0.04
+			political_power_cost = 0.02
+		}
+	}
+	bribe_capitalist_leadership = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 180
+		days_remove = 90
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			democratic > 0.15
+		}
+
+		modifier = {
+			democratic_drift = -0.04
+			consumer_goods_factor = 0.01
+			political_power_cost = 0.04
+		}
+	}
+	expose_despotist_kleptocracy = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_eng_propaganda_campaigns
+		days_re_enable = 180
+		days_remove = 180
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			neutrality > 0.15
+		}
+		
+		modifier = {
+			neutrality_drift = -0.04
+			political_power_cost = 0.02
+		}	
+	}
+	bribe_despotist_leadership = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 180
+		days_remove = 90
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			neutrality > 0.15
+		}
+		
+		modifier = {
+			neutrality_drift = -0.04
+			consumer_goods_factor = 0.01
+			political_power_cost = 0.04
+		}	
+	}
+	highlight_fascist_inhumanity = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_eng_propaganda_campaigns
+		days_re_enable = 180
+		days_remove = 180
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			fascism > 0.15
+		}
+
+		modifier = {
+			fascism_drift = -0.04
+			political_power_cost = 0.02
+		}
+	}
+	bribe_fascist_leadership = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 180
+		days_remove = 90
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			fascism > 0.15
+		}
+
+		modifier = {
+			fascism_drift = -0.04
+			consumer_goods_factor = 0.01
+			political_power_cost = 0.04
+		}
+	}
+	critisize_communist_irrationality = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_eng_propaganda_campaigns
+		days_re_enable = 180
+		days_remove = 180
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			communism > 0.15
+		}
+
+		modifier = {
+			communism_drift = -0.04
+			political_power_cost = 0.02
+		}
+	}
+	bribe_communist_leadership = {
+		allowed = { always = yes }
+		cost = 10
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 180
+		days_remove = 90
+		ai_will_do = {
+			base = 50
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			communism > 0.15
+		}
+
+		modifier = {
+			communism_drift = -0.04
+			consumer_goods_factor = 0.01
+			political_power_cost = 0.04
+		}
+	}
+	decapitate_the_capitalist_faction = {
+		allowed = { always = yes }
+		custom_cost_trigger = {
+		    command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+		icon = GFX_decision_SWI_elect_confederation_president
+		days_re_enable = 90
+		ai_will_do = {
+			base = 1
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			democratic > 0.2
+			NOT = {
+				has_government = democratic
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+			random_list = {
+				50 = {country_event = decapitation_events.1}
+				20 = {country_event = decapitation_events.2}
+				20 = {country_event = decapitation_events.3}
+				10 = {country_event = decapitation_events.4}
+			}
+		}
+	}
+	decapitate_the_despotist_faction = {
+		allowed = { always = yes }
+		custom_cost_trigger = {
+		    command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+		icon = GFX_decision_SWI_elect_confederation_president
+		days_re_enable = 90
+		ai_will_do = {
+			base = 1
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			neutrality > 0.2
+			NOT = {
+				has_government = neutrality
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+			random_list = {
+				50 = {country_event = decapitation_events.5}
+				20 = {country_event = decapitation_events.6}
+				20 = {country_event = decapitation_events.7}
+				10 = {country_event = decapitation_events.8}
+			}
+		}
+	}
+	decapitate_the_fascist_faction = {
+		allowed = { always = yes }
+		custom_cost_trigger = {
+		    command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+		icon = GFX_decision_SWI_elect_confederation_president
+		days_re_enable = 90
+		ai_will_do = {
+			base = 1
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			fascism > 0.2
+			NOT = {
+				has_government = fascism
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+			random_list = {
+				50 = {country_event = decapitation_events.9}
+				20 = {country_event = decapitation_events.10}
+				20 = {country_event = decapitation_events.11}
+				10 = {country_event = decapitation_events.12}
+			}
+		}
+	}
+	decapitate_the_communist_faction = {
+		allowed = { always = yes }
+		custom_cost_trigger = {
+		    command_power > 14
+		}
+		custom_cost_text = decision_cost_CP_15
+		icon = GFX_decision_SWI_elect_confederation_president
+		days_re_enable = 90
+		ai_will_do = {
+			base = 1
+			modifier = {
+		        add = 10
+		        OR = {
+		        	has_stability < 0.5
+		        	has_war_support < 0.5
+		        }
+		    }
+		    modifier = {
+		        add = 20
+		        OR = {
+		        	has_stability < 0.4
+		        	has_war_support < 0.4
+		        }
+		    }
+		    modifier = {
+		        add = 40
+		        OR = {
+		        	has_stability < 0.3
+		        	has_war_support < 0.3
+		        }
+		    }
+		    modifier = {
+		        add = 80
+		        OR = {
+		        	has_stability < 0.2
+		        	has_war_support < 0.2
+		        }
+		    }
+		    modifier = {
+		        add = 160
+		        OR = {
+		        	has_stability < 0.1
+		        	has_war_support < 0.1
+		        }
+		    }
+		}
+		available = {
+			communism > 0.2
+			NOT = {
+				has_government = communism
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+			random_list = {
+				50 = {country_event = decapitation_events.13}
+				20 = {country_event = decapitation_events.14}
+				20 = {country_event = decapitation_events.15}
+				10 = {country_event = decapitation_events.16}
+			}
+		}
+	}
+}

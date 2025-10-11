@@ -1,0 +1,45 @@
+state={
+	id=52
+	name="STATE_52"
+	resources={
+		aluminium= 8 
+		steel = 32
+	}
+	provinces={
+		692 707 3688 3705 6693 9652 11620 11653 
+	}
+	history = {
+
+		owner = GER
+		add_core_of = GER
+		1936.01.02 = {
+			add_core_of = BAY
+			#add_core_of =
+			#add_core_of = 
+		}
+
+		victory_points = {
+			692 20 # Munich
+		}
+		victory_points = {
+			708 3 # Augsburg
+		}
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 4
+			industrial_complex = 6
+			air_base = 6
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 10
+			}
+		}
+	}
+	manpower=2038013
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=8.000
+}

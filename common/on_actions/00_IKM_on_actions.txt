@@ -1,0 +1,107 @@
+on_actions = {
+	#Japanese Rubber
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					country_exists = SIA
+				}
+				SIA = {
+					give_resource_rights = { receiver = JAP state = 289 }
+					give_resource_rights = { receiver = JAP state = 724 }
+				}
+			}
+        }
+	}
+	#British Oil
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					country_exists = IRQ
+				}
+				IRQ = {
+					give_resource_rights = { receiver = ENG state = 1011 }
+				}
+			}
+        }
+        effect = {
+			if = {
+				limit = {
+					country_exists = PER
+				}
+				PER = {
+					give_resource_rights = { receiver = ENG state = 413 }
+					give_resource_rights = { receiver = ENG state = 421 }
+					give_resource_rights = { receiver = ENG state = 1001 }
+				}
+			}
+        }
+	}
+	#Peacetime press to Wartime press
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_idea = IKM_peacetime_media_freedom
+					}
+				}
+				THIS = {
+					swap_ideas = {
+					    remove_idea = IKM_peacetime_media_freedom
+					    add_idea = IKM_wartime_media_restrictions
+					}
+				}
+			}
+		}
+	}
+	on_peace = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_idea = IKM_peacetime_media_freedom
+					}
+				}
+				THIS = {
+					swap_ideas = {
+					    remove_idea = IKM_wartime_media_restrictions
+					    add_idea = IKM_peacetime_media_freedom
+					}
+				}
+			}
+		}
+	}
+	#Market law chnages for new iedologies 
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_government = fascism
+					}
+				}
+				THIS = {
+					add_ideas = IKM_mixed_economy
+					add_ideas = IKM_light_media_censorship
+				}
+			}
+		}
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_government = communism
+					}
+				}
+				THIS = {
+					add_ideas = IKM_command_economy
+					add_ideas = IKM_state_controlled_media
+				}
+			}
+		}
+	}
+}

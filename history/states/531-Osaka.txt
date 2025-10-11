@@ -1,0 +1,52 @@
+state={
+	id=531
+	name="STATE_531"
+
+	provinces={
+		1051 1133 4054 4142 7072 7113 11960 12031 13522 13523 
+	}
+	history = {
+
+		owner = JAP
+		add_core_of = JAP
+
+		buildings = {
+			infrastructure = 4 #was: 8
+			arms_factory = 9
+			industrial_complex = 14
+			dockyard = 6
+			7072 = {
+				naval_base = 3
+			}
+
+		}
+
+		victory_points = {
+			7072 40 # Osaka
+		}
+
+		victory_points = {
+			11960 20 # Kyoto
+		}
+
+		victory_points = {
+			13522 1 
+		}
+
+		victory_points = {
+			13523 1 
+		}
+
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+				industrial_complex = 5
+			}
+		}
+
+	}
+	manpower=9441429
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=9.000
+}

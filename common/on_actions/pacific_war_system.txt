@@ -1,0 +1,553 @@
+on_actions = {
+	#
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = USA
+					}
+					FROM.FROM = {
+						OR = {
+							state = 526
+							state = 645
+							state = 648
+							state = 646
+							state = 638
+							state = 647
+							state = 684
+							state = 632
+							state = 650
+							state = 631
+							state = 630
+							state = 629
+						}
+					}
+				}
+				USA = {
+					subtract_from_variable = {
+					    var = america_pacific_war
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = USA
+					FROM.FROM = {
+						OR = {
+							state = 526
+							state = 645
+							state = 648
+							state = 646
+							state = 638
+							state = 647
+							state = 684
+							state = 632
+							state = 650
+							state = 631
+							state = 630
+							state = 629
+						}
+					}
+				}
+				USA = {
+					add_to_variable = {
+					    var = america_pacific_war
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_weekly_USA = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_won
+						has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 12
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_won
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_10
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 11
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_10
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_9
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 10
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_9
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_8
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 9
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_8
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_7	
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 8
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_7	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_6
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 7
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_6	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_5	
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 6
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_5	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_4
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 5
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_4	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_3
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 4
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_3	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_2
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 3
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_2	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_1
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 2
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_1	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 1
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_USA_pacific_war_lost	
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = america_pacific_war
+					    value = 0
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_USA_pacific_war_lost	
+			}
+		}
+	}
+
+	#
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = JAP
+					}
+					FROM.FROM = {
+						OR = {
+							state = 526
+							state = 645
+							state = 648
+							state = 646
+							state = 638
+							state = 647
+							state = 684
+							state = 632
+							state = 650
+							state = 631
+							state = 630
+							state = 629
+						}
+					}
+				}
+				JAP = {
+					subtract_from_variable = {
+					    var = japan_pacific_war
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = JAP
+					FROM.FROM = {
+						OR = {
+							state = 526
+							state = 645
+							state = 648
+							state = 646
+							state = 638
+							state = 647
+							state = 684
+							state = 632
+							state = 650
+							state = 631
+							state = 630
+							state = 629
+						}
+					}
+				}
+				JAP = {
+					add_to_variable = {
+					    var = japan_pacific_war
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_weekly_JAP = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_won
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 12
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_won
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_10
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 11
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_10
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_9
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 10
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_9
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_8
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 9
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_8
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_7	
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 8
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_7	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_6
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 7
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_6	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_5	
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 6
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_5	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_4
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 5
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_4	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_3
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 4
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_3	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_2
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 3
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_2	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_1
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 2
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_1	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 1
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_JAP_pacific_war_lost	
+					has_idea = IKM_pacific_war_inactive
+					}
+					check_variable = {
+					    var = japan_pacific_war
+					    value = 0
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_JAP_pacific_war_lost	
+			}
+		}
+	}
+}

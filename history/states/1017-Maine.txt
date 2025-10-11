@@ -1,0 +1,27 @@
+state={
+	id=1017
+	name="STATE_1017"
+	provinces={
+		1282 1338 1619 3732 4287 6719 7462 10247 10318 12202 12221 12459 
+	}
+
+	resources={
+		steel= 4
+	}
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+		victory_points = {
+			12459 1 
+		}
+	}
+	manpower= 823746
+	state_category= town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

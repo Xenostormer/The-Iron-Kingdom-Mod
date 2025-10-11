@@ -1,0 +1,36 @@
+state={
+	id=1038
+	name="STATE_1038"
+	provinces={
+		925 967 6926 11790 11861 
+	}
+
+	resources={
+		aluminium = 18
+	}
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		1936.01.02 = {
+			add_core_of = PAP
+			#add_core_of =
+			#add_claim_by = 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2 
+			industrial_complex = 1
+			925 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			925 1 
+		}
+	}
+	manpower=1683972
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

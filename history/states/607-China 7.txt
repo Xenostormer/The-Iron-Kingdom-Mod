@@ -1,0 +1,38 @@
+state={
+	id=607
+	name="STATE_607"
+	provinces={
+		1004 1139 4066 4114 4144 4606 7074 7126 7540 7656 9958 10098 10364 10434 11931 12012 
+	}
+
+	resources = {
+		steel = 44
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2 #was: 5
+			industrial_complex = 5
+		}
+		victory_points = {
+			9958 1 
+		}
+
+		1938.10.25 = {
+			controller = JAP
+			buildings = {
+				industrial_complex = 4
+				infrastructure = 4 #was: 8
+				air_base = 1
+				arms_factory = 1
+			}
+		}
+	}
+	manpower=15753719
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=3.000
+}

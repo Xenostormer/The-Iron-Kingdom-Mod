@@ -1,0 +1,46 @@
+﻿l_english:
+  
+ privatize_high_value_government_land:0 "Privatize High-Value Government Land"
+ privatize_high_value_government_land_desc:0 "Sell off valuable urban government land to private entities to generate stability—though at the cost of political popularity."
+
+ privatize_mid_value_government_land:0 "Privatize Mid-Value Government Land"
+ privatize_mid_value_government_land_desc:0 "Auction off mid-range government land in towns and cities to raise stability. The public might not fully support this move."
+
+ privatize_low_value_government_land:0 "Privatize Low-Value Government Land"
+ privatize_low_value_government_land_desc:0 "Sell off low-demand government land in rural or undeveloped regions. Gains are minor but politically safer."
+
+ sell_off_many_transport_planes:0 "Sell Off Many Transport Planes"
+ sell_off_many_transport_planes_desc:0 "Liquidate a large number of surplus transport aircraft to boost national stability."
+
+ sell_off_some_transport_planes:0 "Sell Off Some Transport Planes"
+ sell_off_some_transport_planes_desc:0 "Sell a modest portion of transport planes to stabilize public sentiment."
+
+ sell_off_few_transport_planes:0 "Sell Off a Few Transport Planes"
+ sell_off_few_transport_planes_desc:0 "Offload a small number of aircraft to gain minimal but welcome stability."
+
+ sell_off_many_government_trains:0 "Sell Off Many Government Trains"
+ sell_off_many_government_trains_desc:0 "Privatize a significant part of the government rail stock to bolster stability."
+
+ sell_off_some_government_trains:0 "Sell Off Some Government Trains"
+ sell_off_some_government_trains_desc:0 "Sell some government train units. Noteworthy for small stabilization benefits."
+
+ sell_off_few_government_trains:0 "Sell Off a Few Government Trains"
+ sell_off_few_government_trains_desc:0 "Offload a small number of government trains. A limited boost to national mood."
+
+ sell_off_many_navy_convoys:0 "Sell Off Many Navy Convoys"
+ sell_off_many_navy_convoys_desc:0 "Privatize a substantial chunk of the naval convoy fleet to raise domestic stability."
+
+ sell_off_some_navy_convoys:0 "Sell Off Some Navy Convoys"
+ sell_off_some_navy_convoys_desc:0 "Reduce the navy’s logistics by selling some convoys, mildly improving stability."
+
+ sell_off_few_navy_convoys:0 "Sell Off a Few Navy Convoys"
+ sell_off_few_navy_convoys_desc:0 "Sell off a small number of convoys for minimal stability gains."
+
+ sell_off_many_military_trucks:0 "Sell Off Many Military Trucks"
+ sell_off_many_military_trucks_desc:0 "Sell a large batch of military trucks to improve national stability at the cost of mobility reserves."
+
+ sell_off_some_military_trucks:0 "Sell Off Some Military Trucks"
+ sell_off_some_military_trucks_desc:0 "Get rid of a few hundred trucks for a stability boost."
+
+ sell_few_military_trucks:0 "Sell Off a Few Military Trucks"
+ sell_few_military_trucks_desc:0 "Sell a modest amount of trucks to slightly raise stability."

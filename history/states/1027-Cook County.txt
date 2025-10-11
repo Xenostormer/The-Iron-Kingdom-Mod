@@ -1,0 +1,29 @@
+state={
+	id=1027
+	name="STATE_1027"
+	provinces={
+		9450 13586 13587 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 5 #was: 7
+			arms_factory = 3
+			industrial_complex = 27
+		}
+		victory_points = {
+			13586 1
+		}
+		victory_points = {
+			13587 1
+		}
+		victory_points = {
+			9450 30.0
+		}
+	}
+	manpower=4505948
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,43 @@
+state={
+	id=681
+	name="STATE_681"
+	provinces={
+		10415 12547 12589 12692 
+	}
+
+	resources = {
+		chromium = 400
+		steel = 6 
+	}
+
+	history = {
+
+		owner = SAF
+		add_core_of = SAF
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 10
+			arms_factory = 1
+			dockyard = 2
+			air_base = 1
+
+			12589 = {
+				naval_base = 4
+			}
+
+			# Woodhead Dam
+			12547 = { dam = 1 }
+
+		}
+
+		victory_points = {
+			12589 10 # Cape Town
+		}
+		
+	}
+	manpower=1488434
+	buildings_max_level_factor=1.000
+	state_category= town
+	local_supplies=0.000
+}

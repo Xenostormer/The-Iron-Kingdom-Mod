@@ -1,0 +1,40 @@
+state={
+	id=19
+	name="STATE_19"
+
+	provinces={
+		6621 6762 6777 9737 11565 13403 
+	}
+	history={
+		owner = FRA
+		victory_points = {
+			9737 20 
+		}
+		victory_points = {
+			13403 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 5
+			dockyard = 4
+			air_base = 3
+			9737 = {
+				naval_base = 3
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = FRA
+		1936.01.02 = {
+			add_core_of = OCC 
+			#add_core_of =
+			#add_core_of = 
+		}
+
+	}
+	manpower=1140400
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

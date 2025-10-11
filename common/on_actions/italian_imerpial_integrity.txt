@@ -1,0 +1,138 @@
+on_actions = {
+	#italian empire strength system
+	on_startup = {
+		effect = {
+			ITA = {
+				set_variable = {
+					var = italian_imperial_integrity
+					value = 3
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = ITA
+					}
+					FROM.FROM = {
+						OR = {
+							state = 458
+							state = 448
+							state = 450
+							state = 164
+						}
+					}
+				}
+				ITA = {
+					subtract_from_variable = {
+					    var = italian_imperial_integrity
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = ITA
+					FROM.FROM = {
+						OR = {
+							state = 458
+							state = 448
+							state = 450
+							state = 164
+						}
+					}
+				}
+				ITA = {
+					add_to_variable = {
+					    var = italian_imperial_integrity
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_weekly_ITA = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ITA_imperial_integrity_4
+					}
+					check_variable = {
+					    var = italian_imperial_integrity
+					    value = 4
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ITA_imperial_integrity_4	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ITA_imperial_integrity_3
+					}
+					check_variable = {
+					    var = italian_imperial_integrity
+					    value = 3
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ITA_imperial_integrity_3	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ITA_imperial_integrity_2
+					}
+					check_variable = {
+					    var = italian_imperial_integrity
+					    value = 2
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ITA_imperial_integrity_2	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ITA_imperial_integrity_1
+					}
+					check_variable = {
+					    var = italian_imperial_integrity
+					    value = 1
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ITA_imperial_integrity_1	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ITA_imperial_integrity	
+					}
+					check_variable = {
+					    var = italian_imperial_integrity
+					    value = 0
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ITA_imperial_integrity	
+			}
+		}
+	}
+}

@@ -1,0 +1,571 @@
+﻿
+add_namespace = decapitation_events
+
+country_event = { # capitalist decapitation - success 
+    id = decapitation_events.1
+    title = decapitation_events.1.t
+    desc = decapitation_events.1.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.1.a
+        kill_ideology_leader = democratic 
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.15
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = decapitation_events.1.b
+        kill_ideology_leader = democratic 
+        add_stability = -0.04
+        add_war_support = -0.04
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.2
+        }
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = { # capitalist decapitation - failure - escaped
+    id = decapitation_events.2
+    title = decapitation_events.2.t
+    desc = decapitation_events.2.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.2.a
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+    option = { 
+        name = decapitation_events.2.b
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.01
+        }
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = { # capitalist decapitation - failure - assassin killed 
+    id = decapitation_events.3
+    title = decapitation_events.3.t
+    desc = decapitation_events.3.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.3.a
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.3.b 
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.01
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # capitalist decapitation - failure - exiled 
+    id = decapitation_events.4
+    title = decapitation_events.4.t
+    desc = decapitation_events.4.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.4.a
+        retire_ideology_leader = democratic 
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.05
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.4.b
+        retire_ideology_leader = democratic
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.1
+        } 
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # despotist decapitation - success
+    id = decapitation_events.5
+    title = decapitation_events.5.t
+    desc = decapitation_events.5.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.5.a
+        kill_ideology_leader = neutrality 
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = neutrality
+            popularity = -0.15
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.5.b
+        kill_ideology_leader = neutrality 
+        add_stability = -0.04
+        add_war_support = -0.04
+        add_popularity = {
+            ideology = neutrality
+            popularity = -0.2
+        } 
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # despotist decapitation - failure - escaped
+    id = decapitation_events.6
+    title = decapitation_events.6.t
+    desc = decapitation_events.6.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.6.a
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.6.b 
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.01
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # despotist decapitation - failure - assassin killed 
+    id = decapitation_events.7
+    title = decapitation_events.7.t
+    desc = decapitation_events.7.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.7.a
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = { 
+        name = decapitation_events.7.b 
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.01
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # despotist decapitation - failure - exiled 
+    id = decapitation_events.8
+    title = decapitation_events.8.t
+    desc = decapitation_events.8.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.8.a
+        retire_ideology_leader = neutrality 
+        add_popularity = {
+            ideology = neutrality
+            popularity = -0.05
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.8.b 
+        retire_ideology_leader = neutrality
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = neutrality
+            popularity = -0.1
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # fascist decapitation - success  
+    id = decapitation_events.9
+    title = decapitation_events.9.t
+    desc = decapitation_events.9.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.9.a
+        kill_ideology_leader = fascism 
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.15
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.9.b
+        kill_ideology_leader = fascism 
+        add_stability = -0.04
+        add_war_support = -0.04
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.2
+        } 
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # fascist decapitation - failure - escaped
+    id = decapitation_events.10
+    title = decapitation_events.10.t
+    desc = decapitation_events.10.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.10.a
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.10.b 
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.01
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # fascist decapitation - failure - assassin killed 
+    id = decapitation_events.11
+    title = decapitation_events.11.t
+    desc = decapitation_events.11.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.11.a
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.11.b 
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.01
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # fascist decapitation - failure - exiled 
+    id = decapitation_events.12
+    title = decapitation_events.12.t
+    desc = decapitation_events.12.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.12.a
+        retire_ideology_leader = fascism 
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.05
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.12.b
+        retire_ideology_leader = fascism
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        } 
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # communist decapitation - success 
+    id = decapitation_events.13
+    title = decapitation_events.13.t
+    desc = decapitation_events.13.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.13.a
+        kill_ideology_leader = communism 
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = communism
+            popularity = -0.15
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.13.b 
+        kill_ideology_leader = communism 
+        add_stability = -0.04
+        add_war_support = -0.04
+        add_popularity = {
+            ideology = communism
+            popularity = -0.2
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # communist decapitation - failure - escaped 
+    id = decapitation_events.14
+    title = decapitation_events.14.t
+    desc = decapitation_events.14.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.14.a
+        add_popularity = {
+            ideology = communism
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.14.b
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = communism
+            popularity = 0.01
+        } 
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # communist decapitation - failure - assassin killed 
+    id = decapitation_events.15
+    title = decapitation_events.15.t
+    desc = decapitation_events.15.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.15.a
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.03
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.15.b
+        random_operative = {
+            kill_operative = { killed_by = ROOT }
+        }
+        add_stability = -0.01
+        add_war_support = -0.01
+        add_popularity = {
+            ideology = communism
+            popularity = 0.01
+        } 
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+country_event = { # communist decapitation - failure - exiled  
+    id = decapitation_events.16
+    title = decapitation_events.16.t
+    desc = decapitation_events.16.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = decapitation_events.16.a
+        retire_ideology_leader = communism 
+        add_popularity = {
+            ideology = communism
+            popularity = -0.05
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    }
+    option = {  
+        name = decapitation_events.16.b 
+        retire_ideology_leader = communism
+        add_stability = -0.02
+        add_war_support = -0.02
+        add_popularity = {
+            ideology = communism
+            popularity = -0.1
+        }
+        ai_chance = {
+            factor = 50 
+        }
+    } 
+}
+
+
+
+
+
+
+
+

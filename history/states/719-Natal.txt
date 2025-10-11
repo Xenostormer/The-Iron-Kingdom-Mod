@@ -1,0 +1,31 @@
+state={
+	id=719
+	name="STATE_719"
+	resources={
+		chromium=61
+		steel = 4
+	}
+	provinces={
+		1468 1494 7576 7900 8178 
+	}
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 13
+			arms_factory = 2
+			air_base = 1
+			1468 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			1468 3 
+		}
+		add_core_of = SAF
+	}
+	manpower=2723983
+	buildings_max_level_factor=1.000
+	state_category= large_town
+	local_supplies=0.000
+}

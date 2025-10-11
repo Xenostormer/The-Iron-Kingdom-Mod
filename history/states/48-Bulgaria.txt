@@ -1,0 +1,33 @@
+state={
+	id=48
+	name="STATE_48"
+	resources={
+		chromium = 3
+		steel = 14
+	}
+	provinces={
+		793 935 949 965 3908 3971 9771 11754 13432 
+	}
+	history={
+		owner = BUL
+		victory_points = { #Sofia
+			949 15 
+		}
+		victory_points = { #Vidin
+			9771 1
+		}
+		victory_points = {
+			13432 1  
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 11
+			air_base = 3
+		}
+		add_core_of = BUL
+	}
+	manpower=1685989
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

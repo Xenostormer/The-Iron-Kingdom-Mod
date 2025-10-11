@@ -1,0 +1,34 @@
+state = {
+	id = 1013
+	name = "STATE_1013"
+	manpower = 33600
+	
+	state_category = pastoral
+
+
+	history = {
+
+		owner = PER
+		add_core_of = PER
+
+		1936.01.02 = {
+			owner = OMA
+			add_core_of = OMA
+			#add_core_of = 
+		}
+
+		buildings = {
+			infrastructure = 1
+			13369 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces = {
+		13369
+	}
+
+	local_supplies = 4.0 
+}

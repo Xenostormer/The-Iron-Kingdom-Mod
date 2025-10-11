@@ -1,0 +1,557 @@
+privatization = {
+	privatize_high_value_government_land = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_forestry
+		days_re_enable = 270
+		cost = 150
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				OR = {
+					has_state_category = megalopolis
+					has_state_category = metropolis
+					has_state_category = large_city
+				}
+				OR = {
+					free_building_slots = {
+					    building = arms_factory
+					    size > 1
+					    include_locked = no
+					}
+					free_building_slots = {
+					    building = industrial_complex
+					    size > 1
+					    include_locked = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.61
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.61
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.61
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.61
+			}
+		}
+		complete_effect = {
+			add_stability = 0.15
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						has_state_category = megalopolis
+						has_state_category = metropolis
+						has_state_category = large_city
+					}
+					OR = {
+						free_building_slots = {
+						    building = arms_factory
+						    size > 1
+						    include_locked = no
+						}
+						free_building_slots = {
+						    building = industrial_complex
+						    size > 1
+						    include_locked = no
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = -1
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.06
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.06
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.06
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.06
+				}
+			}
+		}
+	}
+	privatize_mid_value_government_land = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_forestry
+		days_re_enable = 270
+		cost = 100
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				OR = {
+					has_state_category = city
+					has_state_category = large_town
+					has_state_category = town
+				}
+				OR = {
+					free_building_slots = {
+					    building = arms_factory
+					    size > 1
+					    include_locked = no
+					}
+					free_building_slots = {
+					    building = industrial_complex
+					    size > 1
+					    include_locked = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.59
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.59
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.59
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.59
+			}
+		}
+		complete_effect = {
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						has_state_category = city
+						has_state_category = large_town
+						has_state_category = town
+					}
+					OR = {
+						free_building_slots = {
+						    building = arms_factory
+						    size > 1
+						    include_locked = no
+						}
+						free_building_slots = {
+						    building = industrial_complex
+						    size > 1
+						    include_locked = no
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = -1
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.04
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.04
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.04
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.04
+				}
+			}
+		}
+	}
+	privatize_low_value_government_land = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_forestry
+		days_re_enable = 270
+		cost = 50
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				OR = {
+					has_state_category = rural
+					has_state_category = small_island
+					has_state_category = pastoral
+				}
+				OR = {
+					free_building_slots = {
+					    building = arms_factory
+					    size > 1
+					    include_locked = no
+					}
+					free_building_slots = {
+					    building = industrial_complex
+					    size > 1
+					    include_locked = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.57
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.57
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.57
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.57
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						has_state_category = rural
+						has_state_category = small_island
+						has_state_category = pastoral
+					}
+					OR = {
+						free_building_slots = {
+						    building = arms_factory
+						    size > 1
+						    include_locked = no
+						}
+						free_building_slots = {
+						    building = industrial_complex
+						    size > 1
+						    include_locked = no
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = -1
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+	sell_off_many_transport_planes = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_air
+		days_re_enable = 180
+		cost = 150
+		available = {
+			has_equipment = {
+			    transport_plane_equipment > 149
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = transport_plane_equipment
+			    amount = -150
+			}
+			add_stability = 0.045
+		}
+	}
+	sell_off_some_transport_planes = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_air
+		days_re_enable = 180
+		cost = 100
+		available = {
+			has_equipment = {
+			    transport_plane_equipment > 99
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = transport_plane_equipment
+			    amount = -100
+			}
+			add_stability = 0.03
+		}
+	}
+	sell_off_few_transport_planes = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_air
+		days_re_enable = 180
+		cost = 50
+		available = {
+			has_equipment = {
+			    transport_plane_equipment > 49
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = transport_plane_equipment
+			    amount = -50
+			}
+			add_stability = 0.015
+		}
+	}
+	sell_off_many_government_trains = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_train
+		days_re_enable = 180
+		cost = 150
+		available = {
+			has_equipment = {
+			    train_equipment > 149
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -150
+			}
+			add_stability = 0.045
+		}
+	}
+	sell_off_some_government_trains = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_train
+		days_re_enable = 180
+		cost = 100
+		available = {
+			has_equipment = {
+			    train_equipment > 99
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -100
+			}
+			add_stability = 0.03
+		}
+	}
+	sell_off_few_government_trains = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_train
+		days_re_enable = 180
+		cost = 50
+		available = {
+			has_equipment = {
+			    train_equipment > 49
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -50
+			}
+			add_stability = 0.015
+		}
+	}
+	sell_off_many_navy_convoys = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_human_torpedo
+		days_re_enable = 180
+		cost = 150
+		available = {
+			has_equipment = {
+			    convoy > 149
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = convoy 
+			    amount = -150
+			}
+			add_stability = 0.045
+		}
+	}
+	sell_off_some_navy_convoys = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_human_torpedo
+		days_re_enable = 180
+		cost = 100
+		available = {
+			has_equipment = {
+			    convoy > 99
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = convoy 
+			    amount = -100
+			}
+			add_stability = 0.03
+		}
+	}
+	sell_off_few_navy_convoys = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_human_torpedo
+		days_re_enable = 180
+		cost = 50
+		available = {
+			has_equipment = {
+			    convoy > 49
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = convoy 
+			    amount = -50
+			}
+			add_stability = 0.015
+		}
+	}
+	sell_off_many_military_trucks = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_motorized
+		days_re_enable = 180
+		cost = 150
+		available = {
+			has_equipment = {
+			    motorized_equipment > 299
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = -300
+			}
+			add_stability = 0.045
+		}
+	}
+	sell_off_some_military_trucks = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_motorized
+		days_re_enable = 180
+		cost = 100
+		available = {
+			has_equipment = {
+			    motorized_equipment > 199
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = -200
+			}
+			add_stability = 0.03
+		}
+	}
+	sell_few_military_trucks = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_motorized
+		days_re_enable = 180
+		cost = 50
+		available = {
+			has_equipment = {
+			    motorized_equipment > 99
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = -100
+			}
+			add_stability = 0.015
+		}
+	}
+}

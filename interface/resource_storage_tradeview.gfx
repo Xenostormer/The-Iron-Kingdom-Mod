@@ -1,0 +1,23 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_tungsten_storage"
+		textureFile = "gfx/interface/storage_icons/tungsten_storage.dds"
+	}
+	SpriteType = {
+		name = "GFX_steel_storage"
+		textureFile = "gfx/interface/storage_icons/steel_storage.dds"
+	}
+	SpriteType = {
+		name = "GFX_chromium_storage"
+		textureFile = "gfx/interface/storage_icons/chromium_storage.dds"
+	}
+	SpriteType = {
+		name = "GFX_rubber_storage"
+		textureFile = "gfx/interface/storage_icons/rubber_storage.dds"
+	}
+	SpriteType = {
+		name = "GFX_aluminium_storage"
+		textureFile = "gfx/interface/storage_icons/aluminium_storage.dds"
+	}
+}

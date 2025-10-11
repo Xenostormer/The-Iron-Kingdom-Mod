@@ -1,0 +1,25 @@
+state = {
+	id = 886
+	name = "STATE_886"
+	manpower = 661102
+	state_category = pastoral
+	history = {
+		owner = ENG
+		add_core_of = ISR
+		1936.01.02 = {
+			add_core_of = SUD
+			#add_core_of = 
+			#add_core_of = 
+			#add_claim_by =  
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces = {
+		1914 4918 10743 10784 12862 12887 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

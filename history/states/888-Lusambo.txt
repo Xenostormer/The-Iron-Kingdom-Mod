@@ -1,0 +1,30 @@
+state={
+	id=888
+	name="STATE_888"
+	provinces={
+		1731 1929 7219 8016 8048 10858 10951 
+	}
+	history = {
+
+		owner = BEL
+		add_core_of = ISR
+
+		1936.01.02 = {
+			owner = COG
+			add_core_of = COG
+			add_dynamic_modifier = {
+				modifier = COG_state_loyal_to_free_congo_modifier
+			}
+		}
+
+		buildings = {
+			
+		}
+
+	}
+	impassable = yes
+	manpower=885237
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,32 @@
+state={
+	id=1070
+	name="STATE_1070"
+	provinces={
+		1833 4584 4696 
+	}
+
+	resources = {
+		chromium = 90 
+		steel = 12
+	}
+
+	history={
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 9
+			arms_factory = 2 
+			4696 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			4696 1 
+		}
+	}
+	manpower=907994
+	state_category= town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

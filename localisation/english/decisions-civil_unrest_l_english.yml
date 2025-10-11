@@ -1,0 +1,61 @@
+﻿l_english:
+
+ civil_unrest:0 "Growing Civil Unrest"
+ civil_unrest_desc:0 "Our party has lost its super majority and now the opposition thinks they can seize power of the nation. We must do whatever we can to reduce their influence and §Gget our party back to a 60% super majority§! with either §G50% War Support or Stability.§! Becuase if we don't than §Rprotest will descend into riots§!, and if we §Rloose the majority§! than there §Rwill be a civil war!§!"
+
+ opposition_launches_civil_war:0 "Oppositional Civil War"
+ opposition_launches_civil_war_desc:0 "The ruling party must act decisively before political rivals launch a full-blown civil war. Time is short."
+
+ national_anti_government_protest:0 "National Anti-Government Protests"
+ national_anti_government_protest_desc:0 "Mounting public dissatisfaction has erupted into nationwide demonstrations. The state must act before order breaks down."
+
+ national_anarchist_riots:0 "Nationwide Anarchist Riots"
+ national_anarchist_riots_desc:0 "Order is collapsing as anarchist elements exploit national instability. Property destruction and sabotage threaten our industrial base."
+
+ terrorize_bourgeoisie_buisnesses:0 "Terrorize Bourgeois Businesses"
+ terrorize_bourgeoisie_buisnesses_desc:0 "To weaken capitalist influence, targeted sabotage against key civilian industries will send a message to the bourgeois elite."
+
+ exile_aristocratic_family:0 "Exile Aristocratic Family"
+ exile_aristocratic_family_desc:0 "By removing prominent aristocratic figures, we weaken the symbolic and financial influence of the old ruling class."
+
+ breakup_unionized_factories:0 "Break Up Unionized Factories"
+ breakup_unionized_factories_desc:0 "Union-controlled production facilities pose a political threat. Dispersing them disrupts leftist influence in the workforce."
+
+ purge_disloyal_officers:0 "Purge Disloyal Officers"
+ purge_disloyal_officers_desc:0 "Fascist sympathizers in the officer corps must be removed to ensure military loyalty, even at the cost of readiness."
+
+ exaggerate_capitalist_hypocracy:0 "Expose Capitalist Hypocrisy"
+ exaggerate_capitalist_hypocracy_desc:0 "A propaganda campaign highlighting contradictions in capitalist rhetoric can erode support for liberal democracy."
+
+ bribe_capitalist_leadership:0 "Bribe Capitalist Leadership"
+ bribe_capitalist_leadership_desc:0 "Some members of the business elite can be swayed with material incentives to lessen their resistance to reform."
+
+ expose_despotist_kleptocracy:0 "Expose Despotist Kleptocracy"
+ expose_despotist_kleptocracy_desc:0 "Reveal the corrupt dealings and self-serving nature of the authoritarian elite to weaken their moral legitimacy."
+
+ bribe_despotist_leadership:0 "Bribe Despotist Leadership"
+ bribe_despotist_leadership_desc:0 "Paying off powerful aristocrates may secure short-term gains in loyalty, though it undermines our message."
+
+ highlight_fascist_inhumanity:0 "Highlight Fascist Inhumanity"
+ highlight_fascist_inhumanity_desc:0 "By showcasing the atrocities fascist really want, we reduce public sympathy for their ideology."
+
+ bribe_fascist_leadership:0 "Bribe Fascist Leadership"
+ bribe_fascist_leadership_desc:0 "Some fascist powerbrokers may be convinced to stand down if given the right incentives."
+
+ critisize_communist_irrationality:0 "Criticize Communist Irrationality"
+ critisize_communist_irrationality_desc:0 "Through media and political messaging, we aim to undermine confidence in the viability of communist ideas."
+
+ bribe_communist_leadership:0 "Bribe Communist Leadership"
+ bribe_communist_leadership_desc:0 "A well-placed bribe can pacify segments of the radical left and reduce their resistance."
+
+ decapitate_the_capitalist_faction:0 "Decapitate the Capitalist Faction"
+ decapitate_the_capitalist_faction_desc:0 "The most influential capitalist leaders must be removed through covert means to cripple their political power."
+
+ decapitate_the_despotist_faction:0 "Decapitate the Despotist Faction"
+ decapitate_the_despotist_faction_desc:0 "Authoritarian leadership must be dismantled surgically to avoid full-scale revolt."
+
+ decapitate_the_fascist_faction:0 "Decapitate the Fascist Faction"
+ decapitate_the_fascist_faction_desc:0 "We will strike directly at the top of the fascist political machine to destabilize its foundation."
+
+ decapitate_the_communist_faction:0 "Decapitate the Communist Faction"
+ decapitate_the_communist_faction_desc:0 "A targeted removal of prominent communist figures can forestall revolutionary movements and regain political control."

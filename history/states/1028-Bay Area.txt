@@ -1,0 +1,36 @@
+state={
+	id=1028
+	name="STATE_1028"
+	provinces={
+		677 3677 3678 6699 9671 9713 11658 13576 
+	}
+	resources = {
+		oil = 40
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4 
+			arms_factory = 3
+			industrial_complex = 11
+			dockyard = 6
+			9671 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+		    9671 25
+		}
+		victory_points = {
+			9713 1 
+		}
+		victory_points = {
+			13576 1 
+		}
+	}
+	manpower=2762771
+	state_category= large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

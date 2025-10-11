@@ -1,0 +1,41 @@
+state={
+	id=538
+	name="STATE_538"
+
+	provinces={
+		988 7931 10071 10883 12741 12824 
+	}
+	history = {
+
+		owner = BEL
+		add_core_of = ISR
+
+		1936.01.02 = {
+			owner = COG
+			add_core_of = COG
+			add_dynamic_modifier = {
+				modifier = COG_state_loyal_to_free_congo_modifier
+			}
+		}
+
+		victory_points = {
+			988 2 # Coquilhatville
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		1939.1.1 = {
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 1
+			}
+		}
+
+	}
+	manpower=1693974
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=1.000
+}

@@ -1,0 +1,53 @@
+scripted_gui = {
+	
+    rubber_storage_info = {
+        window_name = "rubber_storage_info"
+        context_type = player_context
+        parent_window_token = trade_tab
+        visible = {  }
+        effects = {  }
+        triggers = {  }
+        properties = {  }
+    }
+
+	steel_storage_info = {
+        window_name = "steel_storage_info"
+        context_type = player_context
+        parent_window_token = trade_tab
+        visible = {  }
+        effects = {  }
+        triggers = {  }
+        properties = {  }
+    }
+	
+	chromium_storage_info = {
+        window_name = "chromium_storage_info"
+        context_type = player_context
+        parent_window_token = trade_tab
+        visible = {  }
+        effects = {  }
+        triggers = {  }
+        properties = {  }
+    }
+	
+	aluminium_storage_info = {
+        window_name = "aluminium_storage_info"
+        context_type = player_context
+        parent_window_token = trade_tab
+        visible = {  }
+        effects = {  }
+        triggers = {  }
+        properties = {  }
+    }
+	
+	tungsten_storage_info = {
+        window_name = "tungsten_storage_info"
+        context_type = player_context
+        parent_window_token = trade_tab
+        visible = {  }
+        effects = {  }
+        triggers = {  }
+        properties = {  }
+    }
+    
+}

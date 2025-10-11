@@ -1,0 +1,32 @@
+state={
+	id=1021
+	name="STATE_1021"
+	provinces={
+		6909 9832 9847 9850 11830 
+	}
+
+	resources={
+		steel= 1
+	}
+
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			6909 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			dockyard = 2
+			9832 = {
+				naval_base = 3
+
+			}
+		}
+	}
+	manpower=1659222
+	state_category= city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

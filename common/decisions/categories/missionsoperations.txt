@@ -1,0 +1,4 @@
+missionsoperations = {
+	icon = GFX_decision_category_generic_crisis
+	picture = GFX_decision_cat_picture_operational_planning
+}

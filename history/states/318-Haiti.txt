@@ -1,0 +1,38 @@
+state=
+{
+	id=318
+	name="STATE_318"
+	manpower = 2380000
+	
+	state_category = town
+	
+	history=
+	{
+
+		buildings = {
+			infrastructure = 1
+			4641 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			4641 5 
+		}
+
+		owner = CHL
+		add_core_of = CHL
+
+		1936.01.02 = {
+			owner = HAI
+			add_core_of = HAI
+			#add_core_of = 
+		}
+
+	}
+	provinces={
+		1594 1635 4641
+	}
+
+	local_supplies=0.0 
+}

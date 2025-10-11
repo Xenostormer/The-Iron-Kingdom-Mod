@@ -1,0 +1,46 @@
+state={
+	id=161
+	name="STATE_161"
+	resources={
+		aluminium= 37
+		steel = 5
+	}
+	provinces={
+		782 3773 3976 6606 6790 6793 6985 9752 9924 13429 
+	}
+	history = {
+		owner = ITA
+		victory_points = { #Bologna
+			6606 20
+		}
+		victory_points = { #Ferrara
+			6793 3
+		}
+		victory_points = { #Parma
+			9752 1
+		}
+		victory_points = {
+			13429 1  
+		}
+		buildings = {
+			infrastructure = 4 #was: 7
+			industrial_complex = 17
+			arms_factory = 4
+			dockyard = 3
+			air_base = 2
+			782 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ITA
+		1936.01.02 = {
+			add_core_of = PAP
+			#add_core_of =
+			#add_claim_by = 
+		}
+	}
+	manpower= 3963151
+	buildings_max_level_factor=1.000
+	state_category= metropolis
+	local_supplies=0.000
+}

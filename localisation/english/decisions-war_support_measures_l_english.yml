@@ -1,0 +1,49 @@
+﻿l_english:
+
+ war_support_measures:0 "War Support Measures"
+ war_support_measures_desc:0 "The publics war support has been in great decline lately. We must take actions now before it gets worse. Maybe a rally, a parade, or giving our soliders benefits could help... or just crack a few skulls. Either way, if it's not addressed soon there §Rwill be mutinies§! in our ranks if our §RWar Support reaches 0%.§! Even worse our §Rpolitical popularity will fall§!, and this §Rwill lead to a civil war!§!"
+
+ massive_call_to_arms_rally:0 "Hold Massive Call-to-Arms Rally"
+ massive_call_to_arms_rally_desc:0 "A thunderous nationwide rally will awaken the spirit of duty in our citizens and fuel the ranks of our armed forces with patriotic fervor."
+
+ moderate_call_to_arms_rally:0 "Hold Moderate Call-to-Arms Rally"
+ moderate_call_to_arms_rally_desc:0 "Through speeches and coordinated events, we aim to bolster enlistment and inspire a renewed sense of national service."
+
+ minuscule_call_to_arms_rally:0 "Hold Small Call-to-Arms Rally"
+ minuscule_call_to_arms_rally_desc:0 "A modest effort to encourage enlistment and military service. Every voice matters, even in a quiet call to arms."
+
+ national_rally_around_the_flag:0 "National Rally Around the Flag"
+ national_rally_around_the_flag_desc:0 "Now more than ever, the nation must unite under one banner. This campaign will stir patriotic pride and reinforce loyalty to our cause."
+
+ hold_gigantic_military_parade:0 "Hold Gigantic Military Parade"
+ hold_gigantic_military_parade_desc:0 "An awe-inspiring parade showcasing our military might will remind the world—and our people—that we are a power to be reckoned with."
+
+ hold_large_military_parade:0 "Hold Large Military Parade"
+ hold_large_military_parade_desc:0 "A grand display of our armed forces will boost public morale and reinforce our image as a nation of strength and unity."
+
+ hold_small_military_parade:0 "Hold Small Military Parade"
+ hold_small_military_parade_desc:0 "Even a modest military parade can inspire pride and confidence in our nation’s preparedness and valor."
+
+ release_propaganda_film:0 "Release Patriotic Propaganda Film"
+ release_propaganda_film_desc:0 "Cinema is a powerful weapon. A stirring propaganda film will shape public opinion and ignite a sense of purpose across the country."
+
+ discharge_conscious_objectors:0 "Discharge Conscientious Objectors"
+ discharge_conscious_objectors_desc:0 "Those unwilling to bear arms on moral or religious grounds will be officially discharged, freeing up resources and reducing internal friction."
+
+ relax_colonial_draft_laws:0 "Relax Colonial Draft Laws"
+ relax_colonial_draft_laws_desc:0 "To avoid unrest and ease tensions, we will scale back conscription in our colonial territories, focusing recruitment efforts elsewhere."
+
+ assassinate_pacifist_agitators:0 "Assassinate Pacifist Agitators"
+ assassinate_pacifist_agitators_desc:0 "Some voices grow too loud for peace. Through covert means, we will silence those who threaten our mobilization with dangerous pacifist rhetoric."
+
+ infiltrate_dissenter_circles:0 "Infiltrate Dissenter Circles"
+ infiltrate_dissenter_circles_desc:0 "We will embed loyal agents within opposition networks to monitor, manipulate, and ultimately dismantle their influence from within."
+
+ increase_officer_salaries:0 "Increase Officer Salaries"
+ increase_officer_salaries_desc:0 "A well-compensated officer corps is a loyal and motivated one. We will raise salaries to secure their continued service and dedication."
+
+ increase_draftee_pensions:0 "Boost Draftee Pensions"
+ increase_draftee_pensions_desc:0 "By offering greater post-service benefits, we ensure that conscripts feel valued and that their families are looked after."
+
+ increase_regimental_provisions:0 "Increase Regimental Provisions"
+ increase_regimental_provisions_desc:0 "Adequate rations and supplies are vital to morale and combat readiness. We will invest in improving the conditions of our regiments."

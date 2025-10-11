@@ -1,0 +1,54 @@
+state={
+	id=126
+	name="STATE_126"
+	provinces={
+		6103 9239 11221 11333 13411 13412 13414 13416 
+	}
+	history={
+		owner = ENG
+		victory_points = {
+			6103 50 
+		}
+        victory_points = {
+			13416 1
+		}
+		victory_points = {
+			13412 1  
+		}
+		victory_points = {
+			11333 1 
+		}
+		victory_points = {
+			13411 1
+		}
+		buildings = {
+			infrastructure = 5 #was: 9
+			arms_factory = 3
+			industrial_complex = 31
+			anti_air_building = 5
+			radar_station = 1
+			air_base = 10
+			13414 = { 
+			    landmark_big_ben = {
+			        allowed = {
+			            always = yes
+			        }
+			        level = 1
+			    }
+			}
+
+		}
+		add_core_of = ENG
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+				industrial_complex = 4
+			}
+		}
+	}
+
+	manpower=9824296
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

@@ -1,0 +1,54 @@
+state={
+	id=54
+	name="STATE_54"
+	provinces={
+		561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116 13443 
+	}
+
+	resources = {
+		steel = 5 
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = GER
+		1936.01.02 = {
+			add_core_of = BAY
+			#add_core_of =
+			#add_core_of = 
+		}
+
+		victory_points = {
+			11544 10 # Nuremberg
+		}
+
+		victory_points = {
+			6421 2 # Coburg
+		}
+
+		victory_points = {
+			9557 2 # Würtzburg
+		}
+
+		victory_points = {
+			13443 1  
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 8
+			arms_factory = 4
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+			}
+		}
+	}
+	manpower=2508159
+	buildings_max_level_factor=1.000
+	state_category= large_city
+	local_supplies=0.000
+}

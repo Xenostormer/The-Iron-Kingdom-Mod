@@ -1,0 +1,19 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		3422 3463 9562 
+	}
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	manpower=915013
+	state_category= large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

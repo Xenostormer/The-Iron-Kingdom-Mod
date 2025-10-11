@@ -1,0 +1,2079 @@
+international_policies = {
+	italy_joins_ww2 = {
+		icon = GFX_decision_generic_ignite_civil_war
+		days_mission_timeout = 270
+		is_good = yes
+		allowed = { always = no }
+		available = {
+	        GER = {
+	        	has_war_with = FRA
+	        }
+	        OR = {
+	        	FRA = {
+	        		surrender_progress > 0.01
+		        }
+		        AND = {
+		        	GER = {
+			        	has_war_with = BEL
+			        }
+			        BEL = {
+			        	has_capitulated = yes
+			        }
+		        }
+	        }
+	    }
+	    complete_effect = {
+	    	ITA = {
+	    		dismantle_faction = yes
+	    	}
+	    	add_war_support = 0.1
+	    	add_popularity = {
+			    ideology = fascism 
+			    popularity = 0.05
+			}
+	    	GER = {
+	    		add_to_faction = ITA
+	    		annex_country = {
+				    target = LUX
+				    transfer_troops = no
+				}
+	    	}
+	    	ENG = {
+	    		create_wargoal = {
+				    type = topple_government
+				    target = ITA
+				}
+	    	}
+	    }
+	    timeout_effect = {
+	    	add_war_support = -0.05
+	    	add_popularity = {
+			    ideology = fascism 
+			    popularity = -0.02
+			}
+			ITA = {
+	    		dismantle_faction = yes
+	    	}
+	    	GER = {
+	    		add_to_faction = ITA
+	    		annex_country = {
+				    target = LUX
+				    transfer_troops = no
+				}
+	    	}
+	    	ENG = {
+	    		create_wargoal = {
+				    type = topple_government
+				    target = ITA
+				}
+	    	}
+	    	if = {
+	    		limit = {
+	    			FRA = {
+	    				has_idea = FRA_political_violance
+	    			}
+	    		}
+	    		FRA = {
+	    			remove_ideas = FRA_political_violance
+	    		}
+	    	}
+	    }
+	}
+	spain_forced_into_ww2 = {
+		icon = GFX_decision_generic_ignite_civil_war
+		days_mission_timeout = 270
+		activation = {
+			tag = SPA
+			SPA = {
+				has_government = fascism
+				has_civil_war = no
+			}
+			GER = {
+	        	has_war_with = FRA
+	        }
+	        OR = {
+	        	date > 1940.07.01
+	        	AND = {
+	        		date > 1940.06.01
+	        		BEL = {
+		        		has_war_with = GER
+		        		has_capitulated = no
+		        	}
+	        	}
+	        }
+	        FRA = {
+        		surrender_progress < 0.1
+	        }
+		}
+		available = {
+	        FRA = {
+        		surrender_progress > 0.1
+	        }
+	    }
+	    complete_effect = {
+	    	add_war_support = 0.05
+	    	add_popularity = {
+			    ideology = fascism 
+			    popularity = 0.1
+			}
+			set_truce = {
+			    target = FRA
+			    days = 365
+			}
+	    }
+	    timeout_effect = {
+	    	add_war_support = -0.1
+	    	add_popularity = {
+			    ideology = fascism 
+			    popularity = -0.05
+			}
+			GER = {
+	    		add_to_faction = SPA
+	    	}
+	    	ENG = {
+	    		create_wargoal = {
+				    type = puppet_wargoal_focus
+				    target = SPA
+				}
+	    	}
+	    }
+	}
+	request_a_british_loan = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 50
+		visible = {
+			NOT = {
+				tag = ENG
+			}
+			ENG = {
+				has_government = democratic 
+				is_major = yes
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = ENG
+			    value > -51
+			}
+			ENG = {
+				surrender_progress < 0.01
+			}
+			OR = {
+				ENG = {
+					has_war = no
+					has_opinion = {
+					    target = ROOT
+					    value > 24
+					}
+				}
+				ENG = {
+					has_war = yes
+					has_opinion = {
+					    target = ROOT
+					    value > 74
+					}
+				}
+			}
+			NOT = {
+				has_idea = IKM_british_loan_rejected
+				has_idea = IKM_small_british_loan
+				has_idea = IKM_medium_british_loan
+				has_idea = IKM_large_british_loan
+			}
+			custom_trigger_tooltip = {
+			    tooltip = in_a_british_loan_process_tt		
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = requesting_british_loan
+		        	}
+		        	has_country_flag = received_british_loan	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = requesting_british_loan
+	    	ENG = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	request_a_french_loan = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 50
+		visible = {
+			NOT = {
+				tag = FRA
+			}
+			FRA = {
+				has_government = democratic 
+				is_major = yes
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = FRA
+			    value > -51
+			}
+			FRA = {
+				surrender_progress < 0.01
+			}
+			OR = {
+				FRA = {
+					has_war = no
+					has_opinion = {
+					    target = ROOT
+					    value > 24
+					}
+				}
+				FRA = {
+					has_war = yes
+					has_opinion = {
+					    target = ROOT
+					    value > 74
+					}
+				}
+			}
+			NOT = {
+				has_idea = IKM_french_loan_rejected
+				has_idea = IKM_small_french_loan
+				has_idea = IKM_medium_french_loan
+				has_idea = IKM_large_french_loan
+			}
+	        custom_trigger_tooltip = {
+			    tooltip = in_a_french_loan_process_tt		
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = requesting_french_loan
+		        	}
+		        	has_country_flag = received_french_loan	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = requesting_french_loan
+	    	FRA = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	request_an_american_loan = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 50
+		visible = {
+			NOT = {
+				tag = USA
+			}
+			USA = {
+				has_government = democratic
+				is_major = yes 
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = USA
+			    value > -51
+			}
+			USA = {
+				surrender_progress < 0.01
+			}
+			OR = {
+				USA = {
+					has_war = no
+					has_opinion = {
+					    target = ROOT
+					    value > 24
+					}
+				}
+				USA = {
+					has_war = yes
+					has_opinion = {
+					    target = ROOT
+					    value > 74
+					}
+				}
+			}
+			NOT = {
+				has_idea = IKM_american_loan_rejected
+				has_idea = IKM_small_american_loan
+				has_idea = IKM_medium_american_loan
+				has_idea = IKM_large_american_loan
+			}
+	        custom_trigger_tooltip = {
+			    tooltip = in_a_american_loan_process_tt		
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = requesting_american_loan
+		        	}
+		        	has_country_flag = received_american_loan	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = requesting_american_loan
+	    	USA = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	reject_the_british_loan = {
+		icon = GFX_decision_SWI_dismiss_council
+		name = reject_the_loan
+		visible = {
+			tag = ENG
+			any_country = {
+				has_country_flag = requesting_british_loan
+			}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_british_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_british_loan_rejected
+				    days = 180
+				}
+				clr_country_flag = requesting_british_loan
+			}
+		}
+	}
+	issue_small_british_loan = {
+		name = issue_small_loan
+		icon = GFX_decision_generic_welfare
+		cost = 10
+		visible = {
+			tag = ENG
+			any_country = {
+				has_country_flag = requesting_british_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_british_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_small_british_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_british_loan
+				set_country_flag = {
+				    flag = received_british_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	issue_medium_british_loan = {
+		name = issue_medium_loan
+		icon = GFX_decision_generic_welfare
+		cost = 15
+		visible = {
+			tag = ENG
+			any_country = {
+				has_country_flag = requesting_british_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.04
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_british_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_medium_british_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_british_loan
+				set_country_flag = {
+				    flag = received_british_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	issue_large_british_loan = {
+		name = issue_large_loan
+		icon = GFX_decision_generic_welfare
+		cost = 30
+		visible = {
+			tag = ENG
+			any_country = {
+				has_country_flag = requesting_british_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.06
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_british_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_large_british_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_british_loan
+				set_country_flag = {
+				    flag = received_british_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	reject_the_french_loan = {
+		icon = GFX_decision_SWI_dismiss_council
+		name = reject_the_loan
+		visible = {
+			tag = FRA
+			any_country = {
+				has_country_flag = requesting_french_loan
+			}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_french_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_french_loan_rejected
+				    days = 180
+				}
+				clr_country_flag = requesting_french_loan
+			}
+		}
+	}
+	issue_small_french_loan = {
+		name = issue_small_loan
+		icon = GFX_decision_generic_welfare
+		cost = 10
+		visible = {
+			tag = FRA
+			any_country = {
+				has_country_flag = requesting_french_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_french_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_small_french_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_french_loan
+				set_country_flag = {
+				    flag = received_french_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	issue_medium_french_loan = {
+		name = issue_medium_loan
+		icon = GFX_decision_generic_welfare
+		cost = 15
+		visible = {
+			tag = FRA
+			any_country = {
+				has_country_flag = requesting_french_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.04
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_french_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_medium_french_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_french_loan
+				set_country_flag = {
+				    flag = received_french_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	issue_large_french_loan = {
+		name = issue_large_loan
+		icon = GFX_decision_generic_welfare
+		cost = 30
+		visible = {
+			tag = FRA
+			any_country = {
+				has_country_flag = requesting_french_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.06
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_french_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_large_french_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_french_loan
+				set_country_flag = {
+				    flag = received_french_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	reject_the_american_loan = {
+		icon = GFX_decision_SWI_dismiss_council
+		name = reject_the_loan
+		visible = {
+			tag = USA
+			any_country = {
+				has_country_flag = requesting_american_loan
+			}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_american_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_american_loan_rejected
+				    days = 180
+				}
+				clr_country_flag = requesting_american_loan
+			}
+		}
+	}
+	issue_small_american_loan = {
+		name = issue_small_loan
+		icon = GFX_decision_generic_welfare
+		cost = 10
+		visible = {
+			tag = USA
+			any_country = {
+				has_country_flag = requesting_american_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_american_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_small_american_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_american_loan
+				set_country_flag = {
+				    flag = received_american_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	issue_medium_american_loan = {
+		name = issue_medium_loan
+		icon = GFX_decision_generic_welfare
+		cost = 15
+		visible = {
+			tag = USA
+			any_country = {
+				has_country_flag = requesting_american_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.04
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_american_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_medium_american_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_american_loan
+				set_country_flag = {
+				    flag = received_american_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	issue_large_american_loan = {
+		name = issue_large_loan
+		icon = GFX_decision_generic_welfare
+		cost = 30
+		visible = {
+			tag = USA
+			any_country = {
+				has_country_flag = requesting_american_loan
+			}
+		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.06
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = requesting_american_loan
+				}
+				add_timed_idea = {
+				    idea = IKM_large_american_loan
+				    days = 180
+				}
+				clr_country_flag = requesting_american_loan
+				set_country_flag = {
+				    flag = received_american_loan
+				    days = 180
+				}
+			}
+		}
+	}
+	invite_german_army_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = GER
+				has_war_with = GER
+			}
+			GER = {
+				has_government = fascism
+				is_major = yes 
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = GER
+			    value > -26
+			}
+			GER = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_army_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_german_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_german_army_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_german_army_instructors
+		        	}
+		        	has_country_flag = received_german_army_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_german_army_instructors
+	    	GER = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_german_navy_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = GER
+				has_war_with = GER
+			}
+			GER = {
+				has_government = fascism 
+				is_major = yes
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = GER
+			    value > -26
+			}
+			GER = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_navy_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_german_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_german_navy_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_german_navy_instructors
+		        	}
+		        	has_country_flag = received_german_navy_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_german_navy_instructors
+	    	GER = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_german_airforce_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = GER
+				has_war_with = GER
+			}
+			GER = {
+				has_government = fascism 
+				is_major = yes
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = GER
+			    value > -26
+			}
+			GER = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_air_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_german_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_german_airforce_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_german_airforce_instructors
+		        	}
+		        	has_country_flag = received_german_airforce_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_german_airforce_instructors
+	    	GER = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_italian_army_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = ITA
+				has_war_with = ITA
+			}
+			ITA = {
+				has_government = fascism 
+				is_major = yes
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = ITA
+			    value > -26
+			}
+			ITA = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_army_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_italian_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_italian_army_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_italian_army_instructors
+		        	}
+		        	has_country_flag = received_italian_army_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_italian_army_instructors
+	    	ITA = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_italian_navy_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = ITA
+				has_war_with = ITA
+			}
+			ITA = {
+				has_government = fascism
+				is_major = yes 
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = ITA
+			    value > -26
+			}
+			ITA = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_navy_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_italian_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_italian_navy_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_italian_navy_instructors
+		        	}
+		        	has_country_flag = received_italian_navy_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_italian_navy_instructors
+	    	ITA = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_italian_airforce_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = ITA
+				has_war_with = ITA
+			}
+			ITA = {
+				has_government = fascism 
+				is_major = yes
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = ITA
+			    value > -26
+			}
+			ITA = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_air_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_italian_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_italian_airforce_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_italian_airforce_instructors
+		        	}
+		        	has_country_flag = received_italian_airforce_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_italian_airforce_instructors
+	    	ITA = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_japanese_army_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = JAP
+				has_war_with = JAP
+			}
+			JAP = {
+				has_government = fascism 
+				is_major = yes
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = JAP
+			    value > -26
+			}
+			JAP = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_army_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_japanese_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_japanese_army_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_japanese_army_instructors
+		        	}
+		        	has_country_flag = received_japanese_army_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_japanese_army_instructors
+	    	JAP = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_japanese_navy_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = JAP
+				has_war_with = JAP
+			}
+			JAP = {
+				has_government = fascism 
+				is_major = yes
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			} 
+		}
+		available = {
+			has_opinion = {
+			    target = JAP
+			    value > -26
+			}
+			JAP = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_navy_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_japanese_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_japanese_navy_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_japanese_navy_instructors
+		        	}
+		        	has_country_flag = received_japanese_navy_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_japanese_navy_instructors
+	    	JAP = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	invite_japanese_airforce_instructors = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		visible = {
+			NOT = {
+				tag = JAP
+				has_war_with = JAP
+			}
+			JAP = {
+				has_government = fascism
+				is_major = yes 
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		available = {
+			has_opinion = {
+			    target = JAP
+			    value > -26
+			}
+			JAP = {
+				has_opinion = {
+				    target = ROOT
+				    value > 0
+				}
+				has_air_experience > 20
+				has_civil_war = no
+				surrender_progress < 0.01
+			}
+			NOT = {
+				has_idea = IKM_reject_sending_japanese_instructors
+			}
+			custom_trigger_tooltip = {
+			    tooltip = has_japanese_airforce_instructors_tt	
+			    NOT = {
+		        	any_country = {
+		        		has_country_flag = invitation_for_japanese_airforce_instructors
+		        	}
+		        	has_country_flag = received_japanese_airforce_instructors	
+		        }
+			}
+	    }
+	    complete_effect = {
+	    	set_country_flag = invitation_for_japanese_airforce_instructors
+	    	JAP = {
+	    		country_event = IKM.39
+	    	}
+	    }
+	}
+	reject_sending_german_army_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_army_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_army_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_german_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_german_army_instructors
+			}
+		}
+	}
+	reject_sending_german_navy_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_navy_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_navy_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_german_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_german_navy_instructors
+			}
+		}
+	}
+	reject_sending_german_airforce_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_airforce_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_airforce_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_german_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_german_airforce_instructors
+			}
+		}
+	}
+	reject_sending_italian_army_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = ITA
+			any_country = {
+        		has_country_flag = invitation_for_italian_army_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_army_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_italian_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_italian_army_instructors
+			}
+		}
+	}
+	reject_sending_italian_navy_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_navy_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_navy_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_italian_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_italian_navy_instructors
+			}
+		}
+	}
+	reject_sending_italian_airforce_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = ITA
+			any_country = {
+        		has_country_flag = invitation_for_italian_airforce_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_airforce_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_italian_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_italian_airforce_instructors
+			}
+		}
+	}
+	reject_sending_japanese_army_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_army_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_army_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_japanese_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_japanese_army_instructors
+			}
+		}
+	}
+	reject_sending_japanese_navy_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = JAP 
+			any_country = {
+        		has_country_flag = invitation_for_japanese_navy_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_navy_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_japanese_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_japanese_navy_instructors
+			}
+		}
+	}
+	reject_sending_japanese_airforce_instructors = {
+		icon = GFX_decision_SWI_dismiss_council
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_airforce_instructors
+        	}
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_airforce_instructors
+				}
+				add_timed_idea = {
+				    idea = IKM_reject_sending_japanese_instructors
+				    days = 180
+				}
+				clr_country_flag = invitation_for_japanese_airforce_instructors
+			}
+		}
+	}
+	send_a_few_german_army_instructors = {
+		name = send_a_few_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 20
+		}
+		complete_effect = {
+			army_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_army_instructors
+				}
+				army_experience = 20
+				clr_country_flag = invitation_for_german_army_instructors
+				set_country_flag = {
+				    flag = received_german_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_german_army_instructors = {
+		name = send_some_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 60
+		}
+		complete_effect = {
+			army_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_army_instructors
+				}
+				army_experience = 60
+				clr_country_flag = invitation_for_german_army_instructors
+				set_country_flag = {
+				    flag = received_german_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_german_army_instructors = {
+		name = send_many_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 100
+		}
+		complete_effect = {
+			army_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_army_instructors
+				}
+				army_experience = 100
+				clr_country_flag = invitation_for_german_army_instructors
+				set_country_flag = {
+				    flag = received_german_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_german_navy_instructors = {
+		name = send_a_few_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 20
+		}
+		complete_effect = {
+			navy_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_navy_instructors
+				}
+				navy_experience = 20
+				clr_country_flag = invitation_for_german_navy_instructors
+				set_country_flag = {
+				    flag = received_german_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_german_navy_instructors = {
+		name = send_some_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 60
+		}
+		complete_effect = {
+			navy_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_navy_instructors
+				}
+				navy_experience = 60
+				clr_country_flag = invitation_for_german_navy_instructors
+				set_country_flag = {
+				    flag = received_german_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_german_navy_instructors = {
+		name = send_many_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 100
+		}
+		complete_effect = {
+			navy_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_navy_instructors
+				}
+				navy_experience = 100
+				clr_country_flag = invitation_for_german_navy_instructors
+				set_country_flag = {
+				    flag = received_german_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_german_airforce_instructors = {
+		name = send_a_few_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 20
+		}
+		complete_effect = {
+			air_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_airforce_instructors
+				}
+				air_experience = 20
+				clr_country_flag = invitation_for_german_airforce_instructors
+				set_country_flag = {
+				    flag = received_german_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_german_airforce_instructors = {
+		name = send_some_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 60
+		}
+		complete_effect = {
+			air_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_airforce_instructors
+				}
+				air_experience = 60
+				clr_country_flag = invitation_for_german_airforce_instructors
+				set_country_flag = {
+				    flag = received_german_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_german_airforce_instructors = {
+		name = send_many_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = GER 
+			any_country = {
+        		has_country_flag = invitation_for_german_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 100
+		}
+		complete_effect = {
+			air_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_german_airforce_instructors
+				}
+				air_experience = 100
+				clr_country_flag = invitation_for_german_airforce_instructors
+				set_country_flag = {
+				    flag = received_german_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_italian_army_instructors = {
+		name = send_a_few_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 20
+		}
+		complete_effect = {
+			army_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_army_instructors
+				}
+				army_experience = 20
+				clr_country_flag = invitation_for_italian_army_instructors
+				set_country_flag = {
+				    flag = received_italian_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_italian_army_instructors = {
+		name = send_some_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 60
+		}
+		complete_effect = {
+			army_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_army_instructors
+				}
+				army_experience = 60
+				clr_country_flag = invitation_for_italian_army_instructors
+				set_country_flag = {
+				    flag = received_italian_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_italian_army_instructors = {
+		name = send_many_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 100
+		}
+		complete_effect = {
+			army_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_army_instructors
+				}
+				army_experience = 100
+				clr_country_flag = invitation_for_italian_army_instructors
+				set_country_flag = {
+				    flag = received_italian_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_italian_navy_instructors = {
+		name = send_a_few_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 20
+		}
+		complete_effect = {
+			navy_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_navy_instructors
+				}
+				navy_experience = 20
+				clr_country_flag = invitation_for_italian_navy_instructors
+				set_country_flag = {
+				    flag = received_italian_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_italian_navy_instructors = {
+		name = send_some_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 60
+		}
+		complete_effect = {
+			navy_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_navy_instructors
+				}
+				navy_experience = 60
+				clr_country_flag = invitation_for_italian_navy_instructors
+				set_country_flag = {
+				    flag = received_italian_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_italian_navy_instructors = {
+		name = send_many_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 100
+		}
+		complete_effect = {
+			navy_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_navy_instructors
+				}
+				navy_experience = 100
+				clr_country_flag = invitation_for_italian_navy_instructors
+				set_country_flag = {
+				    flag = received_italian_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_italian_airforce_instructors = {
+		name = send_a_few_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 20
+		}
+		complete_effect = {
+			air_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_airforce_instructors
+				}
+				air_experience = 20
+				clr_country_flag = invitation_for_italian_airforce_instructors
+				set_country_flag = {
+				    flag = received_italian_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_italian_airforce_instructors = {
+		name = send_some_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 60
+		}
+		complete_effect = {
+			air_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_airforce_instructors
+				}
+				air_experience = 60
+				clr_country_flag = invitation_for_italian_airforce_instructors
+				set_country_flag = {
+				    flag = received_italian_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_italian_airforce_instructors = {
+		name = send_many_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = ITA 
+			any_country = {
+        		has_country_flag = invitation_for_italian_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 100
+		}
+		complete_effect = {
+			air_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_italian_airforce_instructors
+				}
+				air_experience = 100
+				clr_country_flag = invitation_for_italian_airforce_instructors
+				set_country_flag = {
+				    flag = received_italian_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_japanese_army_instructors = {
+		name = send_a_few_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 20
+		}
+		complete_effect = {
+			army_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_army_instructors
+				}
+				army_experience = 20
+				clr_country_flag = invitation_for_japanese_army_instructors
+				set_country_flag = {
+				    flag = received_japanese_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_japanese_army_instructors = {
+		name = send_some_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 60
+		}
+		complete_effect = {
+			army_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_army_instructors
+				}
+				army_experience = 60
+				clr_country_flag = invitation_for_japanese_army_instructors
+				set_country_flag = {
+				    flag = received_japanese_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_japanese_army_instructors = {
+		name = send_many_army_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_army_instructors
+        	}
+		}
+		available = {
+			has_army_experience > 100
+		}
+		complete_effect = {
+			army_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_army_instructors
+				}
+				army_experience = 100
+				clr_country_flag = invitation_for_japanese_army_instructors
+				set_country_flag = {
+				    flag = received_japanese_army_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_japanese_navy_instructors = {
+		name = send_a_few_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 20
+		}
+		complete_effect = {
+			navy_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_navy_instructors
+				}
+				navy_experience = 20
+				clr_country_flag = invitation_for_japanese_navy_instructors
+				set_country_flag = {
+				    flag = received_japanese_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_japanese_navy_instructors = {
+		name = send_some_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 60
+		}
+		complete_effect = {
+			navy_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_navy_instructors
+				}
+				navy_experience = 60
+				clr_country_flag = invitation_for_japanese_navy_instructors
+				set_country_flag = {
+				    flag = received_japanese_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_japanese_navy_instructors = {
+		name = send_many_navy_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_navy_instructors
+        	}
+		}
+		available = {
+			has_navy_experience > 100
+		}
+		complete_effect = {
+			navy_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_navy_instructors
+				}
+				navy_experience = 100
+				clr_country_flag = invitation_for_japanese_navy_instructors
+				set_country_flag = {
+				    flag = received_japanese_navy_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_a_few_japanese_airforce_instructors = {
+		name = send_a_few_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 5
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 20
+		}
+		complete_effect = {
+			air_experience = -20
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_airforce_instructors
+				}
+				air_experience = 20
+				clr_country_flag = invitation_for_japanese_airforce_instructors
+				set_country_flag = {
+				    flag = received_japanese_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_some_japanese_airforce_instructors = {
+		name = send_some_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 10
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 60
+		}
+		complete_effect = {
+			air_experience = -60
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_airforce_instructors
+				}
+				air_experience = 60
+				clr_country_flag = invitation_for_japanese_airforce_instructors
+				set_country_flag = {
+				    flag = received_japanese_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+	send_many_japanese_airforce_instructors = {
+		name = send_many_airforce_insructors
+		icon = GFX_decision_generic_military
+		cost = 15
+		visible = {
+			tag = JAP
+			any_country = {
+        		has_country_flag = invitation_for_japanese_airforce_instructors
+        	}
+		}
+		available = {
+			has_air_experience > 100
+		}
+		complete_effect = {
+			air_experience = -100
+			every_country = {
+				limit = {
+					has_country_flag = invitation_for_japanese_airforce_instructors
+				}
+				air_experience = 100
+				clr_country_flag = invitation_for_japanese_airforce_instructors
+				set_country_flag = {
+				    flag = received_japanese_airforce_instructors	
+				    days = 180
+				}
+			}
+		}
+	}
+}

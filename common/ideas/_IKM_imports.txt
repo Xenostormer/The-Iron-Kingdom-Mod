@@ -1,0 +1,144 @@
+ideas = {
+
+	imports = {
+
+		law = yes
+		use_list_view = yes
+
+		IKM_no_import_tariffs = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    level = 1
+		    available = {
+		    	
+		    }
+		    modifier = {
+		    	consumer_goods_factor = 0.1
+		    	stability_weekly = 0.004
+		    	stability_weekly_factor = 0.2
+		    	party_popularity_stability_factor = 0.15
+		    	political_power_factor = 0.2
+		    	faction_trade_opinion_factor = 0.4 
+		    	trade_opinion_factor = 0.3
+		    	#production_speed_infrastructure_factor = 
+		    	#production_speed_supply_node_factor = 
+		    	#production_speed_rail_way_factor = 
+		    	production_speed_industrial_complex_factor = -0.3
+		    	production_speed_arms_factory_factor = -0.15 
+		    	production_factory_start_efficiency_factor = -0.03 
+		    	license_production_speed = 0.06
+		    	control_trade_mission_factor = 0.1
+		    }
+		}
+
+		IKM_few_import_tariffs = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    level = 2 
+		    available = {
+		    	
+		    }
+		    modifier = {
+		    	consumer_goods_factor = 0.075
+		    	stability_weekly = 0.003
+		    	stability_weekly_factor = 0.15
+		    	party_popularity_stability_factor = 0.1
+		    	political_power_factor = 0.12
+		    	faction_trade_opinion_factor = 0.2
+		    	trade_opinion_factor = 0.15
+		    	production_speed_infrastructure_factor = 0.05
+		    	production_speed_supply_node_factor = 0.05
+		    	production_speed_rail_way_factor = 0.05
+		    	production_speed_industrial_complex_factor = -0.2 
+		    	production_speed_arms_factory_factor = -0.1
+		    	#production_factory_start_efficiency_factor = 
+		    	#license_production_speed = 
+		    	#control_trade_mission_factor = 
+		    }
+		}
+
+		IKM_some_import_tariffs = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    default = yes
+		    level = 3 
+		    available = {
+		    	
+		    }
+		    modifier = {
+		    	consumer_goods_factor = 0.05
+		    	stability_weekly = 0.002
+		    	stability_weekly_factor = 0.1
+		    	party_popularity_stability_factor = 0.05
+		    	political_power_factor = 0.05
+		    	#faction_trade_opinion_factor = 
+		    	#trade_opinion_factor = 
+		    	production_speed_infrastructure_factor = 0.1
+		    	production_speed_supply_node_factor = 0.1
+		    	production_speed_rail_way_factor = 0.1
+		    	production_speed_industrial_complex_factor = -0.1
+		    	production_speed_arms_factory_factor = -0.05
+		    	production_factory_start_efficiency_factor = 0.03
+		    	license_production_speed = -0.06
+		    	control_trade_mission_factor = -0.1
+		    }
+		}
+
+		IKM_many_import_tariffs = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    level = 4 
+		    available = {
+		    	
+		    }
+		    modifier = {
+		    	consumer_goods_factor = 0.025
+		    	stability_weekly = 0.001
+		    	stability_weekly_factor = 0.05
+		    	#party_popularity_stability_factor = 
+		    	#political_power_factor = 
+		    	faction_trade_opinion_factor = -0.2
+		    	trade_opinion_factor = -0.15
+		    	production_speed_infrastructure_factor = 0.15
+		    	production_speed_supply_node_factor = 0.15
+		    	production_speed_rail_way_factor = 0.15
+		    	#production_speed_industrial_complex_factor = 
+		    	#production_speed_arms_factory_factor = 
+		    	production_factory_start_efficiency_factor = 0.06 
+		    	license_production_speed = -0.12
+		    	control_trade_mission_factor = -0.2 
+		    }
+		}
+
+		IKM_insane_import_tariffs = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    level = 5 
+		    available = {
+		    	
+		    }
+		    modifier = {
+		    	#consumer_goods_factor = 
+		    	#stability_weekly = 
+		    	#stability_weekly_factor = 
+		    	party_popularity_stability_factor = -0.05 
+		    	political_power_factor = -0.05
+		    	faction_trade_opinion_factor = -0.4
+		    	trade_opinion_factor = -0.3
+		    	production_speed_infrastructure_factor = 0.2
+		    	production_speed_supply_node_factor = 0.2
+		    	production_speed_rail_way_factor = 0.2
+		    	production_speed_industrial_complex_factor = 0.1
+		    	production_speed_arms_factory_factor = 0.05
+		    	production_factory_start_efficiency_factor = 0.09
+		    	license_production_speed = -0.18
+		    	control_trade_mission_factor = -0.3
+		    }
+		}
+	}
+}

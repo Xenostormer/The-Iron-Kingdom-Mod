@@ -1,0 +1,33 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		3824 6845 6869 11799 13580 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 25
+			arms_factory = 2
+			dockyard = 2
+			6845 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {
+			6845 20
+		}
+		victory_points = {
+			6869 1
+		}
+		victory_points = {
+			3824 1
+		}
+	}
+	manpower=3447301
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

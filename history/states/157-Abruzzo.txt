@@ -1,0 +1,36 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		963 3910 3923 3966 6831 9838 
+	}
+
+	resources={
+		aluminium = 26
+	}
+
+	history = {
+		owner = ITA
+		victory_points = {
+			6831 1 
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 1
+			arms_factory = 1 
+			6831 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ITA
+		1936.01.02 = {
+			add_core_of = PAP
+			#add_core_of =
+			#add_claim_by = 
+		}
+	}
+	manpower=1295363
+	buildings_max_level_factor=1.000
+	state_category= large_town
+	local_supplies=0.000
+}

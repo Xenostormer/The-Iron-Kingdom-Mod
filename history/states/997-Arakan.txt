@@ -1,0 +1,29 @@
+state={
+	id=997
+	name="STATE_997"
+	resources = {
+		rubber = 4 
+	}
+	provinces={
+		1014 1142 1333 3651 4019 4059 4147 7122 12090 
+	}
+	history = {
+		
+		owner = RAJ
+		add_core_of = RAJ
+
+		1936.01.02 = {
+			owner = BRM
+			add_core_of = BRM
+			#add_core_of = 
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=530980
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

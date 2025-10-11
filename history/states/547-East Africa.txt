@@ -1,0 +1,31 @@
+state={
+	id=547
+	name="STATE_547"
+	provinces={
+		1939 5160 10860 10962 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+		}
+		victory_points = {
+			1939 2 
+		}
+		
+		add_core_of = ISR
+		1936.01.02 = {
+			add_core_of = KEN
+			#add_core_of = 
+			#add_core_of = 
+			#add_claim_by =  
+		}
+
+	}
+	manpower=1085440
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

@@ -1,0 +1,54 @@
+state={
+	id=66
+	name="STATE_66"
+
+	provinces={
+		552 3283 3438 3485 3510 3545 6462 6534 6595 9470 9570 11517 13599 
+	}
+
+	resources = {
+		steel = 6
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = GER
+		1936.01.02 = {
+			add_core_of = PRE
+			add_core_of = SIL
+			#add_core_of = 
+			#add_claim_by =  
+		}
+
+		victory_points = {
+			9570 10 # Breslau
+		}
+
+		victory_points = {
+			552 1 # Liegnitz
+		}
+
+		victory_points = {
+			13599 1 # Waldenburg
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 7
+			industrial_complex = 7
+			air_base = 6
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 10
+				arms_factory = 9
+				industrial_complex = 11
+			}
+		}
+	}
+	manpower=3052726
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=10.000
+}

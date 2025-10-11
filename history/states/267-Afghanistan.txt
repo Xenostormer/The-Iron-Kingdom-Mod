@@ -1,0 +1,33 @@
+
+state={
+	id=267
+	name="STATE_267" # Kabul
+	manpower = 1976110
+	
+	state_category = town
+	
+	history={
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10737 5 
+		}
+
+		owner = RAJ
+		add_core_of = ISR
+
+		1936.01.02 = {
+			owner = AFG
+			add_core_of = AFG
+			#add_core_of = 
+		}
+	}
+
+	provinces={
+		7916 7984 10737 10852 12769 
+	}
+
+	local_supplies=0.0 
+}

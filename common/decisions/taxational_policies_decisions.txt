@@ -1,0 +1,1195 @@
+taxational_policies = {
+	raise_upper_class_peacetime_taxes = {
+		icon = GFX_decision_eng_trade_unions_demand
+		days_re_enable = 365
+		cost = 200
+		visible = {
+		    has_war = no
+		}
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+		    NOT = {	
+		    	has_decision = lower_upper_class_peacetime_taxes
+		    }
+		    has_stability > 0.05
+		}
+		complete_effect = {
+			set_country_flag = {
+			    flag = raised_upper_class_taxes
+			    days = 365
+			    value = 1
+			}
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories > 1000
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 40
+			    }
+			    add_political_power = -550
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 1001
+		    		num_of_civilian_factories > 800
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 38
+			    }
+			    add_political_power = -400
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 801
+		    		num_of_civilian_factories > 600
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 36
+			    }
+			    add_political_power = -300
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 601
+		    		num_of_civilian_factories > 500
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 34
+			    }
+			    add_political_power = -220
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 501
+		    		num_of_civilian_factories > 400
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 32
+			    }
+			    add_political_power = -180
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 401
+		    		num_of_civilian_factories > 350
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 30
+			    }
+			    add_political_power = -140
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 351
+		    		num_of_civilian_factories > 300
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 27
+			    }
+			    add_political_power = -100
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 301
+		    		num_of_civilian_factories > 250
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 24
+			    }
+			    add_political_power = -80
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 251
+		    		num_of_civilian_factories > 200
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 21
+			    }
+			    add_political_power = -60
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 201
+		    		num_of_civilian_factories > 150
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 18
+			    }
+			    add_political_power = -40
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 151
+		    		num_of_civilian_factories > 100
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 15
+			    }
+			    add_political_power = -20
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 101
+		    		num_of_civilian_factories > 80
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 12
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 81
+		    		num_of_civilian_factories > 60
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 9
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 61
+		    		num_of_civilian_factories > 40
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 6
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 41
+		    		num_of_civilian_factories > 20
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 4
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 21
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 2
+			    }
+		    }
+		    add_stability = -0.05
+		}
+	}
+	raise_middle_class_peacetime_taxes = {
+		icon = GFX_decision_eng_trade_unions_demand
+		days_re_enable = 365
+		cost = 150
+		visible = {
+		    has_war = no
+		}
+		available = {
+		    NOT = {	
+		    	has_decision = lower_middle_class_peacetime_taxes
+		    }
+		    has_stability > 0.15
+		}
+		complete_effect = {
+			set_country_flag = {
+			    flag = raised_middle_class_taxes
+			    days = 365
+			    value = 1
+			}
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories > 1000
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 20
+			    }
+			    add_political_power = -180
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 1001
+		    		num_of_civilian_factories > 800
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 18
+			    }
+			    add_political_power = -165
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 801
+		    		num_of_civilian_factories > 600
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 16
+			    }
+			    add_political_power = -150
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 601
+		    		num_of_civilian_factories > 500
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 14
+			    }
+			    add_political_power = -135
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 501
+		    		num_of_civilian_factories > 400
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 12
+			    }
+			    add_political_power = -120
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 401
+		    		num_of_civilian_factories > 350
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 11
+			    }
+			    add_political_power = -105
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 351
+		    		num_of_civilian_factories > 300
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 10
+			    }
+			    add_political_power = -80
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 301
+		    		num_of_civilian_factories > 250
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 9
+			    }
+			    add_political_power = -65
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 251
+		    		num_of_civilian_factories > 200
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 8
+			    }
+			    add_political_power = -40
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 201
+		    		num_of_civilian_factories > 150
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 7
+			    }
+			    add_political_power = -25
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 151
+		    		num_of_civilian_factories > 100
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 6
+			    }
+			    add_political_power = -10
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 101
+		    		num_of_civilian_factories > 80
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 5
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 81
+		    		num_of_civilian_factories > 60
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 4
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 61
+		    		num_of_civilian_factories > 40
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 3
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 41
+		    		num_of_civilian_factories > 20
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 2
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 21
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 1
+			    }
+		    }
+		    add_stability = -0.15
+		}
+	}
+	raise_working_class_peacetime_taxes = {
+		icon = GFX_decision_eng_trade_unions_demand
+		days_re_enable = 365
+		cost = 100
+		visible = {
+		    has_war = no
+		}
+		available = {
+			NOT = {
+				has_government = democratic
+			}
+		    NOT = {	
+		    	has_decision = lower_working_class_peacetime_taxes
+		    }
+		    has_stability > 0.3
+		}
+		complete_effect = {
+			set_country_flag = {
+			    flag = raised_working_class_taxes
+			    days = 365
+			    value = 1
+			}
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories > 1000
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 12
+			    }
+			    add_political_power = -60
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 1001
+		    		num_of_civilian_factories > 700
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 10
+			    }
+			    add_political_power = -50
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 701
+		    		num_of_civilian_factories > 500
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 9
+			    }
+			    add_political_power = -40
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 501
+		    		num_of_civilian_factories > 400
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 8
+			    }
+			    add_political_power = -30
+		    }
+			if = {
+		    	limit = {
+		    		num_of_civilian_factories < 401
+		    		num_of_civilian_factories > 320
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 7
+			    }
+			    add_political_power = -20
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 320
+		    		num_of_civilian_factories > 240
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 6
+			    }
+			    add_political_power = -10
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 241
+		    		num_of_civilian_factories > 180
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 5
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 181
+		    		num_of_civilian_factories > 120
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 4
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 121
+		    		num_of_civilian_factories > 80
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 3
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 81
+		    		num_of_civilian_factories > 40
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 2
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_civilian_factories < 41
+		    	}
+		    	add_offsite_building = {
+			    	type = industrial_complex
+			    	level = 1
+			    }
+		    }
+		    add_stability = -0.3
+		}
+	}
+	lower_upper_class_peacetime_taxes = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 1
+		days_remove = 364
+		cost = 75
+		visible = {
+		    has_war = no
+		}
+		available = {
+			NOT = {
+				has_government = democratic
+			}
+		    custom_trigger_tooltip = {
+			    tooltip = raised_upper_class_taxes_tt	
+			    NOT = {	
+			    	has_country_flag = raised_upper_class_taxes
+			    }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.15
+			stability_weekly = 0.015
+		}
+
+	}
+	lower_middle_class_peacetime_taxes = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 1
+		days_remove = 364
+		cost = 50
+		visible = {
+		    has_war = no
+		}
+		available = {
+		    custom_trigger_tooltip = {
+			    tooltip = raised_middle_class_taxes_tt	
+			    NOT = {	
+			    	has_country_flag = raised_middle_class_taxes
+			    }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.08
+			stability_weekly = 0.01
+		}
+	}
+	lower_working_class_peacetime_taxes = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		days_re_enable = 1
+		days_remove = 364
+		cost = 25
+		visible = {
+		    has_war = no
+		}
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+		    custom_trigger_tooltip = {
+			    tooltip = raised_working_class_taxes_tt	
+			    NOT = {	
+			    	has_country_flag = raised_working_class_taxes
+			    }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.02
+			stability_weekly = 0.005
+		}
+	}
+	raise_upper_class_wartime_taxes = {
+		icon = GFX_decision_ger_military_buildup
+		days_re_enable = 365
+		cost = 200
+		visible = {
+		    has_war = yes
+		}
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+		    NOT = {	
+		    	has_decision = lower_upper_class_wartime_taxes
+		    }
+		    has_war_support > 0.05
+		}
+		complete_effect = {
+			set_country_flag = {
+			    flag = raised_upper_class_taxes
+			    days = 365
+			    value = 1
+			}
+			if = {
+		    	limit = {
+		    		num_of_military_factories > 1000
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 40
+			    }
+			    add_political_power = -320
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 1001
+		    		num_of_military_factories > 800
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 38
+			    }
+			    add_political_power = -280
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 801
+		    		num_of_military_factories > 600
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 36
+			    }
+			    add_political_power = -240
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 601
+		    		num_of_military_factories > 500
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 34
+			    }
+			    add_political_power = -200
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 501
+		    		num_of_military_factories > 400
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 32
+			    }
+			    add_political_power = -160
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 401
+		    		num_of_military_factories > 350
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 30
+			    }
+			    add_political_power = -120
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 351
+		    		num_of_military_factories > 300
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 27
+			    }
+			    add_political_power = -100
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 301
+		    		num_of_military_factories > 250
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 24
+			    }
+			    add_political_power = -80
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 251
+		    		num_of_military_factories > 200
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 21
+			    }
+			    add_political_power = -60
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 201
+		    		num_of_military_factories > 150
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 18
+			    }
+			    add_political_power = -40
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 151
+		    		num_of_military_factories > 100
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 15
+			    }
+			    add_political_power = -20
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 101
+		    		num_of_military_factories > 80
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 12
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 81
+		    		num_of_military_factories > 60
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 9
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 61
+		    		num_of_military_factories > 40
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 6
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 41
+		    		num_of_military_factories > 20
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 4
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 21
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 2
+			    }
+		    }
+		    add_war_support = -0.05
+		}
+	}
+	raise_middle_class_wartime_taxes = {
+		icon = GFX_decision_ger_military_buildup
+		days_re_enable = 365
+		cost = 150
+		visible = {
+		    has_war = yes
+		}
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+		    NOT = {	
+		    	has_decision = lower_middle_class_wartime_taxes
+		    }
+		    has_war_support > 0.15
+		}
+		complete_effect = {
+			set_country_flag = {
+			    flag = raised_middle_class_taxes
+			    days = 365
+			    value = 1
+			}
+			if = {
+		    	limit = {
+		    		num_of_military_factories > 1000
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 20
+			    }
+			    add_political_power = -180
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 1001
+		    		num_of_military_factories > 800
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 18
+			    }
+			    add_political_power = -165
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 801
+		    		num_of_military_factories > 600
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 16
+			    }
+			    add_political_power = -150
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 601
+		    		num_of_military_factories > 500
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 14
+			    }
+			    add_political_power = -135
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 501
+		    		num_of_military_factories > 400
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 12
+			    }
+			    add_political_power = -120
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 401
+		    		num_of_military_factories > 350
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 11
+			    }
+			    add_political_power = -105
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 351
+		    		num_of_military_factories > 300
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 10
+			    }
+			    add_political_power = -80
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 301
+		    		num_of_military_factories > 250
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 9
+			    }
+			    add_political_power = -65
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 251
+		    		num_of_military_factories > 200
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 8
+			    }
+			    add_political_power = -40
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 201
+		    		num_of_military_factories > 150
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 7
+			    }
+			    add_political_power = -25
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 151
+		    		num_of_military_factories > 100
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 6
+			    }
+			    add_political_power = -10
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 101
+		    		num_of_military_factories > 80
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 5
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 81
+		    		num_of_military_factories > 60
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 4
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 61
+		    		num_of_military_factories > 40
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 3
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 41
+		    		num_of_military_factories > 20
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 2
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 21
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 1
+			    }
+		    }
+		    add_war_support = -0.15
+		}
+	}
+	raise_working_class_wartime_taxes = {
+		icon = GFX_decision_ger_military_buildup
+		days_re_enable = 365
+		cost = 100
+		visible = {
+		    has_war = yes
+		}
+		available = {
+			NOT = {
+				has_government = neutrality
+			}
+		    NOT = {	
+		    	has_decision = lower_working_class_wartime_taxes
+		    }
+		    has_war_support > 0.3
+		}
+		complete_effect = {
+			set_country_flag = {
+			    flag = raised_working_class_taxes
+			    days = 365
+			    value = 1
+			}
+			if = {
+		    	limit = {
+		    		num_of_military_factories > 1000
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 12
+			    }
+			    add_political_power = -60
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 1001
+		    		num_of_military_factories > 700
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 10
+			    }
+			    add_political_power = -50
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 701
+		    		num_of_military_factories > 500
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 9
+			    }
+			    add_political_power = -40
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 501
+		    		num_of_military_factories > 400
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 8
+			    }
+			    add_political_power = -30
+		    }
+			if = {
+		    	limit = {
+		    		num_of_military_factories < 401
+		    		num_of_military_factories > 320
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 7
+			    }
+			    add_political_power = -20
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 320
+		    		num_of_military_factories > 240
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 6
+			    }
+			    add_political_power = -10
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 241
+		    		num_of_military_factories > 180
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 5
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 181
+		    		num_of_military_factories > 120
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 4
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 121
+		    		num_of_military_factories > 80
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 3
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 81
+		    		num_of_military_factories > 40
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 2
+			    }
+		    }
+		    if = {
+		    	limit = {
+		    		num_of_military_factories < 41
+		    	}
+		    	add_offsite_building = {
+			    	type = arms_factory
+			    	level = 1
+			    }
+		    }
+		    add_war_support = -0.3
+		}
+	}
+	lower_upper_class_wartime_taxes = {
+		icon = GFX_decision_generic_civil_support
+		days_re_enable = 1
+		days_remove = 364
+		cost = 75
+		visible = {
+		    has_war = yes
+		}
+		available = {
+			NOT = {
+				has_government = fascism
+			}
+		    custom_trigger_tooltip = {
+			    tooltip = raised_upper_class_taxes_tt	
+			    NOT = {	
+			    	has_country_flag = raised_upper_class_taxes
+			    }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.15
+			war_support_weekly = 0.015
+		}
+	}
+	lower_middle_class_wartime_taxes = {
+		icon = GFX_decision_generic_civil_support
+		days_re_enable = 1
+		days_remove = 364
+		cost = 50 
+		visible = {
+		    has_war = yes
+		}
+		available = {
+			NOT = {
+				has_government = fascism
+			}
+		    custom_trigger_tooltip = {
+			    tooltip = raised_middle_class_taxes_tt	
+			    NOT = {	
+			    	has_country_flag = raised_middle_class_taxes
+			    }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.08
+			war_support_weekly = 0.01
+		}
+	}
+	lower_working_class_wartime_taxes = {
+		icon = GFX_decision_generic_civil_support
+		days_re_enable = 1
+		days_remove = 364
+		cost = 25
+		visible = {
+		    has_war = yes
+		}
+		available = {
+			NOT = {
+				has_government = fascism
+			}
+		    custom_trigger_tooltip = {
+			    tooltip = raised_working_class_taxes_tt	
+			    NOT = {	
+			    	has_country_flag = raised_working_class_taxes
+			    }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.02
+			war_support_weekly = 0.005
+		}
+	}
+}

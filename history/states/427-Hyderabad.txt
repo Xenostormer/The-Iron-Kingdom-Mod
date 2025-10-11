@@ -1,0 +1,36 @@
+state={
+	id=427
+	name="STATE_427"
+
+	provinces={
+		1275 1317 1359 1405 4280 4472 5019 5063 5104 7060 8087 10311 10324 10511 11950 12114 12226 13486 
+	}
+	history={
+		owner = RAJ
+		1936.01.02 = {
+			add_core_of = HYD
+			#add_core_of = 
+		}
+		victory_points = {
+			8087 15 
+
+		}
+		victory_points = {
+			13486 1  
+		}
+		victory_points = { 12114 1 }
+		victory_points = { 10311 1 }
+			
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 5 
+			air_base = 3
+		}
+
+	}
+	manpower=13374676
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=7.000
+}

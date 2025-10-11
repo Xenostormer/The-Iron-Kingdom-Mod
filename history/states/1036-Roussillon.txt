@@ -1,0 +1,37 @@
+state={
+	id=1036
+	name="STATE_1036"
+	provinces={
+		943 3946 3948 6766 6915 6917 6931 9853 11702 13401 
+	}
+	
+	resources={
+		aluminium = 7 
+		steel = 8 
+	}
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		1936.01.02 = {
+			add_core_of = OCC
+			#add_core_of =
+			#add_claim_by = 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 6
+		}
+		victory_points = {
+			6766 5 
+		}
+		victory_points = {
+			13401 1
+		}
+	}
+	manpower= 1216667
+	state_category= city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

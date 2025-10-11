@@ -1,0 +1,42 @@
+
+state={
+	id=316
+	name="STATE_316"
+	manpower = 503856
+
+	
+	state_category = town
+	
+
+	history={
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+			13087 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			13087 3
+		}
+
+		owner = CHL
+		add_core_of = CHL
+
+		1936.01.02 = {
+			owner = COS 
+			add_core_of = COS
+			#add_core_of = 
+		}
+
+	}
+
+	provinces={
+		12878 13087 13092 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,1896 @@
+add_namespace = IKM
+
+country_event = { #Start WW2
+	id = IKM.1
+	title = IKM.1.t
+	desc = IKM.1.d
+	picture = GFX_report_event_canada_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.1.a
+		add_to_war = { 
+		    targeted_alliance = POL
+		    enemy = GER
+		    hostility_reason = asked_to_join
+		}
+		ENG = {
+			add_ideas = IKM_phoney_war
+		}
+		FRA = {
+			add_ideas = IKM_phoney_war
+		}
+	}
+}
+
+country_event = { #Start Greco-Italian War
+	id = IKM.2
+	title = IKM.2.t
+	desc = IKM.2.d
+	picture = GFX_report_event_gre_italian_troops
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.2.a
+		start_border_war = {
+		    change_state_after_war = no
+		    attacker = {
+		        state = 805
+		        num_provinces = 3
+		        on_win = IKM.5 
+		        on_lose = IKM.3
+		        on_cancel = IKM.7
+		        modifier = 0.1
+		        dig_in_factor = 0
+		        terrain_factor = 0
+		    }	
+		    defender = {
+		        state = 185
+		        num_provinces = 4
+		        on_win = IKM.4
+		        on_lose = IKM.6
+		        on_cancel = IKM.8
+		    }
+		}
+	}
+}
+
+country_event = { #Greco-Italian War, Italy looses - Italian version
+	id = IKM.3
+	title = IKM.3.t
+	desc = IKM.3.d
+	picture = GFX_report_event_gre_city_siege
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.3.a
+		add_war_support = -0.05
+		add_stability = -0.02
+		ENG = {
+			give_guarantee = GRE
+		}
+	}
+}
+
+country_event = { #Greco-Italian War, Italy looses - Greek version
+	id = IKM.4
+	title = IKM.4.t
+	desc = IKM.4.d
+	picture = GFX_report_event_gre_george_ii_victorious
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.4.a
+		transfer_state = 805
+		add_war_support = 0.1
+		add_stability = 0.05
+	}
+}
+
+country_event = { #Greco-Italian War, Italy wins - Italian version
+	id = IKM.5
+	title = IKM.5.t
+	desc = IKM.5.d
+	picture = GFX_report_event_ITA_gramsci
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.5.a
+		add_war_support = 0.1
+		add_stability = 0.05
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = GRE
+		}
+	}
+}
+
+country_event = { #Greco-Italian War, Italy wins - Greek version
+	id = IKM.6
+	title = IKM.6.t
+	desc = IKM.6.d
+	picture = GFX_report_event_gre_city_devastated
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.6.a
+		add_war_support = 0.2
+		add_stability = -0.02
+		add_timed_idea = {
+		    idea = IKM_greco_italian_war
+		    days = 90
+		}
+	}
+}
+
+country_event = { #Greco-Italian War, Stalemate - Italian version
+	id = IKM.7
+	title = IKM.7.t
+	desc = IKM.7.d
+	picture = GFX_report_event_ITA_air_crash
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.7.a
+		add_war_support = -0.02
+		start_border_war = {
+		    change_state_after_war = no
+		    attacker = {
+		        state = 805
+		        num_provinces = 3
+		        on_win = IKM.5 
+		        on_lose = IKM.3
+		        on_cancel = IKM.7
+		        modifier = 0.1
+		        dig_in_factor = 0
+		        terrain_factor = 0
+		    }	
+		    defender = {
+		        state = 185
+		        num_provinces = 4
+		        on_win = IKM.4
+		        on_lose = IKM.6
+		        on_cancel = IKM.8
+		    }
+		}
+	}
+}
+
+country_event = { #Greco-Italian War, Stalemate - Greek version
+	id = IKM.8
+	title = IKM.8.t
+	desc = IKM.8.d
+	picture = GFX_report_event_gre_winter_soldiers_celebrating
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.8.a
+		add_war_support = 0.02
+	}
+}
+
+country_event = { #Blakan Intervnetion - Start 
+	id = IKM.9
+	title = IKM.9.t
+	desc = IKM.9.d
+	picture = GFX_report_event_bul_boris_tour
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.9.a
+		BUL = {
+			country_event = IKM.10
+		}
+	}
+}
+
+country_event = { #Blakan Intervnetion - Bulgaria Folds
+	id = IKM.10
+	title = IKM.10.t
+	desc = IKM.10.d
+	picture = GFX_report_event_bul_boris_with_hitler
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.10.a
+		GER = {
+			set_autonomy = {
+			    target = BUL
+			    autonomous_state = autonomy_satellite
+			    freedom_level = 10 
+			    end_wars = no
+			    end_civil_wars = yes
+			}
+			country_event = IKM.11
+		}
+	}
+}
+
+country_event = { #Blakan Intervnetion - Yugoslavias Turn
+	id = IKM.11
+	title = IKM.11.t
+	desc = IKM.11.d
+	picture = GFX_report_event_yugoslavian_king_peter
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.11.a
+		YUG = {
+			country_event = IKM.12
+		}
+	}
+}
+
+country_event = { #Blakan Intervnetion - Yugoslavia Falls 
+	id = IKM.12
+	title = IKM.12.t
+	desc = IKM.12.d
+	picture = GFX_report_event_yugoslavia_partisans
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.12.a
+		trigger = {
+			YUG = {
+				is_ai = yes
+			}
+		}
+		add_war_support = 0.3
+		GER = {
+			country_event = IKM.13
+		}
+	}
+
+	option = {
+		name = IKM.12.b
+		trigger = {
+			YUG = {
+				is_ai = no
+			}
+		}
+		start_civil_war = {
+		    ideology = democratic
+		    size = 0.4
+		    navy_ratio = 0
+		    states = {
+		    	106 970 803 802 105 108 107 764 45
+		    }
+		}
+		GER = {
+			country_event = IKM.14
+		}
+	}
+}
+
+country_event = { #Blakan Intervnetion - Operation 25 
+	id = IKM.13
+	title = IKM.13.t
+	desc = IKM.13.d
+	picture = GFX_report_event_bul_ff_troops_panzer
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.13.a
+		add_war_support = 0.02
+		GER = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = YUG
+			}
+		}
+		ENG = {
+			give_guarantee = YUG
+		}
+	}
+}
+
+country_event = { #Blakan Intervnetion - Create Croatia
+	id = IKM.14
+	title = IKM.14.t
+	desc = IKM.14.d
+	picture = GFX_report_event_hitler_croatia_handshake
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.14.a
+		ITA = {
+			transfer_state = 853
+		}
+		GER = {
+			transfer_state = 102
+			puppet = YUG
+		}
+		102 = {
+			remove_core_of = YUG
+			add_core_of = SLO
+		}
+		853 = {
+			remove_core_of = YUG
+			add_core_of = SLO
+		}
+	}
+}
+
+country_event = { #Paritican of Yugoslavia
+	id = IKM.15
+	title = IKM.15.t
+	desc = IKM.15.d
+	picture = GFX_report_event_yugoslavian_split
+	
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		country_exists = YUG
+		OR = {
+			AND = {
+				GER = {
+					is_in_faction_with = ITA
+					is_in_faction_with = HUN
+					is_in_faction_with = ROM
+					is_in_faction_with = BUL
+				}
+				YUG = {
+					has_war_with = GER
+					has_capitulated = yes
+				}
+			}
+			AND = {
+				YUG = {
+					is_in_faction_with = GER
+					is_in_faction_with = ITA
+					is_in_faction_with = HUN
+					is_in_faction_with = ROM
+					is_in_faction_with = BUL
+				}
+				any_country = {
+					civilwar_target = YUG
+					has_capitulated = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = IKM.15.a
+		if = {
+			limit = {
+				NOT = {
+					853 = {
+						is_owned_by = ITA
+					}
+				}
+			}
+			ITA = {
+				transfer_state = 853
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					102 = {
+						is_owned_by = GER
+					}
+				}
+			}
+			GER = {
+				transfer_state = 102
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					YUG = {
+						is_puppet_of = GER
+					}
+				}
+				ITA = {
+					is_ai = no
+				}
+			}
+			ITA = {
+				transfer_state = 109
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 103 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					YUG = {
+						is_puppet_of = GER
+					}
+				}
+				ITA = {
+					is_ai = yes
+				}
+			}
+			109 = {
+				add_core_of = CRO
+				transfer_state_to = CRO
+			}
+			104 = {
+				add_core_of = CRO
+				transfer_state_to = CRO
+			}
+			804 = {
+				add_core_of = CRO
+				transfer_state_to = CRO
+			}
+			103 = {
+				add_core_of = CRO
+				transfer_state_to = CRO
+			}
+			GER = {
+				puppet = CRO
+			}
+		}
+		HUN = {
+			transfer_state = 45
+		}
+		ROM = {
+			transfer_state = 764
+		}
+		ITA = {
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 802
+			transfer_state = 105
+			transfer_state = 907
+		}
+		BUL = {
+			transfer_state = 803 
+			transfer_state = 106
+		}
+		if = {
+			limit = {
+				YUG = {
+					is_in_faction_with = ENG
+				}
+			}
+			YUG = {
+				become_exiled_in = { 
+					target = ENG
+					legitimacy = 50  
+				}
+			}
+			else = {
+				SER = {
+					become_exiled_in = { 
+						target = ENG
+						legitimacy = 80 
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Fate of Transylvania - Hungary Invades
+	id = IKM.16
+	title = IKM.16.t
+	desc = IKM.16.d
+	picture = GFX_report_event_HUN_hungary_occupies_area
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.16.a
+		76 = {
+			add_core_of = HUN
+		}
+		add_war_support = 0.05
+		start_border_war = {
+		    change_state_after_war = no
+		    attacker = {
+		        state = 154
+		        num_provinces = 4
+		        on_win = IKM.17
+		        on_lose = IKM.19
+		        on_cancel = IKM.21
+		        modifier = 0.1
+		        dig_in_factor = 0
+		        terrain_factor = 0
+		    }	
+		    defender = {
+		        state = 76
+		        num_provinces = 3
+		        on_win = IKM.20
+		        on_lose = IKM.18
+		        on_cancel = IKM.22
+		    }
+		}
+	}
+}
+
+country_event = { #Fate of Transylvania - Hungary Wins - Hungary Version
+	id = IKM.17
+	title = IKM.17.t
+	desc = IKM.17.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.17.a
+		add_stability = 0.1
+		add_war_support = 0.2
+		HUN = {
+			transfer_state = 76
+		}
+	}
+}
+
+country_event = { #Fate of Transylvania - Hungary Wins - Romania Version
+	id = IKM.18
+	title = IKM.18.t
+	desc = IKM.18.d
+	picture = GFX_report_event_romania_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.18.a
+		add_stability = -0.05
+		add_war_support = -0.1
+		GER = {
+			set_autonomy = {
+			    target = ROM
+			    autonomous_state = autonomy_satellite
+			    freedom_level = 25 
+			    end_wars = yes
+			    end_civil_wars = yes
+			}
+		}
+		ROM = {
+			give_resource_rights = {
+			    receiver = GER
+			    state = 46
+			    resources = { oil }
+			}
+			set_cosmetic_tag = ROM_fascism
+		}
+	}
+}
+
+country_event = { #Fate of Transylvania - Hungary Looses - Hungary Version
+	id = IKM.19
+	title = IKM.19.t
+	desc = IKM.19.d
+	picture = GFX_report_event_hungary_refused
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.17.a
+		76 = {
+			remove_core_of = HUN
+		}
+		add_stability = -0.05
+		add_war_support = -0.1
+	}
+}
+
+country_event = { #Fate of Transylvania - Hungary Looses - Romania Version
+	id = IKM.20
+	title = IKM.20.t
+	desc = IKM.20.d
+	picture = GFX_report_event_romanian_soldiers
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.20.a
+		add_stability = 0.1
+		add_war_support = 0.2
+		GER = {
+			set_autonomy = {
+			    target = ROM
+			    autonomous_state = autonomy_satellite
+			    freedom_level = 75
+			    end_wars = yes
+			    end_civil_wars = yes
+			}
+		}
+		ROM = {
+			give_resource_rights = {
+			    receiver = GER
+			    state = 46
+			    resources = { oil }
+			}
+			set_cosmetic_tag = ROM_fascism
+		}
+	}
+}
+
+country_event = { #Fate of Transylvania - Stalemate - Hungary Version
+	id = IKM.21
+	title = IKM.21.t
+	desc = IKM.21.d
+	picture = GFX_report_event_canada_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.21.a
+	}
+}
+
+country_event = { #Fate of Transylvania - Stalemate - Romania Version
+	id = IKM.22
+	title = IKM.22.t
+	desc = IKM.22.d
+	picture = GFX_report_event_canada_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.22.a
+		GER = {
+			set_autonomy = {
+			    target = ROM
+			    autonomous_state = autonomy_satellite
+			    freedom_level = 50
+			    end_wars = yes
+			    end_civil_wars = yes
+			}
+		}
+		ROM = {
+			give_resource_rights = {
+			    receiver = GER
+			    state = 46
+			    resources = { oil }
+			}
+			set_cosmetic_tag = ROM_fascism
+		}
+	}
+}
+
+country_event = { #Ceasfire in China
+	id = IKM.23
+	title = IKM.23.t
+	desc = IKM.23.d
+	picture = GFX_report_event_chinese_japanese_handshake
+	
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_offensive_war_with = CHI
+		}
+		CHI = {
+			surrender_progress > 0.65
+		}
+	}
+
+	immediate = {
+		JAP = {
+			transfer_state = 591
+			transfer_state = 594
+			transfer_state = 599
+			transfer_state = 592
+			transfer_state = 593
+			transfer_state = 595
+			transfer_state = 596
+			transfer_state = 613
+			transfer_state = 743	
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = PRC
+				}
+				MAN = {
+					is_subject_of = JAP
+				}
+				NOT = {
+					PRC = {
+						controls_state = 621 
+					}
+				}
+			}
+			MAN = {
+				transfer_state = 621 
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = PRC
+				}
+				NOT = {
+					MAN = {
+						is_subject_of = JAP
+					}
+				}
+				NOT = {
+					PRC = {
+						controls_state = 621 
+					}
+				}
+			}
+			JAP = {
+				transfer_state = 621 
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = PRC
+				}
+				MAN = {
+					is_subject_of = JAP
+				}
+				NOT = {
+					PRC = {
+						controls_state = 615
+					}
+				}
+			}
+			MAN = {
+				transfer_state = 615
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = PRC
+				}
+				NOT = {
+					MAN = {
+						is_subject_of = JAP
+					}
+				}
+				NOT = {
+					PRC = {
+						controls_state = 615 
+					}
+				}
+			}
+			JAP = {
+				transfer_state = 615
+			}
+		}
+		if = {
+			limit = {
+				MAN = {
+					is_subject_of = JAP
+					is_ai = no 
+				}
+			}
+			MAN = {
+				transfer_state = 602
+				transfer_state = 600 
+				transfer_state = 749
+				transfer_state = 620
+				transfer_state = 606
+				transfer_state = 1059
+				transfer_state = 607
+				transfer_state = 1058
+				transfer_state = 598
+				transfer_state = 597
+				transfer_state = 1057
+				transfer_state = 614
+				transfer_state = 608
+			}
+			else = {
+				JAP = {
+					transfer_state = 602
+					transfer_state = 600 
+					transfer_state = 749
+					transfer_state = 620
+					transfer_state = 606
+					transfer_state = 1059
+					transfer_state = 607
+					transfer_state = 1058
+					transfer_state = 598
+					transfer_state = 597
+					transfer_state = 1057
+					transfer_state = 614
+					transfer_state = 608
+				}
+			}
+		}
+	}
+
+	option = {
+		name = IKM.23.a
+		JAP = {
+			white_peace = CHI
+		}
+		if = {
+			limit = {
+				MAN = {
+					is_subject_of = JAP
+					is_ai = no 
+				}
+			}
+			MAN = {
+				transfer_state = 609
+				set_capital = {
+					state = 608
+				}
+				country_event = IKM.29
+			}
+		}
+		JAP = {
+			white_peace = PRC
+		}
+		if = {
+			limit = {
+				MON = {
+					is_in_faction_with = SOV
+				}
+				NOT = {
+					country_exists = SIK
+				}
+			}
+			MON = {
+				transfer_state = 618
+				transfer_state = 760
+				transfer_state = 617
+				transfer_state = 759
+				transfer_state = 287
+				transfer_state = 619
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					MON = {
+						is_in_faction_with = SOV
+					}
+				}
+				NOT = {
+					country_exists = SIK
+				}
+			}
+			SOV = {
+				transfer_state = 618
+				transfer_state = 760
+				transfer_state = 617
+				transfer_state = 759
+				transfer_state = 287
+				transfer_state = 619
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					MON = {
+						is_subject_of = SOV
+					}
+				}
+				NOT = {
+					country_exists = SIK
+				}
+			}
+			SOV = {
+				set_autonomy = {
+				    target = MON
+				    autonomous_state = autonomy_supervised_state
+				    end_wars = no
+				    end_civil_wars = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SIK
+			}
+			SOV = {
+				puppet = SIK
+			}
+		}
+		if = {
+			limit = {
+				SOV = {
+					has_war_with = CHI
+				}
+			}
+			SOV = {
+				white_peace = CHI
+			}
+			PRC = {
+				transfer_state = 283
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 604
+				transfer_state = 754
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_exists = TIB
+				}
+			}
+			RAJ = {
+				transfer_state = 322
+				transfer_state = 758
+				transfer_state = 757
+			}
+		}
+		CHI = {
+			country_event = IKM.24
+		}
+	}
+}
+
+country_event = { #China is defeated
+	id = IKM.24
+	title = IKM.24.t
+	desc = IKM.24.d
+	picture = GFX_report_event_china_politicians_captured
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.24.a
+		add_stability = -0.25
+		add_war_support = -0.5
+		set_capital = {
+			state = 605
+		}
+		USA = {
+			give_guarantee = CHI
+		}
+	}
+}
+
+country_event = { #Algeria is free
+	id = IKM.25
+	title = IKM.25.t
+	desc = IKM.25.d
+	picture = GFX_report_event_france_parade
+	
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		FRA = {
+			is_in_faction_with = ENG
+			is_in_faction_with = POL
+		}
+		GER = {
+			has_war_with = POL
+			has_war_with = ENG
+		}
+		OR = {
+			POL = {
+				surrender_progress > 0.5
+			}
+			POL = {
+				has_capitulated = yes
+			}
+		}
+	}
+
+	option = {
+		name = IKM.25.a
+		add_stability = -0.05
+		ALG = {
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 513
+			transfer_state = 514
+		}
+		459 = {
+			remove_core_of = ISR
+			add_core_of = ALG
+			add_claim_by = FRA
+		}
+		460 = {
+			remove_core_of = ISR
+			add_core_of = ALG
+			add_claim_by = FRA
+		}
+		513 = {
+			remove_core_of = ISR
+			add_core_of = ALG
+			add_claim_by = FRA
+		}
+		514 = {
+			remove_core_of = ISR
+			add_core_of = ALG
+			add_claim_by = FRA
+		}
+	}
+}
+
+country_event = { #Italy invades Tunisia
+	id = IKM.26
+	title = IKM.26.t
+	desc = IKM.26.d
+	picture = GFX_report_event_ITA_grand_council
+	
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		FRA = {
+			is_in_faction_with = ENG
+			is_in_faction_with = POL
+		}
+		GER = {
+			has_war_with = POL
+			has_war_with = ENG
+		}
+		POL = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = IKM.26.a
+		add_stability = -0.05
+		ITA = {
+			transfer_state = 458
+			transfer_state = 665
+			country_event = IKM.27
+		}
+		458 = {
+			remove_core_of = ISR
+			add_core_of = TUN
+			add_claim_by = FRA
+		}
+		665 = {
+			remove_core_of = ISR
+			add_core_of = TUN
+			add_claim_by = FRA
+		}
+	}
+}
+
+country_event = { #Italy celebrates getting Tunisia
+	id = IKM.27
+	title = IKM.27.t
+	desc = IKM.27.d
+	picture = GFX_report_event_generic_mussolini
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.27.a
+		add_stability = 0.05
+		add_war_support = 0.1
+		activate_mission = italy_joins_ww2
+	}
+}
+
+country_event = { #Vichy is Born
+	id = IKM.28
+	title = IKM.28.t
+	desc = IKM.28.d
+	picture = GFX_report_event_soldiers_in_france
+	
+
+	fire_only_once = yes
+	trigger = {
+		tag = ALG
+		26 = {
+			is_capital = yes
+		}
+	}
+
+	option = {
+		name = IKM.28.a
+		random_country = {
+			limit = {
+				has_focus_tree = vichy_french_focus
+			}
+			annex_country = {
+			    target = ALG
+			    transfer_troops = no
+			}
+			461 = {
+				set_demilitarized_zone = yes
+			}
+			462 = {
+				set_demilitarized_zone = yes
+			}
+			459 = {
+				set_demilitarized_zone = yes
+			}
+			460 = {
+				set_demilitarized_zone = yes
+			}
+			513 = {
+				set_demilitarized_zone = yes
+			}
+			give_military_access = GER
+			give_military_access = ITA
+			change_tag_from = SWI
+		}
+	}
+}
+
+country_event = { #Manchukuo becomes Collaberationist China
+	id = IKM.29
+	title = IKM.29.t
+	desc = IKM.29.d
+	picture = GFX_report_event_hitler_china
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.29.a
+		every_state = {
+			limit = {
+				is_owned_by = MAN
+				is_core_of = CHI
+			}
+			add_core_of = MAN
+		}
+		every_state = {
+			limit = {
+				NOT = {
+					is_owned_by = MAN
+				}
+				is_core_of = CHI
+			}
+			add_claim_by = MAN
+		}
+		if = {
+			limit = {
+				country_exists = MEN
+			}
+			MAN = {
+				annex_country = {
+				    target = MEN
+				    transfer_troops = yes
+				}
+			}
+		}
+		JAP = {
+			set_autonomy = {
+			    target = MAN
+			    autonomous_state = autonomy_wtt_imperial_associate
+			    end_wars = yes
+			    end_civil_wars = yes
+			}
+		}
+		SOV = {
+			set_autonomy = {
+			    target = PRC
+			    autonomous_state = autonomy_supervised_state
+			    end_wars = no
+			    end_civil_wars = no
+			}
+		}
+		give_resource_rights = { 
+			receiver = JAP
+			state = 1057
+		}
+		give_resource_rights = { 
+			receiver = JAP
+			state = 597
+		}
+	}
+}
+
+country_event = { #Phillipines Ultimatum 
+	id = IKM.30
+	title = IKM.30.t
+	desc = IKM.30.d
+	picture = GFX_report_event_japanese_officers
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.30.a
+		ai_chance = {
+   			base = 50
+		}
+		623 = {
+			set_demilitarized_zone = yes
+		}
+		327 = {
+			set_demilitarized_zone = yes
+		}
+		624 = {
+			set_demilitarized_zone = yes
+		}
+		662 = {
+			set_demilitarized_zone = yes
+		}
+		JAP = {
+			 country_event = IKM.31
+		}
+	}
+
+	option = {
+		name = IKM.30.b
+		ai_chance = {
+   			base = 50
+		}
+		JAP = {
+			 country_event = IKM.32
+		}
+	}
+}
+
+country_event = { #Phillipines Agrees to Ultimatum 
+	id = IKM.31
+	title = IKM.31.t
+	desc = IKM.31.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.31.a
+		add_stability = 0.02
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Phillipines Rejects the Ultimatum 
+	id = IKM.32
+	title = IKM.32.t
+	desc = IKM.32.d
+	picture = GFX_report_event_japanese_reply
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.32.a
+		add_stability = -0.01
+		add_war_support = 0.1
+		add_state_claim = 623
+		add_state_claim = 327
+		add_state_claim = 624
+		add_state_claim = 626
+		add_state_claim = 628
+		add_state_claim = 625
+		add_state_claim = 627
+	}
+}
+
+country_event = { #Day of Infamy 
+	id = IKM.33
+	title = IKM.33.t
+	desc = IKM.33.d
+	picture = GFX_report_event_usa_pearl_harbor_airphoto
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.33.a
+		add_war_support = 0.8
+		USA_senate_medium_support = yes
+		if = {
+			limit = {
+				PHI = {
+					is_subject_of = USA
+				}
+			}
+			PHI = {
+				add_to_war = {
+				    targeted_alliance = USA
+				    enemy = JAP
+				}
+			}
+		}
+		if = {
+			limit = {
+				CHI = {
+					is_subject_of = USA
+				}
+			}
+			CHI = {
+				add_to_war = {
+				    targeted_alliance = USA
+				    enemy = JAP
+				}
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					is_in_faction = no
+				}
+			}
+			ENG = {
+				add_to_faction = USA
+				country_event = IKM.34
+			}
+		}
+	}
+}
+
+country_event = { #Allies Join the Pacific War
+	id = IKM.34
+	title = IKM.34.t
+	desc = IKM.34.d
+	picture = GFX_report_event_USA_charlie_brown
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.34.a
+		ENG = {
+			add_to_war = {
+			    targeted_alliance = USA
+			    enemy = JAP
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = ENG	
+			}
+			add_to_war = {
+			    targeted_alliance = USA
+			    enemy = JAP
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					CHI = {
+						controls_state = 287
+					}
+				}
+				RAJ = {
+					controls_state = 758
+					controls_state = 757
+				}
+			}
+			RAJ = {
+				country_event = IKM.35
+			}
+		}
+	}
+}
+
+country_event = { #Raj invades Sinkang
+	id = IKM.35
+	title = IKM.35.t
+	desc = IKM.35.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.35.a
+		transfer_state = 287
+	}
+}
+
+country_event = { #Fance has civil war - British Version 
+	id = IKM.36
+	title = IKM.36.t
+	desc = IKM.36.d
+	picture = GFX_report_event_chamberlain_announce
+	
+	fire_only_once = yes
+	trigger = {
+		FRA = {
+			has_government = democratic
+			has_civil_war = yes
+		}
+		ENG = {
+			has_government = democratic
+			NOT = {
+				has_war_with = GER
+			} 
+		}
+	}
+
+	option = {
+		name = IKM.36.a
+		ENG = {
+			puppet = {
+			    target = FRA
+			    end_civil_wars = yes
+			}
+		}
+		FRA = {
+			country_event = IKM.37
+		}
+	}
+}
+
+country_event = { #Fance has civil war - French Version
+	id = IKM.37
+	title = IKM.37.t
+	desc = IKM.37.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.36.a
+		FRA = {
+			add_timed_idea = {
+			    idea = strikes_3
+			    days = 180
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = FRA
+				NOT = {
+					is_owned_by = FRA
+				}
+			}
+			transfer_state_to = FRA
+		}
+	}
+}
+
+country_event = { #PRC folds
+	id = IKM.38
+	title = IKM.38.t
+	desc = IKM.38.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	fire_only_once = yes
+	trigger = {
+		tag = PRC 
+		PRC = {
+			has_defensive_war_with = JAP
+			surrender_progress > 0.75
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				MAN = {
+					is_in_faction_with = JAP
+				}
+			}
+			MAN = {
+				transfer_state = 621
+				transfer_state = 615
+			}
+			else = {
+				JAP = {
+					transfer_state = 621
+					transfer_state = 615
+				}
+			}
+		}
+		JAP = {
+			white_peace = PRC
+			remove_wargoal = {
+			    type = all
+			    target = PRC
+			}
+			set_truce = {
+			    target = PRC
+			    days = 365
+			}
+		}
+	}
+
+	option = {
+		name = IKM.38.a
+		leave_faction = yes
+		JAP = {
+			white_peace = PRC
+		}
+		SOV = {
+			add_to_faction = PRC
+		}
+	}
+}
+
+country_event = { #International Loan Event 
+	id = IKM.39
+	title = IKM.39.t
+	desc = IKM.39.d
+	picture = GFX_report_event_canada_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.39.a
+		if = {
+			limit = {
+				tag = ENG
+			}
+			unlock_decision_tooltip = issue_small_british_loan
+			unlock_decision_tooltip = issue_medium_british_loan
+			unlock_decision_tooltip = issue_large_british_loan
+		}
+		if = {
+			limit = {
+				tag = FRA
+			}
+			unlock_decision_tooltip = issue_small_french_loan
+			unlock_decision_tooltip = issue_medium_french_loan
+			unlock_decision_tooltip = issue_large_french_loan
+		}
+		if = {
+			limit = {
+				tag = USA
+			}
+			unlock_decision_tooltip = issue_small_american_loan
+			unlock_decision_tooltip = issue_medium_american_loan
+			unlock_decision_tooltip = issue_large_american_loan
+		}
+	}
+}
+
+country_event = { #Invite Instructors Event 
+	id = IKM.40
+	title = IKM.40.t
+	desc = IKM.40.d
+	picture = GFX_report_event_canada_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.40.a
+		if = {
+			limit = {
+				tag = GER
+			}
+			unlock_decision_tooltip = reject_sending_german_army_instructors
+			unlock_decision_tooltip = reject_sending_german_navy_instructors
+			unlock_decision_tooltip = reject_sending_german_airforce_instructors
+			unlock_decision_tooltip = send_a_few_german_army_instructors
+			unlock_decision_tooltip = send_some_german_army_instructors
+			unlock_decision_tooltip = send_many_german_army_instructors
+			unlock_decision_tooltip = send_a_few_german_navy_instructors
+			unlock_decision_tooltip = send_some_german_navy_instructors
+			unlock_decision_tooltip = send_many_german_navy_instructors
+			unlock_decision_tooltip = send_a_few_german_airforce_instructors
+			unlock_decision_tooltip = send_some_german_airforce_instructors
+			unlock_decision_tooltip = send_many_german_airforce_instructors
+		}
+		if = {
+			limit = {
+				tag = ITA
+			}
+			unlock_decision_tooltip = reject_sending_german_army_instructors
+			unlock_decision_tooltip = reject_sending_german_navy_instructors
+			unlock_decision_tooltip = reject_sending_german_airforce_instructors
+			unlock_decision_tooltip = send_a_few_german_army_instructors
+			unlock_decision_tooltip = send_some_german_army_instructors
+			unlock_decision_tooltip = send_many_german_army_instructors
+			unlock_decision_tooltip = send_a_few_german_navy_instructors
+			unlock_decision_tooltip = send_some_german_navy_instructors
+			unlock_decision_tooltip = send_many_german_navy_instructors
+			unlock_decision_tooltip = send_a_few_german_airforce_instructors
+			unlock_decision_tooltip = send_some_german_airforce_instructors
+			unlock_decision_tooltip = send_many_german_airforce_instructors
+		}
+		if = {
+			limit = {
+				tag = JAP
+			}
+			unlock_decision_tooltip = reject_sending_german_army_instructors
+			unlock_decision_tooltip = reject_sending_german_navy_instructors
+			unlock_decision_tooltip = reject_sending_german_airforce_instructors
+			unlock_decision_tooltip = send_a_few_german_army_instructors
+			unlock_decision_tooltip = send_some_german_army_instructors
+			unlock_decision_tooltip = send_many_german_army_instructors
+			unlock_decision_tooltip = send_a_few_german_navy_instructors
+			unlock_decision_tooltip = send_some_german_navy_instructors
+			unlock_decision_tooltip = send_many_german_navy_instructors
+			unlock_decision_tooltip = send_a_few_german_airforce_instructors
+			unlock_decision_tooltip = send_some_german_airforce_instructors
+			unlock_decision_tooltip = send_many_german_airforce_instructors
+		}
+	}
+}
+
+country_event = { #Spain is Falling 
+	id = IKM.41
+	title = IKM.41.t
+	desc = IKM.41.d
+	picture = GFX_report_event_canada_army
+	
+	fire_only_once = yes
+	trigger = {
+		tag = ITA
+		SPA = {
+			surrender_progress > 0.5
+			has_civil_war = yes
+		}
+	}
+
+	immediate = {
+		ITA = {
+			add_to_faction = SPA
+		}
+	}
+
+	option = {
+		name = IKM.41.a
+		if = {
+			limit = {
+				D01 = {
+					has_war_with = SPA
+				}
+			}
+			ITA = {
+				add_to_war = {
+				    targeted_alliance = SPA
+				    enemy = D01
+				    hostility_reason = asked_to_join
+				}
+			}
+		}
+		if = {
+			limit = {
+				D02 = {
+					has_war_with = SPA
+				}
+			}
+			ITA = {
+				add_to_war = {
+				    targeted_alliance = SPA
+				    enemy = D02
+				    hostility_reason = asked_to_join
+				}
+			}
+		}
+		if = {
+			limit = {
+				D03 = {
+					has_war_with = SPA
+				}
+			}
+			ITA = {
+				add_to_war = {
+				    targeted_alliance = SPA
+				    enemy = D03
+				    hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Spanish Civil War Volunteers event
+	id = IKM.42
+	title = IKM.42.t
+	desc = IKM.42.d
+	picture = GFX_report_event_canada_army
+	
+	#AI FLOW CONTROL DECISION !!!!
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.42.a
+		trigger = {
+			OR = {
+				tag = GER
+				tag = ITA
+			}
+		}
+		add_ideas = IKM_spanish_civil_war_volunteers_5_axis
+	}
+
+	option = {
+		name = IKM.42.b
+		trigger = {
+			tag = SOV
+		}
+		add_ideas = IKM_spanish_civil_war_volunteers_5_soviet
+	}
+
+	option = {
+		name = IKM.42.c
+		trigger = {
+			tag = JAP
+		}
+		add_ideas = IKM_spanish_civil_war_volunteers_4
+	}
+
+	option = {
+		name = IKM.42.d
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = FRA
+			}
+		}
+		add_ideas = IKM_spanish_civil_war_volunteers_3
+	}
+
+	option = {
+		name = IKM.42.e
+		trigger = {
+			OR = {
+				tag = HUN
+				tag = ROM
+				tag = FIN
+				tag = MAN
+			}
+		}
+		add_ideas = IKM_spanish_civil_war_volunteers_2
+	}
+
+	option = {
+		name = IKM.42.f
+		trigger = {
+			OR = {
+				tag = CAN
+				tag = SAF
+				tag = RAJ
+				tag = AST
+			}
+		}
+		add_ideas = IKM_spanish_civil_war_volunteers_1
+	}
+}
+
+country_event = { #USA africa volunteers
+	id = IKM.43
+	title = IKM.43.t
+	desc = IKM.43.d
+	picture = GFX_report_event_canada_army
+	
+	#AI FLOW CONTROL DECISION !!!!
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.43.a
+		add_ideas = IKM_usa_africa_volunteers
+	}
+}
+
+country_event = { #USA barbarossa volunteers 1 
+	id = IKM.44
+	title = IKM.44.t
+	desc = IKM.44.d
+	picture = GFX_report_event_canada_army
+	
+	#AI FLOW CONTROL DECISION !!!!
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.44.a
+		add_ideas = IKM_usa_barbarossa_volunteers
+	}
+}
+
+country_event = { #USA barbarossa volunteers 2 (send more)
+	id = IKM.45
+	title = IKM.45.t
+	desc = IKM.45.d
+	picture = GFX_report_event_canada_army
+	
+	#AI FLOW CONTROL DECISION !!!!
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.45.a
+		swap_ideas = {
+		    remove_idea = IKM_usa_barbarossa_volunteers
+		    add_idea = IKM_usa_barbarossa_volunteers_2
+		}
+	}
+}
+
+country_event = { #Spanish WW2 volunteers
+	id = IKM.46
+	title = IKM.46.t
+	desc = IKM.46.d
+	picture = GFX_report_event_canada_army
+	
+	#AI FLOW CONTROL DECISION !!!!
+	
+	is_triggered_only = yes
+
+	option = {
+		name = IKM.46.a
+		add_ideas = IKM_spanish_ww2_volunteers
+	}
+}
+
+country_event = { #Iraq AND iRAN nartionalizes oil
+	id = IKM.47
+	title = IKM.47.t
+	desc = IKM.47.d
+	picture = GFX_report_event_canada_army
+	
+	#AI FLOW CONTROL DECISION !!!!
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		FRA = {
+			has_war_with = GER
+			has_capitulated = yes	
+		}
+	}
+
+	option = {
+		name = IKM.47.a
+		ENG = {
+			remove_resource_rights = 676
+			remove_resource_rights = 1010
+			remove_resource_rights = 291
+			remove_resource_rights = 1011	
+			remove_resource_rights = 1001
+			remove_resource_rights = 421
+			remove_resource_rights = 413
+		}
+		IRQ = {
+			add_ideas = uncontrolled_exports
+			set_country_flag = IRQ_nationalized_oil
+		}
+		PER = {
+			add_ideas = uncontrolled_exports
+		}
+	}
+}
+
+country_event = { #Spanish volunteers recalled
+	id = IKM.48
+	title = IKM.48.t
+	desc = IKM.48.d
+	picture = GFX_report_event_canada_army
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = SOV
+			tag = FRA
+			tag = CAN
+			tag = SAF
+			tag = RAJ
+			tag = AUS
+		}
+		SPA = {
+			is_in_faction_with = ITA
+			has_civil_war = yes	
+		}
+	}
+
+	option = {
+		name = IKM.48.a
+		if = {
+			limit = {
+				D01 = {
+					has_war_with = SPA
+				}
+			}
+			recall_volunteers_from = D01
+		}
+		if = {
+			limit = {
+				D02 = {
+					has_war_with = SPA
+				}
+			}
+			recall_volunteers_from = D02
+		}
+		if = {
+			limit = {
+				D03 = {
+					has_war_with = SPA
+				}
+			}
+			recall_volunteers_from = D03
+		}
+	}
+}
+
+

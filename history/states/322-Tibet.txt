@@ -1,0 +1,31 @@
+state={
+	id=322
+	name="STATE_322"
+
+	provinces={
+		2010 2093 4994 5011 5094 7926 8068 8121 10755 10918 12784 
+	}
+	history={
+
+		buildings = {
+
+		}
+		
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+
+		1936.01.02 = {
+			owner = TIB
+			add_core_of = TIB
+			add_core_of = CHI
+			add_core_of = PRC
+		}
+
+	}
+	impassable = yes
+	manpower=22000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=2.000
+}

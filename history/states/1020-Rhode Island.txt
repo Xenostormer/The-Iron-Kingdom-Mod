@@ -1,0 +1,22 @@
+state={
+	id=1020
+	name="STATE_1020"
+	provinces={
+		13585 
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		victory_points = {
+			13585 1 
+		}
+	}
+	manpower=700059
+	state_category= large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

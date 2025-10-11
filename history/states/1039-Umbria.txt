@@ -1,0 +1,23 @@
+state={
+	id=1039
+	name="STATE_1039"
+	provinces={
+		3885 9750 9879 
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		1936.01.02 = {
+			add_core_of = PAP
+			add_core_of = TOS
+			#add_claim_by = 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=268136
+	state_category= rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

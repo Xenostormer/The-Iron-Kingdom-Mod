@@ -1,0 +1,58 @@
+state={
+	id=217
+	name="STATE_217"
+	provinces={
+		498 520 3503 3529 3555 6503 6527 6541 9459 9474 9504 9530 11447 11474 11484 13469 13470 13471 13472 13473 
+	}
+
+	resources={
+		steel= 1
+	}
+
+
+	history = {
+
+		owner = SOV
+		add_core_of = SOV
+
+		victory_points = {
+			3529 30 # Stalingrad
+		}
+		victory_points = {
+			13469 1
+		}
+		victory_points = {
+			13470 1 
+		}
+		victory_points = {
+			13473 1 
+		}
+		victory_points = {
+			13472 1 
+		}
+		victory_points = {
+			13474 1 
+		}
+
+		buildings = {
+			infrastructure = 4 #was: 7
+			arms_factory = 2
+			industrial_complex = 9
+			air_base = 1
+
+			# 22nd Congress of the CPSU Stalingrad Hydroelectric Power Station
+			#3555 = { dam = 1 }
+
+		}
+		
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+	manpower= 3750158
+	buildings_max_level_factor=1.000
+	state_category= metropolis
+	local_supplies=7.000
+}

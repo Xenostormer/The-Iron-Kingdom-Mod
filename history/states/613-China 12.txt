@@ -1,0 +1,51 @@
+state={
+	id=613
+	name="STATE_613"
+	provinces={
+		996 1089 4091 7014 7120 10034 10076 11913 11928 11982 12052 12076 13142 13514 13515 
+	}
+	history = {
+
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+
+		set_demilitarized_zone = yes
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 31
+			air_base = 6
+			dockyard = 1
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+		victory_points = {
+			11913 20 # Nanjing
+		}
+		victory_points = {
+			7014 5 # Shanghai
+		}
+		victory_points = {
+			10076 3 # Suzhou
+		}
+		victory_points = {
+			13514 1 
+		}
+		victory_points = {
+			13515 1 
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	manpower=21318444
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

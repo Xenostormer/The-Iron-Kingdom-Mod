@@ -1,0 +1,36 @@
+state={
+	id=128
+	name="STATE_128"
+	resources={
+		steel=27.000
+	}
+	provinces={
+		3241 3301 6270 6301 7239 9297 11345 13417 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4 #was: 8
+			arms_factory = 10
+			industrial_complex = 15
+			air_base = 6
+		}
+		victory_points = {
+			9297 25
+		}
+		victory_points = {
+			13417 1 
+		}
+		add_core_of = ENG
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+				industrial_complex = 4
+			}
+		}
+	}
+	manpower=3685235
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

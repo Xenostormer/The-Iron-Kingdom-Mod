@@ -1,0 +1,37 @@
+state=
+{
+	id=102
+	name="STATE_102"
+	manpower = 811050 # was 1144300 before Ljubljana split
+	
+	state_category = large_town
+
+	resources = {
+		aluminium = 1
+		steel = 5
+	}
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 5
+		}
+		victory_points = {
+			665 1
+		}
+		add_core_of = YUG
+		1936.01.02 = {
+			add_core_of = SLV
+			#add_core_of = 
+			#add_core_of = 
+		}
+	}
+	provinces={
+		596 665 3631 3654 6672 9596
+	}
+	
+	local_supplies=0.0 
+}

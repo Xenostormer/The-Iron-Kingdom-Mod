@@ -1,0 +1,1313 @@
+ideas = {
+	
+	country = {
+
+		IKM_pacific_war_inactive = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 1
+				army_core_defence_factor = 1 
+			}
+		}
+
+		IKM_JAP_pacific_war_lost = {
+			name = IKM_USA_pacific_war_lost
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.2
+			}
+			targeted_modifier = {
+		    	tag = SOV
+		    	attack_bonus_against = -0.64
+		    }
+		    targeted_modifier = {
+		    	tag = PRC
+		    	attack_bonus_against = -0.64
+		    }
+		}
+
+		IKM_JAP_pacific_war = {
+			name = IKM_USA_pacific_war
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war_lost
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war_lost
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.25
+				surrender_limit = 0.1
+			}
+			targeted_modifier = {
+		    	tag = SOV
+		    	attack_bonus_against = -0.32
+		    }
+		    targeted_modifier = {
+		    	tag = PRC
+		    	attack_bonus_against = -0.32
+		    }
+		}
+
+		IKM_JAP_pacific_war_1 = {
+			name = IKM_USA_pacific_war_1
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.3
+				surrender_limit = 0.2
+			}
+			targeted_modifier = {
+		    	tag = SOV
+		    	attack_bonus_against = -0.16
+		    }
+		    targeted_modifier = {
+		    	tag = PRC
+		    	attack_bonus_against = -0.16
+		    }
+		}
+
+		IKM_JAP_pacific_war_2 = {
+			name = IKM_USA_pacific_war_2
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.35
+				surrender_limit = 0.3
+			}
+			targeted_modifier = {
+		    	tag = SOV
+		    	attack_bonus_against = -0.08
+		    }
+		    targeted_modifier = {
+		    	tag = PRC
+		    	attack_bonus_against = -0.08
+		    }
+		}
+
+		IKM_JAP_pacific_war_3 = {
+			name = IKM_USA_pacific_war_3
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.4
+				surrender_limit = 0.4
+			}
+			targeted_modifier = {
+		    	tag = SOV
+		    	attack_bonus_against = -0.04
+		    }
+		    targeted_modifier = {
+		    	tag = PRC
+		    	attack_bonus_against = -0.04
+		    }
+		}
+
+		IKM_JAP_pacific_war_4 = {
+			name = IKM_USA_pacific_war_4
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_lost 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.35
+				army_core_defence_factor = 0.45
+				surrender_limit = 0.5
+			}
+			targeted_modifier = {
+		    	tag = SOV
+		    	attack_bonus_against = -0.02
+		    }
+		    targeted_modifier = {
+		    	tag = PRC
+		    	attack_bonus_against = -0.02
+		    }
+		}
+
+		IKM_JAP_pacific_war_5 = {
+			name = IKM_USA_pacific_war_5
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.4
+				army_core_defence_factor = 0.5
+				surrender_limit = 0.6
+			}
+		}
+
+		IKM_JAP_pacific_war_6 = {
+			name = IKM_USA_pacific_war_6
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_lost 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.45
+				army_core_defence_factor = 0.55
+				surrender_limit = 0.7
+			}
+			targeted_modifier = {
+		    	tag = USA
+		    	defense_bonus_against = -0.02
+		    }
+		}
+
+		IKM_JAP_pacific_war_7 = {
+			name = IKM_USA_pacific_war_7
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_lost 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.6
+				surrender_limit = 0.8
+			}
+			targeted_modifier = {
+		    	tag = USA
+		    	defense_bonus_against = -0.04
+		    }
+		}
+
+		IKM_JAP_pacific_war_8 = {
+			name = IKM_USA_pacific_war_8
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.55
+				army_core_defence_factor = 0.65
+				surrender_limit = 0.9
+			}
+			targeted_modifier = {
+		    	tag = USA
+		    	defense_bonus_against = -0.06
+		    }
+		}
+
+		IKM_JAP_pacific_war_9 = {
+			name = IKM_USA_pacific_war_9
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.6
+				army_core_defence_factor = 0.7
+				surrender_limit = 1
+			}
+			targeted_modifier = {
+		    	tag = USA
+		    	defense_bonus_against = -0.08
+		    }
+		}
+
+		IKM_JAP_pacific_war_10 = {
+			name = IKM_USA_pacific_war_10
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_won
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_won
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.65
+				army_core_defence_factor = 0.75
+				surrender_limit = 1.1
+			}
+			targeted_modifier = {
+		    	tag = USA
+		    	defense_bonus_against = -0.1
+		    }
+		}
+
+		IKM_JAP_pacific_war_won = {
+			name = IKM_USA_pacific_war_won
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_JAP_pacific_war_lost
+							has_idea = IKM_JAP_pacific_war_10
+							has_idea = IKM_JAP_pacific_war_9
+							has_idea = IKM_JAP_pacific_war_8
+							has_idea = IKM_JAP_pacific_war_7 
+							has_idea = IKM_JAP_pacific_war_6 
+							has_idea = IKM_JAP_pacific_war_5
+							has_idea = IKM_JAP_pacific_war_4 
+							has_idea = IKM_JAP_pacific_war_3
+							has_idea = IKM_JAP_pacific_war_2
+							has_idea = IKM_JAP_pacific_war_1
+							has_idea = IKM_JAP_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_JAP_pacific_war_lost
+						IKM_JAP_pacific_war_10
+						IKM_JAP_pacific_war_9
+						IKM_JAP_pacific_war_8
+						IKM_JAP_pacific_war_7 
+						IKM_JAP_pacific_war_6 
+						IKM_JAP_pacific_war_5
+						IKM_JAP_pacific_war_4 
+						IKM_JAP_pacific_war_3
+						IKM_JAP_pacific_war_2
+						IKM_JAP_pacific_war_1
+						IKM_JAP_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.7
+				army_core_defence_factor = 0.8
+				surrender_limit = 1.1
+			}
+			targeted_modifier = {
+		    	tag = USA
+		    	defense_bonus_against = -0.12
+		    }
+		}
+
+		IKM_USA_pacific_war_lost = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.2
+			}
+			targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against = -0.64
+		    }
+		    targeted_modifier = {
+		    	tag = ITA
+		    	attack_bonus_against = -0.64
+		    }
+		}
+
+		IKM_USA_pacific_war = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war_lost
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war_lost
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.25
+				surrender_limit = 0.1
+			}
+			targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against = -0.32
+		    }
+		    targeted_modifier = {
+		    	tag = ITA
+		    	attack_bonus_against = -0.32
+		    }
+		}
+
+		IKM_USA_pacific_war_1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.3
+				surrender_limit = 0.2
+			}
+			targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against = -0.16
+		    }
+		    targeted_modifier = {
+		    	tag = ITA
+		    	attack_bonus_against = -0.16
+		    }
+		}
+
+		IKM_USA_pacific_war_2 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.35
+				surrender_limit = 0.3
+			}
+			targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against = -0.08
+		    }
+		    targeted_modifier = {
+		    	tag = ITA
+		    	attack_bonus_against = -0.08
+		    }
+		}
+
+		IKM_USA_pacific_war_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.4
+				surrender_limit = 0.4
+			}
+			targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against = -0.04
+		    }
+		    targeted_modifier = {
+		    	tag = ITA
+		    	attack_bonus_against = -0.04
+		    }
+		}
+
+		IKM_USA_pacific_war_4 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_lost 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.35
+				army_core_defence_factor = 0.45
+				surrender_limit = 0.5
+			}
+			targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against = -0.02
+		    }
+		    targeted_modifier = {
+		    	tag = ITA
+		    	attack_bonus_against = -0.02
+		    }
+		}
+
+		IKM_USA_pacific_war_5 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.4
+				army_core_defence_factor = 0.5
+				surrender_limit = 0.6
+			}
+		}
+
+		IKM_USA_pacific_war_6 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_lost 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.45
+				army_core_defence_factor = 0.55
+				surrender_limit = 0.7
+			}
+			targeted_modifier = {
+		    	tag = JAP
+		    	defense_bonus_against = -0.02
+		    }
+		}
+
+		IKM_USA_pacific_war_7 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_lost 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.6
+				surrender_limit = 0.8
+			}
+			targeted_modifier = {
+		    	tag = JAP
+		    	defense_bonus_against = -0.04
+		    }
+		}
+
+		IKM_USA_pacific_war_8 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.55
+				army_core_defence_factor = 0.65
+				surrender_limit = 0.9
+			}
+			targeted_modifier = {
+		    	tag = JAP
+		    	defense_bonus_against = -0.06
+		    }
+		}
+
+		IKM_USA_pacific_war_9 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.6
+				army_core_defence_factor = 0.7
+				surrender_limit = 1
+			}
+			targeted_modifier = {
+		    	tag = JAP
+		    	defense_bonus_against = -0.08
+		    }
+		}
+
+		IKM_USA_pacific_war_10 = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_won
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_won
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.65
+				army_core_defence_factor = 0.75
+				surrender_limit = 1.1
+			}
+			targeted_modifier = {
+		    	tag = JAP
+		    	defense_bonus_against = -0.1
+		    }
+		}
+
+		IKM_USA_pacific_war_won = {
+			allowed = { always = no }
+			removal_cost = -1
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_USA_pacific_war_lost
+							has_idea = IKM_USA_pacific_war_10
+							has_idea = IKM_USA_pacific_war_9
+							has_idea = IKM_USA_pacific_war_8
+							has_idea = IKM_USA_pacific_war_7 
+							has_idea = IKM_USA_pacific_war_6 
+							has_idea = IKM_USA_pacific_war_5
+							has_idea = IKM_USA_pacific_war_4 
+							has_idea = IKM_USA_pacific_war_3
+							has_idea = IKM_USA_pacific_war_2
+							has_idea = IKM_USA_pacific_war_1
+							has_idea = IKM_USA_pacific_war
+						}
+					}
+					remove_ideas = {
+						IKM_USA_pacific_war_lost
+						IKM_USA_pacific_war_10
+						IKM_USA_pacific_war_9
+						IKM_USA_pacific_war_8
+						IKM_USA_pacific_war_7 
+						IKM_USA_pacific_war_6 
+						IKM_USA_pacific_war_5
+						IKM_USA_pacific_war_4 
+						IKM_USA_pacific_war_3
+						IKM_USA_pacific_war_2
+						IKM_USA_pacific_war_1
+						IKM_USA_pacific_war
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.7
+				army_core_defence_factor = 0.8
+				surrender_limit = 1.1
+			}
+			targeted_modifier = {
+		    	tag = JAP
+		    	defense_bonus_against = -0.12
+		    }
+		}
+	}
+}

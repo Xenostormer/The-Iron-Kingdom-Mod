@@ -1,0 +1,31 @@
+state={
+	id=1052
+	name="STATE_1052"
+	provinces={
+		1100 7125 7175 7204 7221 9936 10036 11992 13528 
+	}
+
+	resources={
+		aluminium = 3 
+	}
+
+	history={
+		owner = JAP
+		add_core_of = KOR
+		victory_points = {
+			7125 3 
+		}
+		victory_points = {
+			 13528 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 7
+		}
+	}
+	manpower=7499155
+	state_category= metropolis 
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

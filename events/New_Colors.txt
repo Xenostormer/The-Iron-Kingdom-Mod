@@ -1,0 +1,1469 @@
+﻿
+add_namespace = country_colors
+
+### contents ###
+# country_colors.1 = ger2 (rhineland)
+# country_colors.2 = ger3 (anschluss)
+# country_colors.3 = ger4 (ww2 start)
+# country_colors.4 = ger5 (fall of france)
+# country_colors.5 = ger6 (barbarossa)
+# country_colors.6 = sov2 (great purge)
+# country_colors.7 = sov3 (m-r pact)
+# country_colors.8 = sov4 (invaded by germany)
+# country_colors.9 = usa2 (america on civ eco)
+# country_colors.10 = usa3 (america at war)
+# country_colors.11 = usa4 (dday or husky)
+# country_colors.12 = jap2 (war with china)
+# country_colors.13 = jap3 (china beaten)
+# country_colors.14 = jap4 (war with usa)
+# country_colors.15 = ita2 (vicotry in ethiopia)
+# country_colors.115 = ita3 (albania annexed)
+# country_colors.16 = ita4 (war with allies)
+# country_colors.17 = ita5 (loosing WW2)
+# country_colors.18 = eng2 (peace of our time)
+# country_colors.19 = eng3 (churchill on power)
+# country_colors.20 = eng4 (dday or husky)
+# country_colors.21 = fra2 (frane is ready for war)
+# country_colors.22 = fra3 (free france)
+# country_colors.23 = chi2 (at war with japan)
+# country_colors.24 = chi3 (china defeated)
+# country_colors.25 = fin2 (post winter war)
+# country_colors.26 = fin3 (post continution war)
+# country_colors.27 = saf2 (control over africa)
+# country_colors.28 = man2 (join japans war)
+# country_colors.29 = hun2 (join axis)
+# country_colors.30 = rom2 (join axis)
+# country_colors.31 = bul2 (join axis)
+# country_colors.32 = yug2 (Enemies around us)
+# country_colors.33 = sia2 (ally japan)
+
+country_event = {
+    id = country_colors.1
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = GER
+    	GER = {
+    		has_government = fascism
+    	}
+    	51 = {
+    		is_demilitarized_zone = no
+    	}
+    	42 = {
+    		is_demilitarized_zone = no
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        GER = {
+        	set_cosmetic_tag = GER2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.2
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = GER
+    	GER = {
+    		has_cosmetic_tag = GER2
+    		has_government = fascism
+    		controls_state = 4
+    		controls_state = 152
+    		controls_state = 153
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        GER = {
+        	set_cosmetic_tag = GER3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.3
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = GER
+    	GER = {
+    		has_cosmetic_tag = GER3
+    		has_government = fascism
+    		has_war = yes
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        GER = {
+        	set_cosmetic_tag = GER4
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.4
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = GER
+    	GER = {
+    		has_cosmetic_tag = GER4
+    		has_government = fascism
+    	}
+    	OR = {
+    		is_in_faction_with = FRA
+    		AND = {
+    			has_war_with = FRA
+    			FRA = {
+    				has_capitulated = yes
+    			}
+    		}
+    		AND = {
+    			has_war_with = SOV
+    			NOT = {
+    				has_war_with = FRA
+    			}
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        GER = {
+        	set_cosmetic_tag = GER5
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.5
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = GER
+    	GER = {
+    		has_cosmetic_tag = GER5
+    		has_government = fascism
+    	}
+    	OR = {
+    		has_war_with = SOV
+    		ENG = {
+    			has_capitulated = yes
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        GER = {
+        	set_cosmetic_tag = GER6
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.6
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = GER
+    	GER = {
+    		has_war_with = SOV
+    		has_cosmetic_tag = GER6
+    		has_government = fascism
+    	}
+    	OR = {
+    		GER = {
+    			has_idea = tot_economic_mobilisation
+    		}
+    		GER = {
+    			controls_state = 195
+    			controls_state = 291
+    			controls_state = 217
+    		}
+    		SOV = {
+    			has_capitulated = yes
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        GER = {
+        	set_cosmetic_tag = GER7
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.7
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = SOV
+    	SOV = {
+    		has_completed_focus = SOV_the_centre
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        SOV = {
+        	set_cosmetic_tag = SOV2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.8
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = SOV
+    	SOV = {
+    		has_cosmetic_tag = SOV2
+    	}
+    	808 = {
+    		is_claimed_by = SOV
+    	}
+    	812 = {
+    		is_claimed_by = SOV
+    	}
+    	78 = {
+    		is_claimed_by = SOV
+    	}
+    	146 = {
+    		is_claimed_by = SOV
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        SOV = {
+        	set_cosmetic_tag = SOV3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.9
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = SOV
+    	SOV = {
+    		has_cosmetic_tag = SOV3
+    		has_war_with = GER
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        SOV = {
+        	set_cosmetic_tag = SOV4
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.10
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = USA
+    	USA = {
+    		NOT = {
+    			has_idea = undisturbed_isolation
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        USA = {
+        	set_cosmetic_tag = USA2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.11
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = USA
+    	USA = {
+    		has_cosmetic_tag = USA2
+    		has_war = yes
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        USA = {
+        	set_cosmetic_tag = USA3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.12
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = USA
+    	USA = {
+    		has_cosmetic_tag = USA3
+    	}
+    	OR = {
+    		ITA = {
+    			surrender_progress > 0.2
+    		}
+    		ITA = {
+    			is_subject_of = GER
+    		}
+    		851 = {
+    			is_controlled_by = FRA
+    		}
+    		22 = {
+    			is_controlled_by = FRA
+    		}
+    		31 = {
+    			is_controlled_by = FRA
+    		}
+    		19 = {
+    			is_controlled_by = FRA
+    		}
+    		23 = {
+    			is_controlled_by = FRA
+    		}
+    		30 = {
+    			is_controlled_by = FRA
+    		}
+    		14 = {
+    			is_controlled_by = FRA
+    		}
+    		15 = {
+    			is_controlled_by = FRA
+    		}
+    		29 = {
+    			is_controlled_by = FRA
+    		}
+    		6 = {
+    			is_controlled_by = BEL
+    		}
+    		7 = {
+    			is_controlled_by = HOL
+    		}
+    		36 = {
+    			is_controlled_by = HOL
+    		}
+    		NOT = {
+    			56 = {
+    				is_controlled_by = GER
+    			}
+    		}
+    		NOT = {
+    			909 = {
+    				is_controlled_by = GER
+    			}
+    		}
+    		NOT = {
+    			58 = {
+    				is_controlled_by = GER
+    			}
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        USA = {
+        	set_cosmetic_tag = USA4
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.13
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = JAP
+    	JAP = {
+    		has_offensive_war_with = CHI
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        JAP = {
+        	set_cosmetic_tag = JAP2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.14
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = JAP
+    	JAP = {
+    		has_cosmetic_tag = JAP2
+    	}
+    	NOT = {
+    		608 = {
+    			is_controlled_by = CHI
+    		}
+    		614 = {
+    			is_controlled_by = CHI
+    		}
+    		597 = {
+    			is_controlled_by = CHI
+    		}
+    		743 = {
+    			is_controlled_by = CHI
+    		}
+    		598 = {
+    			is_controlled_by = CHI
+    		}
+    		613 = {
+    			is_controlled_by = CHI
+    		}
+    		595 = {
+    			is_controlled_by = CHI
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        JAP = {
+        	set_cosmetic_tag = JAP3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.15
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ITA
+    	OR = {
+    		ETH = {
+    			has_capitulated = yes
+    		}
+    		ETH = {
+    			is_subject_of = ITA
+    		}
+    		271 = {
+    			is_fully_controlled_by = ITA
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ITA = {
+        	set_cosmetic_tag = ITA2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.15
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ITA
+    	OR = {
+    		ETH = {
+    			has_capitulated = yes
+    		}
+    		ETH = {
+    			is_subject_of = ITA
+    		}
+    		271 = {
+    			is_fully_controlled_by = ITA
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ITA = {
+        	set_cosmetic_tag = ITA2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.115
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = ITA
+        ITA = {
+            has_cosmetic_tag = ITA2
+        }
+        OR = {
+            ALB = {
+                is_subject_of = ITA
+            }
+            44 = {
+                is_fully_controlled_by = ITA
+            }
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ITA = {
+            set_cosmetic_tag = ITA3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.16
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ITA
+    	ITA = {
+    		has_cosmetic_tag = ITA3
+    	}
+    	OR = {
+    		ITA = {
+    			has_war_with = ENG
+    		}
+    		ITA = {
+    			has_war_with = FRA
+    		}
+    		ITA = {
+    			has_war_with = USA
+    		}
+    		ITA = {
+    			has_war_with = SOV
+    		}
+    		ITA = {
+    			has_war_with = GER
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ITA = {
+        	set_cosmetic_tag = ITA4
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.17
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ITA
+    	ITA = {
+    		has_cosmetic_tag = ITA4
+    	}
+    	OR = {
+    		ITA = {
+    			surrender_progress > 0.10
+    		}
+    		ITA = {
+    			is_subject_of = GER
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ITA = {
+        	set_cosmetic_tag = ITA5
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.18
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ENG
+    	OR = {
+    		GER = {
+    			has_war = yes
+    		}
+    		69 = {
+    			is_controlled_by = GER
+    		}
+    		74 = {
+    			is_controlled_by = GER
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ENG = {
+        	set_cosmetic_tag = ENG2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.118
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = ENG
+        ENG = {
+            has_cosmetic_tag = ENG2
+            has_war_with = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ENG = {
+            set_cosmetic_tag = ENG3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.19
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ENG
+    	ENG = {
+    		has_cosmetic_tag = ENG3
+    		has_country_leader = {
+    			character = ENG_winston_churchill
+    			ruling_only = yes
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ENG = {
+        	set_cosmetic_tag = ENG4
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.20
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = ENG
+    	ENG = {
+    		has_cosmetic_tag = ENG4
+    	}
+        GER = {
+            has_war_with = SOV
+        }
+    	OR = {
+    		ITA = {
+    			surrender_progress > 0.2
+    		}
+    		ITA = {
+    			is_subject_of = GER
+    		}
+    		851 = {
+    			is_controlled_by = FRA
+    		}
+    		22 = {
+    			is_controlled_by = FRA
+    		}
+    		31 = {
+    			is_controlled_by = FRA
+    		}
+    		19 = {
+    			is_controlled_by = FRA
+    		}
+    		23 = {
+    			is_controlled_by = FRA
+    		}
+    		30 = {
+    			is_controlled_by = FRA
+    		}
+    		14 = {
+    			is_controlled_by = FRA
+    		}
+    		15 = {
+    			is_controlled_by = FRA
+    		}
+    		29 = {
+    			is_controlled_by = FRA
+    		}
+    		6 = {
+    			is_controlled_by = BEL
+    		}
+    		7 = {
+    			is_controlled_by = HOL
+    		}
+    		36 = {
+    			is_controlled_by = HOL
+    		}
+    		NOT = {
+    			56 = {
+    				is_controlled_by = GER
+    			}
+    		}
+    		NOT = {
+    			909 = {
+    				is_controlled_by = GER
+    			}
+    		}
+    		NOT = {
+    			58 = {
+    				is_controlled_by = GER
+    			}
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ENG = {
+        	set_cosmetic_tag = ENG5
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.21
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = FRA
+    	OR = {
+            FRA = {
+                is_in_faction_with = ENG
+            }
+    		GER = {
+    			has_war = yes
+    		}
+    		CZE = {
+    			is_subject_of = GER
+    		}
+    		9 = {
+    			is_controlled_by = GER
+    		}
+    		75 = {
+    			is_controlled_by = GER
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        FRA = {
+        	set_cosmetic_tag = FRA2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.22
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = FRA
+        FRA = {
+            has_cosmetic_tag = FRA2
+            has_war_with = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        FRA = {
+            set_cosmetic_tag = FRA3
+        }
+    }
+}
+
+
+
+country_event = {
+    id = country_colors.23
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = CHI
+    	CHI = {
+    		has_war_with = JAP
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        CHI = {
+        	set_cosmetic_tag = CHI2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.24
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+    	tag = CHI
+    	CHI = {
+    		has_cosmetic_tag = CHI2
+    	}
+    	NOT = {
+    		608 = {
+    			is_controlled_by = CHI
+    		}
+    		614 = {
+    			is_controlled_by = CHI
+    		}
+    		597 = {
+    			is_controlled_by = CHI
+    		}
+    		743 = {
+    			is_controlled_by = CHI
+    		}
+    		598 = {
+    			is_controlled_by = CHI
+    		}
+    		613 = {
+    			is_controlled_by = CHI
+    		}
+    		595 = {
+    			is_controlled_by = CHI
+    		}
+    	}
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        CHI = {
+        	set_cosmetic_tag = CHI3
+        }
+    }
+}
+
+
+country_event = {
+    id = country_colors.25
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = FIN
+        FIN = {
+            has_war = no
+        }
+        SOV = {
+            controls_state = 146   
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        FIN = {
+            set_cosmetic_tag = FIN2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.26
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = FIN
+        FIN = {
+            has_war = no
+            has_cosmetic_tag = FIN2
+        }
+        SOV = {
+            controls_state = 722  
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        FIN = {
+            set_cosmetic_tag = FIN3
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.27
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = SAF
+        SAF = {
+            controls_state = 542
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        SAF = {
+            set_cosmetic_tag = SAF2
+        }
+    }
+}
+
+### NEEDS UPDATED ###
+country_event = {
+    id = country_colors.28
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = MAN
+        MAN = {
+            has_war = yes
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        MAN = {
+            set_cosmetic_tag = MAN2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.29
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = HUN
+        HUN = {
+            is_in_faction_with = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        HUN = {
+            set_cosmetic_tag = HUN2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.30
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = ROM
+        ROM = {
+            is_in_faction_with = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        ROM = {
+            set_cosmetic_tag = ROM2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.31
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = BUL
+        BUL = {
+            is_in_faction_with = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        BUL = {
+            set_cosmetic_tag = BUL2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.32
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = YUG
+        OR = {
+            44 = {
+                is_controlled_by = ITA
+            }
+            ALB = {
+                is_subject_of = ITA
+            }
+            AND = {
+                HUN = {
+                  is_in_faction_with = GER  
+                }
+                ROM = {
+                  is_in_faction_with = GER  
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        YUG = {
+            set_cosmetic_tag = YUG2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.33
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = SIA
+        SIA = {
+            is_in_faction_with = JAP
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        SIA = {
+            set_cosmetic_tag = SIA2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.34
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = CZE
+        69 = {
+            is_controlled_by = GER
+        }
+        74 = {
+            is_controlled_by = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        CZE = {
+            set_cosmetic_tag = CZE2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.35
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = POL
+        807 = {
+            is_claimed_by = GER
+        }
+        86 = {
+            is_claimed_by = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        POL = {
+            set_cosmetic_tag = POL2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.36
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = DEN
+        DEN = {
+            is_subject_of = GER
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        DEN = {
+            set_cosmetic_tag = DEN2
+        }
+    }
+}
+
+country_event = {
+    id = country_colors.37
+    title = "x"
+    desc = "x"
+    picture = GFX_report_event_generic
+
+    fire_only_once = yes
+    is_triggered_only = no
+    hidden = yes
+    trigger = {
+        tag = SWE
+        OR = {
+            FIN = {
+                has_war_with = SOV
+            }
+            GER = {
+                has_war_with = DEN
+            }
+            GER = {
+                has_war_with = NOR
+            }
+        }
+    }
+
+    option = {
+        name = "x"
+        ai_chance = {
+            factor = 100
+        }
+        SWE = {
+            set_cosmetic_tag = SWE2
+        }
+    }
+}
+
+
+

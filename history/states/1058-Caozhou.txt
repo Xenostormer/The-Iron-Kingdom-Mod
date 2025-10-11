@@ -1,0 +1,34 @@
+state={
+	id=1058
+	name="STATE_1058"
+	provinces={
+		4010 7025 7085 7129 7160 9987 9995 10043 10072 11933 11962 12069 
+	}
+
+	resources = {
+		steel = 77
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+
+		victory_points = {
+			7025 1 
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	manpower=16374189 
+	state_category= large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

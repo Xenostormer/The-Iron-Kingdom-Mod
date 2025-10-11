@@ -1,0 +1,76 @@
+state={
+	id=64
+	name="STATE_64"
+	provinces={
+		375 478 3367 3499 6521 9428 9456 9496 11219 11415 11444 11505 13450 13452 13454 13455 13456 
+	}
+
+	resources = {
+		steel = 1
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = GER
+		1936.01.02 = {
+			add_core_of = PRE
+			#add_core_of =
+			#add_core_of = 
+		}
+
+		victory_points = {
+			6521 50 
+		}
+
+		victory_points = {
+			9496 1 
+		}
+
+		victory_points = {
+			13452 1 
+		}
+		victory_points = {
+			13450 1  
+		}
+		victory_points = {
+			13456 1  
+		}
+		victory_points = {
+			13455 1 
+		}
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 13
+			industrial_complex = 20
+			anti_air_building = 2
+			air_base = 6
+            13454 = {
+                landmark_berlin_reichstag = {
+                    level = 1
+                    allowed = {
+                        always = yes
+                    }
+                }
+            }
+            13455 = {
+                land_facility = 1 #Representing Kommersdorf's Research Facilities
+            }
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 10
+				anti_air_building = 5
+				arms_factory = 10
+				industrial_complex = 7
+			}
+		}
+
+	}
+	manpower=6064029
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}
