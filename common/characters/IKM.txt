@@ -1,0 +1,24 @@
+characters={
+
+	# USA
+
+	USA_jp_morgan_jr = {
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_sean_ceallaigh
+			allowed  = {
+					original_tag  = USA
+				}
+				traits  = {
+					bond_salesman 
+				}
+		}
+		name="J.P. Morgan Jr."
+		portraits={
+			army={
+				small="GFX_idea_IKM_USA_new_advisor_8"
+			}
+		}
+	}
+
+}

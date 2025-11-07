@@ -486,6 +486,9 @@ recruit_character = USA_andrew_mckee
 recruit_character = USA_john_walter_christie
 recruit_character = USA_vannevar_bush
 
+# IKM NEW ADVI
+recruit_character = USA_jp_morgan_jr
+
 
 
 if = {
