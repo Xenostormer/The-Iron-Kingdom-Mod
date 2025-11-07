@@ -14,7 +14,24 @@ spriteTypes = {
 
 	## ADVISORS 
 
-	# AMERICAN ADVISORS
+	# USA-ADVI
+	# GER-ADVI
+	# SOV-SDVI
+	# ENG-ADVI
+	# ITA-ADVI
+	# JAP-ADVI
+	# FRA-ADVI
+	# CAN-ADVI
+	# AST-ADVI
+	# RAJ-ADVI
+	# SAF-ADVI
+	# HUN-ADVI
+	# ROM-ADVI
+	# SPR-ADVI
+	# FIN-ADVI
+	# MAN-ADVI
+
+	# USA-ADVI
 
 	spriteType = {
 		name = "GFX_idea_IKM_USA_new_advisor_1"
@@ -81,7 +98,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/USA/IKM_USA_new_advisor_12.dds"
 	}
 
-	# GERMAN ADVISORS
+	# GER-ADVI
 
 	spriteType = {
 		name = "GFX_idea_IKM_GER_new_advisor_1"
@@ -143,9 +160,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GER/IKM_GER_new_advisor_12.dds"
 	}
 
-	# SOVIET ADVISORS 
+	# SOV-ADVI 
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_IKM_SOV_new_advisor_1"
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SOV/IKM_SOV_new_advisor_1.dds"
 	}
@@ -205,7 +222,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SOV/IKM_SOV_new_advisor_12.dds"
 	}
 
-	# BRITISH ADVISORS
+	# ENG-ADVI
 
 	spriteType = {
 		name = "GFX_idea_IKM_ENG_new_advisor_1"
@@ -267,9 +284,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ENG/IKM_ENG_new_advisor_12.dds"
 	}
 
-	# ITALIAN ADVISORS
+	# ITA-ADVI
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_IKM_ITA_new_advisor_1"
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ITA/IKM_ITA_new_advisor_1.dds"
 	}
@@ -329,7 +346,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ITA/IKM_ITA_new_advisor_12.dds"
 	}
 
-	# JAPANESE ADVISORS
+	# JAP-ADVI
 
 	spriteType = {
 		name = "GFX_idea_IKM_JAP_new_advisor_1"
@@ -391,7 +408,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/JAP/IKM_JAP_new_advisor_12.dds"
 	}
 
-	# FRENCH ADVISORS
+	# FRA-ADVI
 
 	spriteType = {
 		name = "GFX_idea_IKM_FRA_new_advisor_1"
@@ -447,7 +464,1104 @@ spriteTypes = {
 		name = "GFX_idea_IKM_FRA_new_advisor_11"
 		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FRA/IKM_FRA_new_advisor_11.dds"
 	}
+
+	# CAN-ADVI 
 	
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CAN_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CAN/IKM_CAN_new_advisor_10.dds"
+	}
+
+	# AST-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_AST_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/AST/IKM_AST_new_advisor_10.dds"
+	}
+
+    # RAJ-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_RAJ_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/RAJ/IKM_RAJ_new_advisor_10.dds"
+	}
+
+	# SAF-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAF_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAF/IKM_SAF_new_advisor_10.dds"
+	}
+
+	# HUN-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HUN_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HUN/IKM_HUN_new_advisor_10.dds"
+	}
+
+	# ROM-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SPR_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SPR/IKM_SPR_new_advisor_10.dds"
+	}
+
+	# FIN-ADVI
+
+		spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_FIN_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/FIN/IKM_FIN_new_advisor_10.dds"
+	}
+
+	# MAN-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MAN_new_advisor_10"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MAN/IKM_MAN_new_advisor_10.dds"
+	}
+
+	# BRA-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BRA_new_advisor_9"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BRA/IKM_BRA_new_advisor_9.dds"
+	}
+
+	# ALB-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_ALB_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ALB/IKM_ALB_new_advisor_1.dds"
+	}
+
+	# ARG-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_ARG_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ARG/IKM_ARG_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_ARG_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ARG/IKM_ARG_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_ARG_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ARG/IKM_ARG_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_ARG_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/ARG/IKM_ARG_new_advisor_4.dds"
+	}
+
+	# BEL-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_BEL_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BEL/IKM_BEL_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BEL_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BEL/IKM_BEL_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BEL_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BEL/IKM_BEL_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BEL_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BEL/IKM_BEL_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BEL_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BEL/IKM_BEL_new_advisor_5.dds"
+	}
+
+	# BUL-ADVI
+
+		spriteType = {
+		name = "GFX_idea_IKM_BUL_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BUL/IKM_BUL_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BUL_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BUL/IKM_BUL_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BUL_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BUL/IKM_BUL_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BUL_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BUL/IKM_BUL_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BUL_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BUL/IKM_BUL_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_BUL_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/BUL/IKM_BUL_new_advisor_6.dds"
+	}
+
+	# CHI-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CHI_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CHI/IKM_CHI_new_advisor_8.dds"
+	}
+
+	# CRO-ADVI
+
+	spriteType = {
+		name = "GFX_idea_IKM_CRO_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CRO/IKM_CRO_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CRO_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CRO/IKM_CRO_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CRO_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CRO/IKM_CRO_new_advisor_3.dds"
+	}
+
+# CZE-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_CZE_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CZE/IKM_CZE_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CZE_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CZE/IKM_CZE_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CZE_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CZE/IKM_CZE_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CZE_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CZE/IKM_CZE_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CZE_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CZE/IKM_CZE_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_CZE_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/CZE/IKM_CZE_new_advisor_6.dds"
+	}
+
+	# DEN-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_DEN_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/DEN/IKM_DEN_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_DEN_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/DEN/IKM_DEN_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_DEN_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/DEN/IKM_DEN_new_advisor_3.dds"
+	}
+
+	# EST-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_EST_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/EST/IKM_EST_new_advisor_1.dds"
+	}
+
+	# GRE-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_GRE_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GRE/IKM_GRE_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_GRE_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GRE/IKM_GRE_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_GRE_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GRE/IKM_GRE_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_GRE_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GRE/IKM_GRE_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_GRE_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GRE/IKM_GRE_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_GRE_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/GRE/IKM_GRE_new_advisor_6.dds"
+	}
+
+	# HOL-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_HOL_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/HOL/IKM_HOL_new_advisor_7.dds"
+	}
+
+	# IRE-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRE_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRE/IKM_IRE_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRE_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRE/IKM_IRE_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRE_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRE/IKM_IRE_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRE_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRE/IKM_IRE_new_advisor_4.dds"
+	}
+
+	# IRQ-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRQ_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRQ/IKM_IRQ_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRQ_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRQ/IKM_IRQ_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_IRQ_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/IRQ/IKM_IRQ_new_advisor_3.dds"
+	}
+
+	# MEX-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_MEX_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MEX/IKM_MEX_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MEX_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MEX/IKM_MEX_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MEX_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MEX/IKM_MEX_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MEX_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MEX/IKM_MEX_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MEX_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MEX/IKM_MEX_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_MEX_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MEX/IKM_MEX_new_advisor_6.dds"
+	}
+
+	# MON-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_MON_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/MON/IKM_MON_new_advisor_1.dds"
+	}
+
+	# NOR-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_NOR_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NOR/IKM_NOR_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_NOR_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NOR/IKM_NOR_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_NOR_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NOR/IKM_NOR_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_NOR_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NOR/IKM_NOR_new_advisor_4.dds"
+	}
+
+	# NZL-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_NZL_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NZL/IKM_NZL_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_NZL_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NZL/IKM_NZL_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_NZL_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NZL/IKM_NZL_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_NZL_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/NZL/IKM_NZL_new_advisor_4.dds"
+	}
+
+	# PER-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_PER_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PER/IKM_PER_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_PER_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PER/IKM_PER_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_PER_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PER/IKM_PER_new_advisor_3.dds"
+	}
+
+	# PHI-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_PHI_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PHI/IKM_PHI_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_PHI_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PHI/IKM_PHI_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_PHI_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PHI/IKM_PHI_new_advisor_3.dds"
+	}
+
+	# POL-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_POL_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POL/IKM_POL_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_POL_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POL/IKM_POL_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_POL_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POL/IKM_POL_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_POL_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POL/IKM_POL_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_POL_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POL/IKM_POL_new_advisor_5.dds"
+	}
+
+	# POR-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_POR_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POR/IKM_POR_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_POR_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POR/IKM_POR_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_POR_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/POR/IKM_POR_new_advisor_3.dds"
+	}
+
+	# PRC-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_PRC_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/PRC/IKM_PRC_new_advisor_1.dds"
+	}
+
+	# SAU-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAU_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAU/IKM_SAU_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SAU_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SAU/IKM_SAU_new_advisor_2.dds"
+	}
+
+	# SIA-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_SIA_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SIA/IKM_SIA_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SIA_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SIA/IKM_SIA_new_advisor_2.dds"
+	}
+
+	# SLO-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_SLO_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SLO/IKM_SLO_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SLO_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SLO/IKM_SLO_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SLO_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SLO/IKM_SLO_new_advisor_3.dds"
+	}
+
+	# SWE-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_SWE_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SWE/IKM_SWE_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SWE_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SWE/IKM_SWE_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SWE_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SWE/IKM_SWE_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SWE_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SWE/IKM_SWE_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_SWE_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SWE/IKM_SWE_new_advisor_5.dds"
+	}
+
+	# SWI-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_SWI_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/SWI/IKM_SWI_new_advisor_1.dds"
+	}
+
+	# TUR-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_TUR_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/TUR/IKM_TUR_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_TUR_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/TUR/IKM_TUR_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_TUR_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/TUR/IKM_TUR_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_TUR_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/TUR/IKM_TUR_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_TUR_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/TUR/IKM_TUR_new_advisor_5.dds"
+	}
+
+	# VEN-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_VEN_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/VEN/IKM_VEN_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_VEN_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/VEN/IKM_VEN_new_advisor_2.dds"
+	}
+
+	# YUG-ADVI 
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_1"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_2"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_3"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_4"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_5"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_6"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_7"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_IKM_YUG_new_advisor_8"
+		texturefile = "gfx/interface/ideas/IKM/ADVISORS/YUG/IKM_YUG_new_advisor_8.dds"
+	}
 
 	## USA
 
