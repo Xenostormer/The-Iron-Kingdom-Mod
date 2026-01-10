@@ -29,6 +29,7 @@ state={
 			air_base = 10
 			11751 = {
 				naval_base = 5
+				naval_headquarters = 1
 			}
 			11846 = {
 				naval_base = 2

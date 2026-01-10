@@ -32,6 +32,7 @@ state = {
 			industrial_complex = 1
 			3022 = {
 				naval_base = 3
+				naval_headquarters = 1 
 				coastal_bunker = 2
 			}
 		}

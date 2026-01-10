@@ -18,6 +18,10 @@ state={
 		add_core_of = SAF
 	}
 
+	resources = {
+		coal = 11 
+	}
+
 	provinces={
 		2229 5154 5189 7605 10963 
 	}

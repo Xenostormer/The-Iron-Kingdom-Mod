@@ -5,6 +5,7 @@ state={
 
 	resources={
 		steel= 125
+		coal = 79
 	}
 
 
@@ -18,7 +19,7 @@ state={
 			fuel_silo = 1
 			788 = {
 				naval_base = 10
-
+				naval_supply_hub = 1
 			}
 
 		}

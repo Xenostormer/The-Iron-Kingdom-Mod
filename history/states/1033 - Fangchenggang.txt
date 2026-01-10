@@ -1,0 +1,26 @@
+state={
+	id=1033
+	name="STATE_1033"
+	provinces={
+		702 822 847 862 891 894 3687 3697 3847 3850 3880 3897 6705 6872 6885 6899 9662 9804 9820 9836 11648 11758 11769 11785 11817 12405  
+	}
+	resources={
+		steel=69
+		coal = 495
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+		}
+		victory_points = {
+			6885 1
+		}
+	}
+	manpower=2632736
+	buildings_max_level_factor=1
+	state_category = city
+	local_supplies=1
+}

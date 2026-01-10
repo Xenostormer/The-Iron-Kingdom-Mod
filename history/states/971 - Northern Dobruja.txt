@@ -24,6 +24,7 @@ state = {
 			arms_factory = 1
 			657 = {
 				naval_base = 8
+				naval_supply_hub = 1
 			}
 			687 = {
 				naval_base = 1

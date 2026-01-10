@@ -4,6 +4,7 @@ state={
 	
 	resources = {
 		chromium = 6
+		coal = 66
 	}
 
 	provinces={

@@ -6,6 +6,10 @@ state=
 	
 	state_category = rural
 
+	resources = {
+		coal = 47
+	}
+
 	history={
 
 		victory_points = {

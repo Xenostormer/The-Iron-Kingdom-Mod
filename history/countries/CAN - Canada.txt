@@ -82,6 +82,18 @@ recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
 recruit_character = CAN_lindsay_gordon
 
+# IKM NEW ADVI
+recruit_character = CAN_Gordon_Churchill
+recruit_character = CAN_Roy_Thomson
+recruit_character = CAN_Graham_Towers
+recruit_character = CAN_Billy_Bishop
+recruit_character = CAN_James_Ralston
+recruit_character = CAN_Sir_Edward_Beatty
+recruit_character = CAN_Mitch_Hepburn
+recruit_character = CAN_Ernest_Lapointe
+recruit_character = CAN_Maurice_Duplessis
+recruit_character = CAN_Sir_James_Dunn
+
 IF = {
 	limit = {
 		has_dlc = "Trial of Allegiance"

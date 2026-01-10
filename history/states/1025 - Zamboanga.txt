@@ -1,0 +1,23 @@
+state = {
+	id = 1025
+	name = "STATE_1025"
+	manpower = 62860
+
+	state_category = wasteland
+	impassable = yes
+
+	resources = {
+
+	}
+
+	history = {
+		owner = INS
+		add_core_of = INS
+	}
+
+	provinces = {
+	 	7570 8235 8250 10436 10990 
+	}
+
+	local_supplies = 0.0 
+}

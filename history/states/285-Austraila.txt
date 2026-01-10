@@ -24,6 +24,7 @@ state={
 
 			12406 = {
 				naval_base = 6
+				naval_supply_hub = 1
 				coastal_bunker = 2
 			}
 

@@ -1,0 +1,25 @@
+state={
+	id=1038
+	name="STATE_1038"
+	provinces={
+		375 3367 3499 9456 11219 11444 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			375 1 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2 
+			3499 = {
+                land_facility = 1 #Representing Kommersdorf's Research Facilities
+            }
+		}
+	}
+	manpower=943293
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=4
+}

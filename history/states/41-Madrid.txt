@@ -4,6 +4,7 @@ state={
 	
 	resources={
 		tungsten = 275 
+		coal = 1
 	}
 
 	provinces={

@@ -2,7 +2,10 @@ state={
 	id=982
 	name="STATE_982"
 	provinces={
-		1321 1409 7288 7402 12247 
+		1238 1321 7288 7391 7402 7447 10130 10190 10274 12275 
+	}
+	resources = {
+		coal = 76
 	}
 	manpower = 7600000
 	buildings_max_level_factor=1.000

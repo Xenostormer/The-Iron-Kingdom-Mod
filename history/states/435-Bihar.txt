@@ -2,7 +2,7 @@ state={
 	id=435
 	name="STATE_435"
 	provinces={
-		1444 1541 1569 1637 4459 4516 4544 4571 7334 10358 10361 10471 10751 10878 12035 12307 12452 13491 13554 13555 13559 13565 
+		1541 1569 4459 4516 4544 4571 7334 10361 10751 10878 13491 13554 13555 13559 13565 13556 
 	}
 	history={
 		owner = RAJ
@@ -20,7 +20,7 @@ state={
 		}
 
 	}
-	manpower=36574500
+	manpower=28648138
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 	local_supplies=0.000

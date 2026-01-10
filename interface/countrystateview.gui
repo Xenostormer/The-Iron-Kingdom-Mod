@@ -74,6 +74,29 @@ guiTypes = {
 				format = center
 				fixedsize = yes
 			}
+
+			iconType ={
+				name ="energy_consumption_bg"
+				spriteType = "GFX_victorypoint_stateview_bg"
+				position = { x = 640 y = 124 }
+			}
+			
+			iconType = {
+				name = "energy_icon"
+				spriteType = "GFX_modifiers_energy"
+				position = { x = 656 y = 121 }
+			}
+			
+			instantTextboxType = {
+				name = "energy_text"
+				position = { x = 639 y = 128 }
+				textureFile = ""
+				font = "hoi_16mbs"
+				text = ""
+				maxWidth = 30
+				maxHeight = 30
+				format = center
+			}
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
@@ -308,19 +331,27 @@ guiTypes = {
 			
 			iconType = {
 				name = "province_required_rule"
-				position = { x = 300 y = -11 }
+				position = { x = 67 y = -236 }
 				spriteType = "GFX_required_rule"
 				Orientation = "UPPER_LEFT"
 			}
 
 			iconType = {
 				name = "building_modifiers_icon"
-				position = { x = 634 y= 54 }
+				position = { x = 620 y= -535 }
 				spriteType = "GFX_buildings_strip"
 				Orientation = "UPPER_LEFT"
 				frame = 21
 				scale = 0.8
 				hide = yes
+			}
+
+			buttonType = {
+				name = "scorched_earth_state_button"
+				position = { x = -92 y = -500 }
+				quadTextureSprite ="GFX_scorched_earth"
+				buttonFont = "Main_14_black"
+				Orientation = "UPPER_RIGHT"
 			}	
 			
 			### Positioning of these are controlled by the positionType "countrystateview_weathericons_position" and "countrystateview_weathericons_offset" above
@@ -364,7 +395,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "dynamic_modifiers_grid"
-				position = { x = 595 y = 58 }
+				position = { x = 10 y = 58 }
 				size = { width = 0 height = 0 }
 				format = "LOWER_LEFT"
 				slotsize = { width = 40 height = 47 }
@@ -402,31 +433,14 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "province_building_entries"
-				position = { x = -2 y = 48 }
+				position = { x = 7 y = 48 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
 				slotsize = { width = 109 height = 54 }
-				max_slots_horizontal = 4
+				max_slots_horizontal = 6
 			}
 			
-			buttonType = {
-				name = "nuke_province"
-				quadTextureSprite ="GFX_nuke_button"
-				position = { x= 27 y = -271 }
-			}
-			
-			iconType = {
-				name = "nuclear_strike_bar"
-				spriteType = "GFX_nuke_progress"
-				position = { x=45 y= -212 }	
-			}	
-			
-			iconType = {
-				name = "nuke_progress_frame"
-				spriteType = "GFX_nuke_progress_frame"
-				position = { x=59 y= -230 }	
-				rotation = -1.5708
-			}				
+							
 			
 		}	
 		
@@ -439,14 +453,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
-		}
-
-		buttonType = {
-			name = "scorched_earth_state_button"
-			position = { x = 217 y = 606 }
-			quadTextureSprite ="GFX_scorched_earth"
-			buttonFont = "Main_14_black"
-			Orientation = "UPPER_RIGHT"
 		}
 	}
 
@@ -611,7 +617,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "province_building_special_icon_entry"
-		position = { x=0 y=-5 }
+		position = { x= -3 y= -243 }
 		size = { width=50 height= 43 }
 		clipping = yes
 

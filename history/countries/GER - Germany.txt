@@ -940,6 +940,34 @@ recruit_character = GER_hellmuth_walter
 recruit_character = GER_manfred_von_ardenne
 recruit_character = GER_konrad_zuse
 
+# IKM NEW ADVI
+recruit_character = GER_Hans_Lammers
+recruit_character = GER_Ferdinand_Porsche
+recruit_character = GER_Alfried_Krupp
+recruit_character = GER_Ernst_Kaltenbrunner
+recruit_character = GER_Heinrich_Müller
+recruit_character = GER_Alfred_Rosenberg
+recruit_character = GER_Friedrich_Flick
+recruit_character = GER_Robert_Ley
+recruit_character = GER_Julius_Streicher
+recruit_character = GER_Fritz_Sauckel
+recruit_character = GER_Adolf_Eichmann
+recruit_character = GER_Sepp_Dietrich
+
+# IKM NEW ADVI
+#1#recruit_character =
+#2#recruit_character =
+#3#recruit_character =
+#4#recruit_character =
+#5#recruit_character =
+#6#recruit_character =
+#7#recruit_character =
+#8#recruit_character =
+#9#recruit_character =
+#10#recruit_character =
+#11#recruit_character =
+#12#recruit_character =
+
 if = {
 	limit = {
 		has_dlc = "Gotterdammerung"

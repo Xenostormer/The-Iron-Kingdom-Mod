@@ -2,6 +2,10 @@ state={
 	id=665
 	name="STATE_665"
 
+	resources={
+		coal = 5
+	}
+
 	history={
 		owner = FRA
 		add_core_of = ISR

@@ -591,6 +591,19 @@ recruit_character = FRA_louis_renault
 recruit_character = FRA_henri_edmond_fouche
 recruit_character = FRA_joseph_bethenod
 
+# IKM NEW ADVI
+recruit_character = FRA_René_Bousquet
+recruit_character = FRA_André_Malraux
+recruit_character = FRA_Louis_Renault
+recruit_character = FRA_Albert_Lebrun
+recruit_character = FRA_Paul_Ramadier
+recruit_character = FRA_André_Tardieu
+recruit_character = FRA_Pierre_Mendès_France
+recruit_character = FRA_Georges_Catroux
+recruit_character = FRA_Jean_Giraudoux
+recruit_character = FRA_Joseph_Paul-Boncour
+recruit_character = FRA_Suzanne_Lacore
+
 if = {
 	limit = {
 		OR = {

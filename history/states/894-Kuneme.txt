@@ -4,6 +4,10 @@ state={
 	manpower = 69300
 	state_category = wasteland
 
+	resources = {
+		coal = 26
+	}
+
 	history={
 		owner = SAF
 		buildings = {

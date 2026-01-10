@@ -17,6 +17,7 @@ state=
 			air_base = 1
 			10062 = {
 				naval_base = 6
+				naval_supply_hub = 1
 				coastal_bunker = 1
 			}
 		}

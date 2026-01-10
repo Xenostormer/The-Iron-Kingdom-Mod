@@ -4,9 +4,10 @@ state={
 	resources={
 		steel=11.000
 		aluminium=3.000
+		coal = 16
 	}
 	provinces={
-		253 311 377 407 3274 6363 9364 11361 13415 
+		253 377 407 3274 11361 13415 
 	}
 	history=
 	{
@@ -14,9 +15,7 @@ state={
 		victory_points = {
 			407 3 #Swansea
 		}
-		victory_points = {
-			311 1 #Wrexham
-		}
+	
 		victory_points = {
 			 13415 1 
 		}
@@ -25,7 +24,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 4
 			dockyard = 5
-			arms_factory = 2
+			arms_factory = 1
 			377 = {
 				naval_base = 3
 			}
@@ -37,7 +36,7 @@ state={
 			#add_core_of = 
 		}
 	}
-	manpower=2639230
+	manpower=2159370
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

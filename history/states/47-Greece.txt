@@ -41,7 +41,7 @@ state={
 			air_base = 4
 			4109 = {
 				naval_base = 9
-
+				naval_supply_hub = 1
 			}
 
 		}

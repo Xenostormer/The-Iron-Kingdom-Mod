@@ -219,6 +219,18 @@ recruit_character = SAF_nicolaas_havenga
 recruit_character = SAF_sir_patrick_duncan
 recruit_character = SAF_abram_fischer
 
+# IKM NEW ADVI
+recruit_character = SAF_Solomon_Isaacs 
+recruit_character = SAF_Clements_Kadalie
+recruit_character = SAF_Charles_Swart
+recruit_character = SAF_Walter_Madeley
+recruit_character = SAF_Harry_Oppenheimer
+recruit_character = SAF_J_H_Hofmeyr
+recruit_character = SAF_Louis_Botha
+recruit_character = SAF_A_B_Xuma
+recruit_character = SAF_Sir_Ernest_Oppenheimer
+recruit_character = SAF_J_G_Strijdom
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = democratic

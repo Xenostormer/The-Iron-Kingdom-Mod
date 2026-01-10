@@ -126,6 +126,18 @@ recruit_character = AST_herbert_v_evatt
 recruit_character = AST_generic_fascist_demagogue
 recruit_character = AST_arthur_calwell
 
+# IKM NEW ADVI
+recruit_character = AST_Essington_Lewis
+recruit_character = AST_Lord_Gowrie
+recruit_character = AST_Norman_Makin
+recruit_character = AST_John_Monash
+recruit_character = AST_Sidney_Myer
+recruit_character = AST_H_C_Coombs
+recruit_character = AST_Dame_Enid_Lyons
+recruit_character = AST_Richard_Casey
+recruit_character = AST_Billy_Hughes
+recruit_character = AST_Sir_Keith_Murdoch
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"

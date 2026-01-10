@@ -4,6 +4,9 @@ state={
 	provinces={
 		1170 1566 1607 2061 4654 7603 7647 10920 12317 12363 
 	}
+	resources = {
+		coal = 10 
+	}
 	history = {
 		
 		owner = RAJ

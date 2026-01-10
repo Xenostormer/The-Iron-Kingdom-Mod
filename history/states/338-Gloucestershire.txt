@@ -3,6 +3,7 @@ state={
 	name="STATE_338"
 	resources={
 		steel=9.000
+		coal = 1 
 	}
 	provinces={
 		3369 6221 6351 6378 9484 11471 13413 

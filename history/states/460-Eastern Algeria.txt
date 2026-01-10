@@ -4,6 +4,11 @@ state={
 	provinces={
 		1058 1141 1160 4046 7065 7081 7166 9976 10059 10078 11953 12034 12051 13077 
 	}
+
+	resources={
+		coal = 74
+	}
+
 	history={
 		owner = FRA
 		

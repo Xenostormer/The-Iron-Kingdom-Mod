@@ -1,0 +1,25 @@
+state={
+	id=1030
+	name="STATE_1030"
+	provinces={
+		1915 1954 1998 2019 2055 3875 3972 4955 5038 5085 6798 7836 8064 9773 9908 10740 10894 12301 12728 12848 12875 12893 
+	}
+	resources={
+		oil=60 # was: 100
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			8064 1 
+		}
+	}
+	manpower=832102
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

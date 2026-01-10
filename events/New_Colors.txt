@@ -598,40 +598,6 @@ country_event = {
     }
 }
 
-country_event = {
-    id = country_colors.15
-    title = "x"
-    desc = "x"
-    picture = GFX_report_event_generic
-
-    fire_only_once = yes
-    is_triggered_only = no
-    hidden = yes
-    trigger = {
-    	tag = ITA
-    	OR = {
-    		ETH = {
-    			has_capitulated = yes
-    		}
-    		ETH = {
-    			is_subject_of = ITA
-    		}
-    		271 = {
-    			is_fully_controlled_by = ITA
-    		}
-    	}
-    }
-
-    option = {
-        name = "x"
-        ai_chance = {
-            factor = 100
-        }
-        ITA = {
-        	set_cosmetic_tag = ITA2
-        }
-    }
-}
 
 country_event = {
     id = country_colors.115

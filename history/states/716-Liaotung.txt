@@ -3,6 +3,7 @@ state={
 	name="STATE_716"
 	resources={
 		aluminium = 74
+		coal = 57 
 	}
 
 	history={

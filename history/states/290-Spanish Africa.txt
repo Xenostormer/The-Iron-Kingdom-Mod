@@ -6,6 +6,9 @@ state={
 	
 	state_category = rural
 
+	resources={
+		coal = 11
+	}
 
 	history={
 		owner = SPR

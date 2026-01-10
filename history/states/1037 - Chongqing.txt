@@ -1,0 +1,26 @@
+state={
+	id=1037
+	name="STATE_1037"
+	provinces={
+		478 9428 9496 11415 11505 
+	}
+	resources = {
+		coal = 1
+	}
+	history={
+		owner = GER
+		add_core_of = GER 
+		victory_points = {
+			9496 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+
+	}
+	manpower=269512
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

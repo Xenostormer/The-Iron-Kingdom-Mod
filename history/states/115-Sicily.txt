@@ -4,6 +4,9 @@ state={
 	provinces={
 		1009 1156 3857 4014 4159 7059 7147 10074 12047 13256 13423 
 	}
+	resources = {
+		coal = 4
+	}
 	history = {
 		owner = ITA
 		victory_points = {

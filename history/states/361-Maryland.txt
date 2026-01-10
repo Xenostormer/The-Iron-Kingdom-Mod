@@ -4,6 +4,10 @@ state={
 	provinces={
 		3957 6823 6892 6929 6984 9758 11892 13578 
 	}
+	resources={
+		coal = 3
+		steel = 1
+	}
 	history={
 		owner = USA
 		victory_points = {

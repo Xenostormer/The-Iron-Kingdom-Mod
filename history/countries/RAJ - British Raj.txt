@@ -85,6 +85,18 @@ recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_sir_mohammed_iqbal
 recruit_character = RAJ_john_mathai
 
+# IKM NEW ADVI
+recruit_character = RAJ_Sir_B_N_Rau
+recruit_character = RAJ_Sir_Robert_Cassels
+recruit_character = RAJ_Sir_Mir_Osman_Ali_Khan
+recruit_character = RAJ_Mohandas_Gandhi
+recruit_character = RAJ_Geoffrey_Miles
+recruit_character = RAJ_Govind_Ballabh_Pant
+recruit_character = RAJ_Sir_Samuel_Hoare 
+recruit_character = RAJ_Sir_Sikandar_Hayat_Khan
+recruit_character = RAJ_Sir_Tej_Bahadur_Sapru
+recruit_character = RAJ_Sir_Ardeshir_Dalal
+
 if = {
 	limit = { has_dlc = "Graveyard of Empires" }
 

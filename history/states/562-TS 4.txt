@@ -5,6 +5,10 @@ state = {
 	manpower = 163480
 	state_category = pastoral
 
+	resources = {
+		coal = 39
+	}
+
 	history = {
 		owner = SOV
 		buildings = {

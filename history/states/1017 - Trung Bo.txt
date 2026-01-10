@@ -1,0 +1,16 @@
+state={
+	id=1017
+	name="STATE_1017"
+	provinces={
+		2176 2281 2308 4171 5180 8144 10932 10988 
+	}
+	history = {
+		owner = ENG
+		add_core_of = ISR
+	}
+	manpower=1103958
+	buildings_max_level_factor=1
+	state_category=wasteland
+	impassable = yes
+	local_supplies=0
+}

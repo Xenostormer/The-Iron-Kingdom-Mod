@@ -210,7 +210,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_buildings_strip"
 		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
-		noOfFrames = 32
+		noOfFrames = 36
 	}
 	
 	spriteType = {
@@ -928,6 +928,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifiers_RAJ_aden_treaty_port"
 		textureFile = "gfx/interface/state_modifiers/modifiers_RAJ_aden_treaty_port.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_energy"
+		textureFile = "gfx/interface/modifiers/modifiers_energy.dds"
 	}
 
 }

@@ -876,6 +876,20 @@ recruit_character = ITA_giovanni_giorgi
 recruit_character = ITA_filippo_bonfiglietti
 recruit_character = ITA_curio_bernardis
 
+# IKM NEW ADVI
+recruit_character = ITA_Junio_Valerio_Borghese
+recruit_character = ITA_Alessandro_Pavolini
+recruit_character = ITA_Piero_Pirelli
+recruit_character = ITA_Alberto_Pirelli
+recruit_character = ITA_Ettore_Muti
+recruit_character = ITA_Felice_Guarneri
+recruit_character = ITA_Giovanni_Agnelli
+recruit_character = ITA_Vittorio_Valletta
+recruit_character = ITA_Fernando_Mezzasoma
+recruit_character = ITA_Raffaele_Mattioli
+recruit_character = ITA_Cardinal_Alfredo_Schuster
+recruit_character = ITA_Achille_Starace
+
 
 ########################################
 ##### MISSIOLINIS - TRIGGER EVENTS #####

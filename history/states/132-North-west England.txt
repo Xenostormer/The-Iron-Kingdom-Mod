@@ -4,6 +4,7 @@ state={
 	resources={
 		steel=31.000
 		aluminium=2.000
+		coal = 30
 	}
 	provinces={
 		3205 6318 6335 6384 13419 
@@ -27,6 +28,7 @@ state={
 			air_base = 3
 			6384 = {
 				naval_base = 5
+				naval_headquarters = 1
 			}
 		}
 		add_core_of = ENG

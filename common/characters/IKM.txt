@@ -5,7 +5,7 @@ characters={
 	USA_jp_morgan_jr = {
 		advisor={
 			slot = political_advisor
-			idea_token = IRE_sean_ceallaigh
+			#idea_token = IRE_sean_ceallaigh
 			allowed  = {
 					original_tag  = USA
 				}

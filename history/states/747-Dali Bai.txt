@@ -4,6 +4,9 @@ state={
 	provinces={
 		4559 5009 7965 7976 10413 10863 12898 
 	}
+	resources = {
+		coal = 53
+	}
 	history={
 		
 		owner = CHI

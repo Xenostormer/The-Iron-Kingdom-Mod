@@ -687,6 +687,20 @@ recruit_character = ENG_charles_goodeve
 recruit_character = ENG_nevil_shute
 recruit_character = ENG_robert_watson_watt
 
+# IKM NEW ADVI
+recruit_character = ENG_Lord_Halifax
+recruit_character = ENG_Herbert_Morrison
+recruit_character = ENG_William_Beveridge
+recruit_character = ENG_Stafford_Cripps
+recruit_character = ENG_Sir_John_Dill
+recruit_character = ENG_Aneurin_Bevan
+recruit_character = ENG_Anthony_Eden
+recruit_character = ENG_Sir_John_Simon
+recruit_character = ENG_J_Arthur_Rank
+recruit_character = ENG_John_Maynard_Keynes
+recruit_character = ENG_William_Morris
+recruit_character = ENG_Arthur_Greenwood
+
 if = {
 	limit = {
 		has_dlc = "Graveyard of Empires"

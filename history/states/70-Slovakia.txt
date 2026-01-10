@@ -9,6 +9,7 @@ state={
 	resources = {
 		aluminium = 13
 		steel = 2
+		coal = 17
 	}
 
 	history = {

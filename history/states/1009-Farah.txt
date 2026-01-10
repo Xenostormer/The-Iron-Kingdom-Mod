@@ -15,8 +15,8 @@ state={
 			2017 1
 		}
 
-		owner = RAJ
-		add_core_of = ISR
+		owner = PER
+		add_core_of = PER
 
 		1936.01.02 = {
 			owner = AFG

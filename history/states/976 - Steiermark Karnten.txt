@@ -4,6 +4,7 @@ state={
 	resources={
 		aluminium= 4
 		steel = 10
+		coal = 29
 	}
 	provinces={
 		653 3673 3674 6687 9646 9648 9650 9679 11612 13436 

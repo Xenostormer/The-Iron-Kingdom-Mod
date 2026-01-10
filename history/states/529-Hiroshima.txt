@@ -19,6 +19,7 @@ state={
 			1092 = {
 				naval_base = 10
 				# Kure Naval Arsenal
+				naval_headquarters = 1
 				naval_facility = 1
 			}
 

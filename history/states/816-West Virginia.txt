@@ -5,6 +5,7 @@ state={
 	resources = {
 		chromium = 2
 		steel = 425 
+		coal = 124
 	}
 	history={
 		owner = USA

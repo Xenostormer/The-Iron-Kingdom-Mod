@@ -487,7 +487,18 @@ recruit_character = USA_john_walter_christie
 recruit_character = USA_vannevar_bush
 
 # IKM NEW ADVI
-recruit_character = USA_jp_morgan_jr
+recruit_character = USA_James_Farley
+recruit_character = USA_Sam_Rosenman
+recruit_character = USA_Frank_Murphy 
+recruit_character = USA_Cornelius_Vanderbilt
+recruit_character = USA_Raymond_Moley
+recruit_character = USA_Harold_Stassen
+recruit_character = USA_Jesse_Jones
+recruit_character = USA_jp_morgan_jr 
+recruit_character = USA_Frank_Knox
+recruit_character = USA_Adolf_Berle
+recruit_character = USA_Claude_Wickard 
+recruit_character = USA_Homer_Cummings
 
 
 

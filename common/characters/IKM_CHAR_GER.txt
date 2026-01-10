@@ -1,0 +1,221 @@
+characters={
+
+	# USA
+
+	GER_Friedrich_Flick = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					bond_salesman 
+				}
+		}
+		name="Friedrich Flick"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_7"
+			}
+		}
+	}
+
+	GER_Fritz_Sauckel = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					warbond_salesman  
+				}
+		}
+		name="Fritz Sauckel"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_10"
+			}
+		}
+	}
+
+	GER_Alfried_Krupp = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					genius_buisness_tycoon 
+				}
+		}
+		name="Alfried Krupp"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_3"
+			}
+		}
+	}
+
+	GER_Ernst_Kaltenbrunner = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					master_plunderer
+				}
+		}
+		name="Ernst Kaltenbrunner"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_4"
+			}
+		}
+	}
+
+	GER_Robert_Ley = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					rationing_administrator
+				}
+		}
+		name="Robert Ley"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_8"
+			}
+		}
+	}
+
+	GER_Alfred_Rosenberg_1 = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					civil_sector_advocate 
+				}
+		}
+		name="Alfred Rosenberg"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_6"
+			}
+		}
+	}
+
+	GER_Adolf_Eichmann = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					militarism_enforcer
+				}
+		}
+		name="Adolf Eichmann"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_11"
+			}
+		}
+	}
+
+	GER_Kurt_Zeitzler = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					military_staff_advocate
+				}
+		}
+		name="Kurt Zeitzler"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_12"
+			}
+		}
+	}
+
+	GER_Hans_Lammers = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					sneaky_accountant
+				}
+		}
+		name="Hans Lammers"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_1"
+			}
+		}
+	}
+
+	GER_Hermann_Schmitz = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					smart_embezzeler
+				}
+		}
+		name="Hermann Schmitz"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_2"
+			}
+		}
+	}
+
+	GER_Heinrich_Müller = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					regime_gangster
+				}
+		}
+		name="Heinrich Müller"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_5"
+			}
+		}
+	}
+
+	GER_Julius_Streicher = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = GER
+				}
+				traits  = {
+					protectionism_zealot
+				}
+		}
+		name="Julius Streicher"
+		portraits={
+			army={
+				small="GFX_idea_IKM_GER_new_advisor_9"
+			}
+		}
+	}
+
+}

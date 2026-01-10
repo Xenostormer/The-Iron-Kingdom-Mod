@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 		IKM_infantry_industry_funding_0 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 11
 		    allowed = { always = yes }
@@ -19,7 +19,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_1 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 10
 		    ai_will_do = {
@@ -58,7 +58,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_2 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 9
 		    ai_will_do = {
@@ -100,7 +100,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_3 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 8
 		    ai_will_do = {
@@ -132,7 +132,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_4 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 7
 		    ai_will_do = {
@@ -164,7 +164,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_5 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 6
 		    ai_will_do = {
@@ -196,7 +196,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_6 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 5
 		    ai_will_do = {
@@ -228,7 +228,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_7 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 4
 		    ai_will_do = {
@@ -260,7 +260,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_8 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 3
 		    ai_will_do = {
@@ -292,7 +292,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_9 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 2
 		    ai_will_do = {
@@ -324,7 +324,7 @@ ideas = {
 
 		IKM_infantry_industry_funding_10 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 1
 		    ai_will_do = {
@@ -355,7 +355,7 @@ ideas = {
 	        level = 11
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        default = yes
 	        equipment_bonus = {
@@ -386,7 +386,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 2 }
 	        equipment_bonus = {
@@ -420,7 +420,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 4 }
 	        equipment_bonus = {
@@ -454,7 +454,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 6 }
 	        equipment_bonus = {
@@ -488,7 +488,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 8 }
 	        equipment_bonus = {
@@ -522,7 +522,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 10 }
 	        equipment_bonus = {
@@ -556,7 +556,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 12 }
 	        equipment_bonus = {
@@ -590,7 +590,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 14 }
 	        equipment_bonus = {
@@ -624,7 +624,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 16 }
 	        equipment_bonus = {
@@ -658,7 +658,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 18 }
 	        equipment_bonus = {
@@ -692,7 +692,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 20 }
 	    }
@@ -702,7 +702,7 @@ ideas = {
 		use_list_view = yes
 		IKM_armor_industry_funding_0 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 11
 		    allowed = { always = yes }
@@ -719,7 +719,7 @@ ideas = {
 
 		IKM_armor_industry_funding_1 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 10
 		    ai_will_do = {
@@ -750,7 +750,7 @@ ideas = {
 
 		IKM_armor_industry_funding_2 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 9
 		    ai_will_do = {
@@ -796,7 +796,7 @@ ideas = {
 
 		IKM_armor_industry_funding_3 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 8
 		    ai_will_do = {
@@ -842,7 +842,7 @@ ideas = {
 
 		IKM_armor_industry_funding_4 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 7
 		    ai_will_do = {
@@ -888,7 +888,7 @@ ideas = {
 
 		IKM_armor_industry_funding_5 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 6
 		    ai_will_do = {
@@ -934,7 +934,7 @@ ideas = {
 
 		IKM_armor_industry_funding_6 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 5
 		    ai_will_do = {
@@ -980,7 +980,7 @@ ideas = {
 
 		IKM_armor_industry_funding_7 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 4
 		    ai_will_do = {
@@ -1026,7 +1026,7 @@ ideas = {
 
 		IKM_armor_industry_funding_8 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 3
 		    ai_will_do = {
@@ -1072,7 +1072,7 @@ ideas = {
 
 		IKM_armor_industry_funding_9 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 2
 		    ai_will_do = {
@@ -1118,7 +1118,7 @@ ideas = {
 
 		IKM_armor_industry_funding_10 = {
 		    cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 		    removal_cost = -1
 		    level = 1
 		    ai_will_do = {
@@ -1161,7 +1161,7 @@ ideas = {
 	        level = 11
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        default = yes
 	        equipment_bonus = {
@@ -1210,7 +1210,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 2 }
 	        equipment_bonus = {
@@ -1262,7 +1262,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 4 }
 	        equipment_bonus = {
@@ -1314,7 +1314,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 6 }
 	        equipment_bonus = {
@@ -1366,7 +1366,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 8 }
 	        equipment_bonus = {
@@ -1418,7 +1418,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 10 }
 	        equipment_bonus = {
@@ -1470,7 +1470,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 12 }
 	        equipment_bonus = {
@@ -1522,7 +1522,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 14 }
 	        equipment_bonus = {
@@ -1574,7 +1574,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 16 }
 	        equipment_bonus = {
@@ -1626,7 +1626,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 18 }
 	        equipment_bonus = {
@@ -1678,7 +1678,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 20 }
 	    }
@@ -1690,7 +1690,7 @@ ideas = {
 	        level = 11
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        default = yes
 	        equipment_bonus = {
@@ -1719,7 +1719,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 2 }
 	        equipment_bonus = {
@@ -1750,7 +1750,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 4 }
 	        equipment_bonus = {
@@ -1781,7 +1781,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 6 }
 	        equipment_bonus = {
@@ -1812,7 +1812,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 8 }
 	        equipment_bonus = {
@@ -1843,7 +1843,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 10 }
 	        equipment_bonus = {
@@ -1874,7 +1874,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 12 }
 	        equipment_bonus = {
@@ -1905,7 +1905,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 14 }
 	        equipment_bonus = {
@@ -1936,7 +1936,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 16 }
 	        equipment_bonus = {
@@ -1967,7 +1967,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 18 }
 	        equipment_bonus = {
@@ -1998,7 +1998,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 20 }
 	    }
@@ -2010,7 +2010,7 @@ ideas = {
 	        level = 11
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        default = yes
 	        equipment_bonus = {
@@ -2067,7 +2067,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 2 }
 	        equipment_bonus = {
@@ -2127,7 +2127,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 4 }
 	        equipment_bonus = {
@@ -2187,7 +2187,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 6 }
 	        equipment_bonus = {
@@ -2247,7 +2247,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 8 }
 	        equipment_bonus = {
@@ -2307,7 +2307,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 10 }
 	        equipment_bonus = {
@@ -2367,7 +2367,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 12 }
 	        equipment_bonus = {
@@ -2427,7 +2427,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 14 }
 	        equipment_bonus = {
@@ -2487,7 +2487,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 16 }
 	        equipment_bonus = {
@@ -2547,7 +2547,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 18 }
 	        equipment_bonus = {
@@ -2645,7 +2645,7 @@ ideas = {
 		    }
 	        allowed = { always = yes }
 	        cost = 100
-		    use_list_view = yes
+		    #use_list_view = yes
 	        removal_cost = -1
 	        modifier = { civilian_factory_use = 20 }
 	    }

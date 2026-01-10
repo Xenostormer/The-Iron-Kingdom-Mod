@@ -39,6 +39,7 @@ state={
 	
 	resources={
 		aluminium=2
+		coal = 18
 	}
 
 	local_supplies=0.0 

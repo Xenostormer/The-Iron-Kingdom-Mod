@@ -2,7 +2,7 @@ state={
 	id=94
 	name="STATE_94"
 	provinces={
-		535 560 3256 3309 3392 3496 3556 6280 6306 6415 6546 6579 9520 11285 11503 11528 13453 
+		3256 3309 3392 3496 6306 6415 6546 9520 11528 13453  
 	}
 	history={
 		owner = POL
@@ -13,9 +13,6 @@ state={
 		}
 		victory_points = {
 			3392 1
-		}
-		victory_points = {
-			560 1
 		}
 		victory_points = {
 			13453 1 
@@ -29,7 +26,7 @@ state={
 			#add_claim_by =  
 		}
 	}
-	manpower=2464600
+	manpower=2117474
 	buildings_max_level_factor=1.000
 	state_category= large_city
 	local_supplies=0.000

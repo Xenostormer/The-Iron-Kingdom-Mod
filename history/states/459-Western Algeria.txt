@@ -5,6 +5,11 @@ state={
 	provinces={
 		1013 1128 1145 3991 4116 4131 4146 4150 7008 7033 7040 7132 9964 10045 11923 11939 12020 12760 
 	}
+
+	resources={
+		coal = 140 
+	}
+
 	history={
 		owner = FRA
 		add_core_of = ISR

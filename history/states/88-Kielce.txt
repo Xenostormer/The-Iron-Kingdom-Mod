@@ -4,7 +4,8 @@ state={
 
 	resources = {
 		aluminium = 9
-		steel = 4 
+		steel = 4
+		coal = 44  
 	}
 
 
@@ -16,12 +17,9 @@ state={
 		victory_points = {
 			442 3 
 		}
-		victory_points = {
-			9494 1
-		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 4
+			arms_factory = 3
 			industrial_complex = 19
 			air_base = 4
 
@@ -31,9 +29,9 @@ state={
 	}
 
 	provinces={
-		417 442 466 3410 3434 6499 6522 9412 9427 9494 11398 11413 11507 13205 
+		417 442 3410 9412 9427 11398 11413 13205 
 	}
-	manpower=3692800
+	manpower=2923467
 	buildings_max_level_factor=1.000
 	state_category=large_city
 

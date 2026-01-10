@@ -5,6 +5,10 @@ state={
 	manpower = 254100
 	state_category = rural
 
+	resources = {
+		coal = 42
+	}
+
 	history={
 		owner = SAF
 		buildings = {

@@ -26,6 +26,7 @@ state={
 			11834 = {
 				naval_base = 3
 				coastal_bunker = 1
+				naval_supply_hub = 1
 			}
 		}
 		1936.01.02 = {

@@ -1,0 +1,22 @@
+state={
+	id=1035
+	name="STATE_1035"
+	provinces={
+		9801 9864 11740 11900  
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			dockyard = 2
+		}
+		victory_points = {
+			9864 1
+		}
+	}
+	manpower=505167
+	buildings_max_level_factor=1
+	state_category= town
+	local_supplies=0
+}

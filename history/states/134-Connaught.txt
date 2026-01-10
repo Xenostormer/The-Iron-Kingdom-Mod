@@ -7,6 +7,10 @@ state=
 	
 	state_category = rural
 
+	resources={
+		coal = 2
+	}
+
 	history= {
 		owner = IRE
 		victory_points = {

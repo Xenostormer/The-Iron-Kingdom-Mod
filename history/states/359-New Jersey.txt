@@ -2,7 +2,7 @@ state={
 	id=359
 	name="STATE_359"
 	provinces={
-		3693 3863 6882 9801 9864 11740 11782 11900 13582 
+		3693 3863 6882 11782 13582  
 	}
 	history={
 		owner = USA
@@ -21,13 +21,13 @@ state={
 		buildings = {
 			infrastructure = 4 #was: 7
 			industrial_complex = 24
-			dockyard = 5
+			dockyard = 3
 			air_base = 4
 
 		}
 		add_core_of = USA
 	}
-	manpower=4041332
+	manpower=3536166
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=15.000
