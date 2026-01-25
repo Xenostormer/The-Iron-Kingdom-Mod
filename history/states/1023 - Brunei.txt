@@ -1,0 +1,19 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		1359 1405 5063 5104 7060 10311 10324 12226 
+	}
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		victory_points = { 10311 1 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=4321533
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

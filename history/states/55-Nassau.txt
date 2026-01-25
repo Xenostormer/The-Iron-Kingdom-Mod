@@ -1,0 +1,61 @@
+state={
+	id=55
+	name="STATE_55"
+	provinces={
+		589 3398 3524 3574 6444 6488 9486 9547 11560 13445
+	}
+
+	resources = {
+		steel = 8
+		coal = 2
+	}
+
+	history = {
+
+		owner = GER
+		add_core_of = GER
+
+		1936.01.02 = {
+			add_core_of = HES 
+			add_core_of = PRE
+			#add_core_of = 
+		}
+
+		buildings = {
+
+			infrastructure = 4
+			arms_factory = 4
+			industrial_complex = 11
+
+		}
+
+		victory_points = {
+			6488 20 # Frankfurt
+		}
+
+		victory_points = {
+			 13445 1 
+		}
+
+		victory_points = {
+			6444 2 # Wiesbaden
+		}
+
+		victory_points = {
+			11560 2 # Mainz
+		}
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+				arms_factory = 4
+				# From "Develop Heraeus Research Facilities"
+				industrial_complex = 4
+			}
+		}
+	}
+	manpower=3255630
+	buildings_max_level_factor=1.000
+	state_category= metropolis
+	local_supplies=15.000
+}

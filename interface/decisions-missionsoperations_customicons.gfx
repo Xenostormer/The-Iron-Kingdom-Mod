@@ -1,0 +1,32 @@
+spriteTypes = { 
+	##Icon For Category: Missions & Operations
+	SpriteType = { 
+		name = "decision_category_icon_missionsoperations"
+		texturefile = "gfx/interface/decisions/decision_category_icon_missionsoperations.dds"
+	}
+
+	##Picture For: Missions & Operations
+	SpriteType = { 
+		name = "decision_category_picture_missionsoperations"
+		texturefile = "gfx/interface/decisions/decision_category_picture_missionsoperations.dds"
+	}
+
+	##Icon For: Conquest of China
+	SpriteType = { 
+		name = "decision_icon_conquest_of_china"
+		texturefile = "gfx/interface/decisions/decision_icon_conquest_of_china.dds"
+	}
+
+	##Icon For: Second Italo-Ethiopian War
+	SpriteType = { 
+		name = "decision_icon_second_italoethiopian_war"
+		texturefile = "gfx/interface/decisions/decision_icon_second_italoethiopian_war.dds"
+	}
+
+	##Icon For: Second Sino-Japanese War
+	SpriteType = { 
+		name = "decision_icon_second_sinojapanese_war"
+		texturefile = "gfx/interface/decisions/decision_icon_second_sinojapanese_war.dds"
+	}
+
+}

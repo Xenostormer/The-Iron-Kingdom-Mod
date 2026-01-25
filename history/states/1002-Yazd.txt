@@ -1,0 +1,19 @@
+state={
+	id=1002
+	name="STATE_1002"
+	provinces={
+		1963 4966 8031 10828 11249 12780 
+	}
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = PER
+	}
+	manpower=221318
+	impassable = yes
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

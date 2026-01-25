@@ -1,0 +1,362 @@
+resource_storage = {
+	unseal_aluminium_reserves = {
+		icon        = GFX_decision_aluminium
+		cost        = 5
+		days_remove = -1
+
+		visible = { aluminium_storage > 0 }
+
+		cancel_trigger = { custom_trigger_tooltip = { tooltip = aluminium_reseal_or_empty_tt NOT = { has_country_flag = aluminium_storage_tapped } } }
+		cancel_effect  = { modify_building_resources = { building = aluminium_storage resource = aluminium amount = -12 } }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = minimal_aluminium_in_storage_tt
+				check_variable = { var = aluminium_currently_stored value = 10 compare = greater_than_or_equals }
+			}
+		}
+
+		modifier = { production_speed_aluminium_storage_factor = -10 }
+
+		complete_effect = {
+			modify_building_resources = { building = aluminium_storage resource = aluminium amount = 12 }
+			set_country_flag = aluminium_storage_tapped
+
+			hidden_effect = {
+				# 1 – Initialise working vars
+				ROOT = {
+					set_variable = { aluminium_reserves_being_tapped = 12 }
+					set_variable = { aluminium_reserves_multiplier  = 0  }
+				}
+
+				# 2 – Sum all controlled warehouse levels into the multiplier
+				every_state = {
+					limit = { is_controlled_by = ROOT }
+					ROOT  = { add_to_variable = { aluminium_reserves_multiplier = PREV.building_level@aluminium_storage } }
+				}
+
+				# 3 – Base × multiplier, then apply the single correct divisor
+				ROOT = {
+					multiply_variable = { aluminium_reserves_being_tapped = aluminium_reserves_multiplier }
+
+					# daily subtraction has rounding errors; divisor rises very slightly with storage size
+					if      = { limit = { aluminium_storage < 10 }  divide_variable = { aluminium_reserves_being_tapped = 48    } }
+					else_if = { limit = { aluminium_storage < 15 }  divide_variable = { aluminium_reserves_being_tapped = 48.25 } }
+					else_if = { limit = { aluminium_storage < 20 }  divide_variable = { aluminium_reserves_being_tapped = 48.5  } }
+					else_if = { limit = { aluminium_storage < 25 }  divide_variable = { aluminium_reserves_being_tapped = 48.75 } }
+					else_if = { limit = { aluminium_storage < 30 }  divide_variable = { aluminium_reserves_being_tapped = 49    } }
+					else_if = { limit = { aluminium_storage < 35 }  divide_variable = { aluminium_reserves_being_tapped = 49.25 } }
+					else_if = { limit = { aluminium_storage < 40 }  divide_variable = { aluminium_reserves_being_tapped = 49.5  } }
+					else_if = { limit = { aluminium_storage < 50 }  divide_variable = { aluminium_reserves_being_tapped = 49.75 } }
+					else    = {                                   divide_variable = { aluminium_reserves_being_tapped = 50    } }
+				}
+			}
+		}
+	}
+	seal_aluminium_reserves = {
+		icon = GFX_decision_aluminium
+		cost = 5
+		visible = {
+			aluminium_storage > 0
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = aluminium_storage_withdraw_tt		
+			    has_country_flag = aluminium_storage_tapped
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = aluminium_reseal_tt
+			clear_variable = aluminium_reserves_being_tapped
+    		clr_country_flag = aluminium_storage_tapped
+		}
+	}
+	unseal_rubber_reserves = {
+		icon        = GFX_decision_rubber
+		cost        = 5
+		days_remove = -1
+
+		visible = { rubber_storage > 0 }
+
+		cancel_trigger = { custom_trigger_tooltip = { tooltip = rubber_reseal_or_empty_tt NOT = { has_country_flag = rubber_storage_tapped } } }
+		cancel_effect  = { modify_building_resources = { building = rubber_storage resource = rubber amount = -12 } }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = minimal_rubber_in_storage_tt
+				check_variable = { var = rubber_currently_stored value = 10 compare = greater_than_or_equals }
+			}
+		}
+
+		modifier = { production_speed_rubber_storage_factor = -10 }
+
+		complete_effect = {
+			modify_building_resources = { building = rubber_storage resource = rubber amount = 12 }
+			set_country_flag = rubber_storage_tapped
+
+			hidden_effect = {
+				# 1 – Initialise working vars
+				ROOT = {
+					set_variable = { rubber_reserves_being_tapped = 12 }
+					set_variable = { rubber_reserves_multiplier  = 0  }
+				}
+
+				# 2 – Sum all controlled warehouse levels into the multiplier
+				every_state = {
+					limit = { is_controlled_by = ROOT }
+					ROOT  = { add_to_variable = { rubber_reserves_multiplier = PREV.building_level@rubber_storage } }
+				}
+
+				# 3 – Base × multiplier, then apply the single correct divisor
+				ROOT = {
+					multiply_variable = { rubber_reserves_being_tapped = rubber_reserves_multiplier }
+
+					# daily subtraction has rounding errors; divisor rises very slightly with storage size
+					if      = { limit = { rubber_storage < 10 }  divide_variable = { rubber_reserves_being_tapped = 48    } }
+					else_if = { limit = { rubber_storage < 15 }  divide_variable = { rubber_reserves_being_tapped = 48.25 } }
+					else_if = { limit = { rubber_storage < 20 }  divide_variable = { rubber_reserves_being_tapped = 48.5  } }
+					else_if = { limit = { rubber_storage < 25 }  divide_variable = { rubber_reserves_being_tapped = 48.75 } }
+					else_if = { limit = { rubber_storage < 30 }  divide_variable = { rubber_reserves_being_tapped = 49    } }
+					else_if = { limit = { rubber_storage < 35 }  divide_variable = { rubber_reserves_being_tapped = 49.25 } }
+					else_if = { limit = { rubber_storage < 40 }  divide_variable = { rubber_reserves_being_tapped = 49.5  } }
+					else_if = { limit = { rubber_storage < 50 }  divide_variable = { rubber_reserves_being_tapped = 49.75 } }
+					else    = {                                   divide_variable = { rubber_reserves_being_tapped = 50    } }
+				}
+			}
+		}
+	}
+	seal_rubber_reserves = {
+		icon = GFX_decision_rubber
+		cost = 5
+		visible = {
+			rubber_storage > 0
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = rubber_storage_withdraw_tt		
+			    has_country_flag = rubber_storage_tapped
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = rubber_reseal_tt
+			clear_variable = rubber_reserves_being_tapped
+    		clr_country_flag = rubber_storage_tapped
+		}
+	}
+	unseal_tungsten_reserves = {
+		icon        = GFX_decision_tungsten
+		cost        = 5
+		days_remove = -1
+
+		visible = { tungsten_storage > 0 }
+
+		cancel_trigger = { custom_trigger_tooltip = { tooltip = tungsten_reseal_or_empty_tt NOT = { has_country_flag = tungsten_storage_tapped } } }
+		cancel_effect  = { modify_building_resources = { building = tungsten_storage resource = tungsten amount = -12 } }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = minimal_tungsten_in_storage_tt
+				check_variable = { var = tungsten_currently_stored value = 10 compare = greater_than_or_equals }
+			}
+		}
+
+		modifier = { production_speed_tungsten_storage_factor = -10 }
+
+		complete_effect = {
+			modify_building_resources = { building = tungsten_storage resource = tungsten amount = 12 }
+			set_country_flag = tungsten_storage_tapped
+
+			hidden_effect = {
+				# 1 – Initialise working vars
+				ROOT = {
+					set_variable = { tungsten_reserves_being_tapped = 12 }
+					set_variable = { tungsten_reserves_multiplier  = 0  }
+				}
+
+				# 2 – Sum all controlled warehouse levels into the multiplier
+				every_state = {
+					limit = { is_controlled_by = ROOT }
+					ROOT  = { add_to_variable = { tungsten_reserves_multiplier = PREV.building_level@tungsten_storage } }
+				}
+
+				# 3 – Base × multiplier, then apply the single correct divisor
+				ROOT = {
+					multiply_variable = { tungsten_reserves_being_tapped = tungsten_reserves_multiplier }
+
+					# daily subtraction has rounding errors; divisor rises very slightly with storage size
+					if      = { limit = { tungsten_storage < 10 }  divide_variable = { tungsten_reserves_being_tapped = 48    } }
+					else_if = { limit = { tungsten_storage < 15 }  divide_variable = { tungsten_reserves_being_tapped = 48.25 } }
+					else_if = { limit = { tungsten_storage < 20 }  divide_variable = { tungsten_reserves_being_tapped = 48.5  } }
+					else_if = { limit = { tungsten_storage < 25 }  divide_variable = { tungsten_reserves_being_tapped = 48.75 } }
+					else_if = { limit = { tungsten_storage < 30 }  divide_variable = { tungsten_reserves_being_tapped = 49    } }
+					else_if = { limit = { tungsten_storage < 35 }  divide_variable = { tungsten_reserves_being_tapped = 49.25 } }
+					else_if = { limit = { tungsten_storage < 40 }  divide_variable = { tungsten_reserves_being_tapped = 49.5  } }
+					else_if = { limit = { tungsten_storage < 50 }  divide_variable = { tungsten_reserves_being_tapped = 49.75 } }
+					else    = {                                   divide_variable = { tungsten_reserves_being_tapped = 50    } }
+				}
+			}
+		}
+	}
+	seal_tungsten_reserves = {
+		icon = GFX_decision_tungsten
+		cost = 5
+		visible = {
+			tungsten_storage > 0
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = tungsten_storage_withdraw_tt		
+			    has_country_flag = tungsten_storage_tapped
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = tungsten_reseal_tt
+			clear_variable = tungsten_reserves_being_tapped
+    		clr_country_flag = tungsten_storage_tapped
+		}
+	}
+	unseal_steel_reserves = {
+		icon        = GFX_decision_steel
+		cost        = 5
+		days_remove = -1
+
+		visible = { steel_storage > 0 }
+
+		cancel_trigger = { custom_trigger_tooltip = { tooltip = steel_reseal_or_empty_tt NOT = { has_country_flag = steel_storage_tapped } } }
+		cancel_effect  = { modify_building_resources = { building = steel_storage resource = steel amount = -12 } }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = minimal_steel_in_storage_tt
+				check_variable = { var = steel_currently_stored value = 10 compare = greater_than_or_equals }
+			}
+		}
+
+		modifier = { production_speed_steel_storage_factor = -10 }
+
+		complete_effect = {
+			modify_building_resources = { building = steel_storage resource = steel amount = 12 }
+			set_country_flag = steel_storage_tapped
+
+			hidden_effect = {
+				# 1 – Initialise working vars
+				ROOT = {
+					set_variable = { steel_reserves_being_tapped = 12 }
+					set_variable = { steel_reserves_multiplier  = 0  }
+				}
+
+				# 2 – Sum all controlled warehouse levels into the multiplier
+				every_state = {
+					limit = { is_controlled_by = ROOT }
+					ROOT  = { add_to_variable = { steel_reserves_multiplier = PREV.building_level@steel_storage } }
+				}
+
+				# 3 – Base × multiplier, then apply the single correct divisor
+				ROOT = {
+					multiply_variable = { steel_reserves_being_tapped = steel_reserves_multiplier }
+
+					# daily subtraction has rounding errors; divisor rises very slightly with storage size
+					if      = { limit = { steel_storage < 10 }  divide_variable = { steel_reserves_being_tapped = 48    } }
+					else_if = { limit = { steel_storage < 15 }  divide_variable = { steel_reserves_being_tapped = 48.25 } }
+					else_if = { limit = { steel_storage < 20 }  divide_variable = { steel_reserves_being_tapped = 48.5  } }
+					else_if = { limit = { steel_storage < 25 }  divide_variable = { steel_reserves_being_tapped = 48.75 } }
+					else_if = { limit = { steel_storage < 30 }  divide_variable = { steel_reserves_being_tapped = 49    } }
+					else_if = { limit = { steel_storage < 35 }  divide_variable = { steel_reserves_being_tapped = 49.25 } }
+					else_if = { limit = { steel_storage < 40 }  divide_variable = { steel_reserves_being_tapped = 49.5  } }
+					else_if = { limit = { steel_storage < 50 }  divide_variable = { steel_reserves_being_tapped = 49.75 } }
+					else    = {                                   divide_variable = { steel_reserves_being_tapped = 50    } }
+				}
+			}
+		}
+	}
+	seal_steel_reserves = {
+		icon = GFX_decision_steel
+		cost = 5
+		visible = {
+			steel_storage > 0
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = steel_storage_withdraw_tt		
+			    has_country_flag = steel_storage_tapped
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = steel_reseal_tt
+			clear_variable = steel_reserves_being_tapped
+    		clr_country_flag = steel_storage_tapped
+		}
+	}
+	unseal_chromium_reserves = {
+		icon        = GFX_decision_chromium
+		cost        = 5
+		days_remove = -1
+
+		visible = { chromium_storage > 0 }
+
+		cancel_trigger = { custom_trigger_tooltip = { tooltip = chromium_reseal_or_empty_tt NOT = { has_country_flag = chromium_storage_tapped } } }
+		cancel_effect  = { modify_building_resources = { building = chromium_storage resource = chromium amount = -12 } }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = minimal_chromium_in_storage_tt
+				check_variable = { var = chromium_currently_stored value = 10 compare = greater_than_or_equals }
+			}
+		}
+
+		modifier = { production_speed_chromium_storage_factor = -10 }
+
+		complete_effect = {
+			modify_building_resources = { building = chromium_storage resource = chromium amount = 12 }
+			set_country_flag = chromium_storage_tapped
+
+			hidden_effect = {
+				# 1 – Initialise working vars
+				ROOT = {
+					set_variable = { chromium_reserves_being_tapped = 12 }
+					set_variable = { chromium_reserves_multiplier  = 0  }
+				}
+
+				# 2 – Sum all controlled warehouse levels into the multiplier
+				every_state = {
+					limit = { is_controlled_by = ROOT }
+					ROOT  = { add_to_variable = { chromium_reserves_multiplier = PREV.building_level@chromium_storage } }
+				}
+
+				# 3 – Base × multiplier, then apply the single correct divisor
+				ROOT = {
+					multiply_variable = { chromium_reserves_being_tapped = chromium_reserves_multiplier }
+
+					# daily subtraction has rounding errors; divisor rises very slightly with storage size
+					if      = { limit = { chromium_storage < 10 }  divide_variable = { chromium_reserves_being_tapped = 48    } }
+					else_if = { limit = { chromium_storage < 15 }  divide_variable = { chromium_reserves_being_tapped = 48.25 } }
+					else_if = { limit = { chromium_storage < 20 }  divide_variable = { chromium_reserves_being_tapped = 48.5  } }
+					else_if = { limit = { chromium_storage < 25 }  divide_variable = { chromium_reserves_being_tapped = 48.75 } }
+					else_if = { limit = { chromium_storage < 30 }  divide_variable = { chromium_reserves_being_tapped = 49    } }
+					else_if = { limit = { chromium_storage < 35 }  divide_variable = { chromium_reserves_being_tapped = 49.25 } }
+					else_if = { limit = { chromium_storage < 40 }  divide_variable = { chromium_reserves_being_tapped = 49.5  } }
+					else_if = { limit = { chromium_storage < 50 }  divide_variable = { chromium_reserves_being_tapped = 49.75 } }
+					else    = {                                   divide_variable = { chromium_reserves_being_tapped = 50    } }
+				}
+			}
+		}
+	}
+	seal_chromium_reserves = {
+		icon = GFX_decision_chromium
+		cost = 5
+		visible = {
+			chromium_storage > 0
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = chromium_storage_withdraw_tt		
+			    has_country_flag = chromium_storage_tapped
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = chromium_reseal_tt
+			clear_variable = chromium_reserves_being_tapped
+    		clr_country_flag = chromium_storage_tapped
+		}
+	}
+}

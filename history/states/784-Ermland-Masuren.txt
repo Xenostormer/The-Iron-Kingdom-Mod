@@ -1,0 +1,34 @@
+state={
+	id=784
+	name="STATE_784"
+	provinces={
+		3320 9274 9295 10941 11342 
+	}
+	history={
+		owner = POL
+		victory_points = {
+			3320 3
+		}
+		victory_points = {
+			10941 1 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 4
+			arms_factory = 10
+			air_base = 5
+		}
+		add_core_of = POL
+		add_core_of = EST
+		1936.01.02 = {
+			add_core_of = LIT
+			remove_core_of = EST
+			#add_core_of = 
+			#add_claim_by =  
+		}
+	}
+	manpower= 2180300
+	buildings_max_level_factor=1.000
+	state_category= large_city
+	local_supplies=0.000
+}

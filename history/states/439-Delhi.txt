@@ -1,0 +1,30 @@
+state={
+	id=439
+	name="STATE_439"
+	provinces={
+		2032 2054 2086 10794 11955 12868 13494 13495 13569 13570 13571 13572 13573 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 21
+			arms_factory = 3
+			air_base = 4
+		}
+		add_core_of = RAJ
+		victory_points = {
+			2086 30
+		}
+		victory_points = {
+			13495 1
+		}
+		victory_points = {
+			13494 1
+		}
+	}
+	manpower=16959758
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=1.000
+}

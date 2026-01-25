@@ -1,0 +1,13 @@
+war_support_measures = {
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+	allowed = {
+		has_capitulated = no
+	}
+	priority = {
+		base = 1000
+	}
+	visible = {
+		has_war_support < 0.5
+	}
+}

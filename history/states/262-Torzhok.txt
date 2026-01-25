@@ -1,0 +1,31 @@
+
+state = {
+	id = 262
+	name = "STATE_262" # Pechora
+	manpower = 41484
+	
+	state_category = pastoral
+	
+	resources = {
+		oil = 6 # was: 8
+	}
+
+	history = {
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		1936.01.02 = {
+			add_core_of = KOM
+			#add_core_of = 
+		}
+	}
+
+	provinces = {
+		 154 6016 6177 6538 9099 9121 9230 10723 11182 
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,560 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = resource_storage_modifier
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				set_variable = { rubber_currently_stored = 0 }
+				set_variable = { aluminium_currently_stored  = 0 }
+				set_variable = { chromium_currently_stored  = 0 }
+				set_variable = { tungsten_currently_stored  = 0 }
+				set_variable = { steel_currently_stored  = 0 }
+			}
+		}	
+	}
+
+	#Storage system set up 
+
+    on_daily = {
+		effect = {
+			
+			set_variable = { building_storage_capacity = 2000 } # constant, how much items a storage building can hold
+
+			set_variable = { rubber_from_storage = 0 }
+			set_variable = { rubber_capacity = 0 }
+			
+			set_variable = { aluminium_from_storage = 0 }
+			set_variable = { aluminium_capacity = 0 }
+			
+			set_variable = { chromium_from_storage = 0 }
+			set_variable = { chromium_capacity = 0 }
+			
+			set_variable = { tungsten_from_storage = 0 }
+			set_variable = { tungsten_capacity = 0 }
+			
+			set_variable = { steel_from_storage = 0 }
+			set_variable = { steel_capacity = 0 }
+			
+			
+			every_state = {
+				limit = { is_controlled_by = ROOT }
+				ROOT = {
+					add_to_variable = {
+						rubber_capacity = PREV.building_level@rubber_storage 	# amount of rubber storage buildings in the state
+					}
+					add_to_variable = {
+						aluminium_capacity = PREV.building_level@aluminium_storage 
+					}
+					add_to_variable = {
+						chromium_capacity = PREV.building_level@chromium_storage 
+					}
+					add_to_variable = {
+						tungsten_capacity = PREV.building_level@tungsten_storage 
+					}
+					add_to_variable = {
+						steel_capacity = PREV.building_level@steel_storage 
+					}
+					
+				}
+			}
+			
+			
+			# multiply by storage capacity constant
+			multiply_variable = {
+				rubber_capacity = building_storage_capacity
+			}
+			multiply_variable = {
+				aluminium_capacity = building_storage_capacity
+			}
+			multiply_variable = {
+				chromium_capacity = building_storage_capacity
+			}
+			multiply_variable = {
+				tungsten_capacity = building_storage_capacity
+			}
+			multiply_variable = {
+				steel_capacity = building_storage_capacity
+			}
+			
+			# add resource surplus to storage
+			add_to_variable = {
+				rubber_from_storage = resource@rubber # The amount of surplus resource of the specified type, which isn't exported or used in production.
+			}
+			add_to_variable = {
+				aluminium_from_storage = resource@aluminium
+			}
+			add_to_variable = {
+				chromium_from_storage = resource@chromium
+			}
+			add_to_variable = {
+				tungsten_from_storage = resource@tungsten
+			}
+			add_to_variable = {
+				steel_from_storage = resource@steel
+			}
+			
+
+			# limit storage to capacity
+
+			clamp_variable = {
+				var = rubber_from_storage
+				min = 0
+				max = rubber_capacity
+			}
+			clamp_variable = {
+				var = aluminium_from_storage
+				min = 0
+				max = aluminium_capacity
+			}
+			clamp_variable = {
+				var = chromium_from_storage
+				min = 0
+				max = chromium_capacity
+			}
+			clamp_variable = {
+				var = tungsten_from_storage
+				min = 0
+				max = tungsten_capacity
+			}
+			clamp_variable = {
+				var = steel_from_storage
+				min = 0
+				max = steel_capacity
+			}
+		
+		}
+    }
+
+    on_daily = {
+    	effect = {
+    		if = {
+    			limit = {
+    				NOT = {
+    					has_country_flag = rubber_storage_tapped
+    				}
+    				check_variable = {
+					    rubber_from_storage > 0
+					}
+    				check_variable = {
+					    var = rubber_currently_stored
+					    value = rubber_capacity
+					    compare = less_than
+					}
+    			}
+	    		add_to_variable = {
+				    var = rubber_currently_stored
+				    value = rubber_from_storage
+				}
+				clamp_variable = {
+					var = rubber_currently_stored
+					min = 0
+					max = rubber_capacity
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		if = {
+    			limit = {
+    				NOT = {
+    					has_country_flag = aluminium_storage_tapped
+    				}
+    				check_variable = {
+					    aluminium_from_storage > 0
+					}
+    				check_variable = {
+					    var = aluminium_currently_stored
+					    value = aluminium_capacity
+					    compare = less_than
+					}
+    			}
+    			add_to_variable = {
+				    var = aluminium_currently_stored
+				    value = aluminium_from_storage
+				}
+				clamp_variable = {
+					var = aluminium_currently_stored
+					min = 0
+					max = aluminium_capacity
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		if = {
+    			limit = {
+    				NOT = {
+    					has_country_flag = chromium_storage_tapped
+    				}
+    				check_variable = {
+					    chromium_from_storage > 0
+					}
+    				check_variable = {
+					    var = chromium_currently_stored
+					    value = chromium_capacity
+					    compare = less_than
+					}
+    			}
+    			add_to_variable = {
+				    var = chromium_currently_stored
+				    value = chromium_from_storage
+				}
+				clamp_variable = {
+					var = chromium_currently_stored
+					min = 0
+					max = chromium_capacity
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		if = {
+    			limit = {
+    				NOT = {
+    					has_country_flag = tungsten_storage_tapped
+    				}
+    				check_variable = {
+					    tungsten_from_storage > 0
+					}
+    				check_variable = {
+					    var = tungsten_currently_stored
+					    value = tungsten_capacity
+					    compare = less_than
+					}
+    			}
+				add_to_variable = {
+				    var = tungsten_currently_stored
+				    value = tungsten_from_storage
+				}
+				clamp_variable = {
+					var = tungsten_currently_stored
+					min = 0
+					max = tungsten_capacity
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		if = {
+    			limit = {
+    				NOT = {
+    					has_country_flag = steel_storage_tapped
+    				}
+    				check_variable = {
+					    steel_from_storage > 0
+					}
+    				check_variable = {
+					    var = steel_currently_stored
+					    value = steel_capacity
+					    compare = less_than
+					}
+    			}
+				add_to_variable = {
+				    var = steel_currently_stored
+				    value = steel_from_storage
+				}
+				clamp_variable = {
+					var = steel_currently_stored
+					min = 0
+					max = steel_capacity
+				}
+    		}
+    	}
+    }
+
+    #Reset stroage to capacity to make sury you can't have more than your supposed to if you loose the state the warehouse is in. 
+
+    on_daily = {
+    	effect = {
+    		if = {
+    			limit = {
+    				OR = {
+    					check_variable = {
+						    var = rubber_currently_stored
+						    value = rubber_capacity
+						    compare = greater_than
+						}
+						check_variable = {
+						    var = aluminium_currently_stored
+						    value = aluminium_capacity
+						    compare = greater_than
+						}
+						check_variable = {
+						    var = chromium_currently_stored
+						    value = chromium_capacity
+						    compare = greater_than
+						}
+						check_variable = {
+						    var = tungsten_currently_stored
+						    value = tungsten_capacity
+						    compare = greater_than
+						}
+						check_variable = {
+						    var = steel_currently_stored
+						    value = steel_capacity
+						    compare = greater_than
+						}
+    				}
+    			}
+    			clamp_variable = {
+					var = rubber_currently_stored
+					min = 0
+					max = rubber_capacity
+				}
+				clamp_variable = {
+					var = aluminium_currently_stored
+					min = 0
+					max = aluminium_capacity
+				}
+				clamp_variable = {
+					var = chromium_currently_stored
+					min = 0
+					max = chromium_capacity
+				}
+				clamp_variable = {
+					var = tungsten_currently_stored
+					min = 0
+					max = tungsten_capacity
+				}
+				clamp_variable = {
+					var = steel_currently_stored
+					min = 0
+					max = steel_capacity
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = rubber_storage_tapped
+    				check_variable = {
+					    var = rubber_currently_stored
+					    value = 0
+					    compare = greater_than
+					}
+    			}
+    			multiply_variable = {
+				    var = rubber_from_storage
+				    value = 0
+				}
+    			subtract_from_variable = {
+				    var = rubber_currently_stored
+				    value = rubber_reserves_being_tapped
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = rubber_storage_tapped
+    				check_variable = {
+					    var = rubber_currently_stored
+					    value = 0
+					    compare = less_than_or_equals
+					}
+    			}
+    			clear_variable = rubber_reserves_being_tapped
+    			clr_country_flag = rubber_storage_tapped
+    			set_variable = {
+				    var = rubber_currently_stored
+				    value = 0
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = aluminium_storage_tapped
+    				check_variable = {
+					    var = aluminium_currently_stored
+					    value = 0
+					    compare = greater_than
+					}
+    			}
+    			multiply_variable = {
+				    var = aluminium_from_storage
+				    value = 0
+				}
+    			subtract_from_variable = {
+				    var = aluminium_currently_stored
+				    value = aluminium_reserves_being_tapped
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = aluminium_storage_tapped
+    				check_variable = {
+					    var = aluminium_currently_stored
+					    value = 0
+					    compare = less_than_or_equals
+					}
+    			}
+    			clear_variable = aluminium_reserves_being_tapped
+    			clr_country_flag = aluminium_storage_tapped
+    			set_variable = {
+				    var = aluminium_currently_stored
+				    value = 0
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = chromium_storage_tapped
+    				check_variable = {
+					    var = chromium_currently_stored
+					    value = 0
+					    compare = greater_than
+					}
+    			}
+    			multiply_variable = {
+				    var = chromium_from_storage
+				    value = 0
+				}
+    			subtract_from_variable = {
+				    var = chromium_currently_stored
+				    value = chromium_reserves_being_tapped
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = chromium_storage_tapped
+    				check_variable = {
+					    var = chromium_currently_stored
+					    value = 0
+					    compare = less_than_or_equals
+					}
+    			}
+    			clear_variable = chromium_reserves_being_tapped
+    			clr_country_flag = chromium_storage_tapped
+    			set_variable = {
+				    var = chromium_currently_stored
+				    value = 0
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = tungsten_storage_tapped
+    				check_variable = {
+					    var = tungsten_currently_stored
+					    value = 0
+					    compare = greater_than
+					}
+    			}
+    			multiply_variable = {
+				    var = tungsten_from_storage
+				    value = 0
+				}
+    			subtract_from_variable = {
+				    var = tungsten_currently_stored
+				    value = tungsten_reserves_being_tapped
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = tungsten_storage_tapped
+    				check_variable = {
+					    var = tungsten_currently_stored
+					    value = 0
+					    compare = less_than_or_equals
+					}
+    			}
+    			clear_variable = tungsten_reserves_being_tapped
+    			clr_country_flag = tungsten_storage_tapped
+    			set_variable = {
+				    var = tungsten_currently_stored
+				    value = 0
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = steel_storage_tapped
+    				check_variable = {
+					    var = steel_currently_stored
+					    value = 0
+					    compare = greater_than
+					}
+    			}
+    			multiply_variable = {
+				    var = steel_from_storage
+				    value = 0
+				}
+    			subtract_from_variable = {
+				    var = steel_currently_stored
+				    value = steel_reserves_being_tapped
+				}
+    		}
+    	}
+    }
+
+    on_daily = {
+    	effect = {
+    		every_country = {
+    			limit = {
+    				has_country_flag = steel_storage_tapped
+    				check_variable = {
+					    var = steel_currently_stored
+					    value = 0
+					    compare = less_than_or_equals
+					}
+    			}
+    			clear_variable = steel_reserves_being_tapped
+    			clr_country_flag = steel_storage_tapped
+    			set_variable = {
+				    var = steel_currently_stored
+				    value = 0
+				}
+    		}
+    	}
+    }
+}

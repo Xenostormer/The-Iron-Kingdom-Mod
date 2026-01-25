@@ -1,0 +1,13 @@
+AI_flow_control_events = {
+	visible_when_empty = yes
+	allowed = {
+		is_ai = yes
+	}
+	priority = {
+		base = 6000
+	}
+	visible = {
+		is_ai = yes
+		tag = CHL
+	}
+}

@@ -1,0 +1,34 @@
+state={
+	id=619
+	name="STATE_619"
+
+	resources={
+		tungsten= 8
+	}
+
+	provinces={
+		1766 2015 4828 5016 5087 7790 7949 12119 
+	}
+	history={
+		
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MON
+
+		1936.01.02 = {
+			owner = SIK
+			add_core_of = SIK
+		}
+
+		buildings = {
+		}
+		victory_points = {
+			2015 2
+		}
+	}
+	manpower=1430700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

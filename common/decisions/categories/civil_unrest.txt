@@ -1,0 +1,46 @@
+civil_unrest = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	visible_when_empty = yes
+	allowed = {
+		has_capitulated = no
+	}
+	priority = {
+		base = 3000
+	}
+	visible = {
+		NOT = {
+			has_idea = SPR_political_violence
+			has_idea = AUS_treaty_of_saint_germain_en_laye
+			has_idea = GRE_political_instability
+		}
+		OR = {
+			has_stability < 0.5
+			has_war_support < 0.5
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			democratic < 0.6
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			neutrality < 0.6
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			fascism < 0.6
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			communism < 0.6
+		}
+	}
+}

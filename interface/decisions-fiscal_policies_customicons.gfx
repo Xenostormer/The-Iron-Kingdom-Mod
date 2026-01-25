@@ -1,0 +1,92 @@
+spriteTypes = { 
+	##Icon For Category: Fiscal Policies
+	SpriteType = { 
+		name = "decision_category_icon_fiscal_policies"
+		texturefile = "gfx/interface/decisions/decision_category_icon_fiscal_policies.dds"
+	}
+
+	##Picture For: Fiscal Policies
+	SpriteType = { 
+		name = "decision_category_picture_fiscal_policies"
+		texturefile = "gfx/interface/decisions/decision_category_picture_fiscal_policies.dds"
+	}
+
+	##Icon For: Telecommunication Investment
+	SpriteType = { 
+		name = "decision_icon_telecommunication_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_telecommunication_investment.dds"
+	}
+
+	##Icon For: Education Investment
+	SpriteType = { 
+		name = "decision_icon_education_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_education_investment.dds"
+	}
+
+	##Icon For: Healthcare Investment
+	SpriteType = { 
+		name = "decision_icon_healthcare_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_healthcare_investment.dds"
+	}
+
+	##Icon For: Infrastructure Investment
+	SpriteType = { 
+		name = "decision_icon_infrastructure_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_infrastructure_investment.dds"
+	}
+
+	##Icon For: Transportation Investment
+	SpriteType = { 
+		name = "decision_icon_transportation_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_transportation_investment.dds"
+	}
+
+	##Icon For: Maritime Investment
+	SpriteType = { 
+		name = "decision_icon_maritime_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_maritime_investment.dds"
+	}
+
+	##Icon For: Automotive Investment
+	SpriteType = { 
+		name = "decision_icon_automotive_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_automotive_investment.dds"
+	}
+
+	##Icon For: Aviation Investment
+	SpriteType = { 
+		name = "decision_icon_aviation_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_aviation_investment.dds"
+	}
+
+	##Icon For: Welfare Investment
+	SpriteType = { 
+		name = "decision_icon_welfare_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_welfare_investment.dds"
+	}
+
+	##Icon For: Commerce Investment
+	SpriteType = { 
+		name = "decision_icon_commerce_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_commerce_investment.dds"
+	}
+
+	##Icon For: Telecommunication Investment
+	SpriteType = { 
+		name = "decision_icon_telecommunication_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_telecommunication_investment.dds"
+	}
+
+	##Icon For: Agriculture Investment
+	SpriteType = { 
+		name = "decision_icon_agriculture_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_agriculture_investment.dds"
+	}
+
+	##Icon For: Justice Investment
+	SpriteType = { 
+		name = "decision_icon_justice_investment"
+		texturefile = "gfx/interface/decisions/decision_icon_justice_investment.dds"
+	}
+
+}

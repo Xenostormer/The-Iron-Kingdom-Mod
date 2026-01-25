@@ -1,0 +1,87 @@
+ideas = {
+
+	country = {
+
+		IKM_british_loan_rejected = {
+			modifier = {
+				democratic_drift = -0.02
+				democratic_acceptance = -10
+			}
+		}
+		IKM_small_british_loan = {
+			modifier = {
+				consumer_goods_factor = -0.05
+			} 
+		}
+		IKM_medium_british_loan = {
+			modifier = {
+				consumer_goods_factor = -0.075
+			} 
+		}
+		IKM_large_british_loan = {
+			modifier = {
+				consumer_goods_factor = -0.1
+			} 
+		}
+		IKM_french_loan_rejected = {
+			modifier = {
+				democratic_drift = -0.01
+				democratic_acceptance = -5
+			} 
+		}
+		IKM_small_french_loan = {
+			modifier = {
+				consumer_goods_factor = -0.025
+			} 
+		}
+		IKM_medium_french_loan = {
+			modifier = {
+				consumer_goods_factor = -0.05
+			} 
+		}
+		IKM_large_french_loan = {
+			modifier = {
+				consumer_goods_factor = -0.075
+			} 
+		}
+		IKM_american_loan_rejected = {
+			modifier = {
+				democratic_drift = -0.04
+				democratic_acceptance = -20
+			} 
+		}
+		IKM_small_american_loan = {
+			modifier = {
+				consumer_goods_factor = -0.075
+			} 
+		}
+		IKM_medium_american_loan = {
+			modifier = {
+				consumer_goods_factor = -0.1
+			} 
+		}
+		IKM_large_american_loan = {
+			modifier = {
+				consumer_goods_factor = -0.125
+			} 
+		}
+		IKM_reject_sending_german_instructors = {
+			modifier = {
+				fascism_drift = -0.04
+				fascism_acceptance = -20
+			} 
+		}
+		IKM_reject_sending_italian_instructors = {
+			modifier = {
+				fascism_drift = -0.01
+				fascism_acceptance = -5
+			} 
+		}
+		IKM_reject_sending_japanese_instructors = {
+			modifier = {
+				fascism_drift = -0.02
+				fascism_acceptance = -10
+			} 
+		}
+	}
+}

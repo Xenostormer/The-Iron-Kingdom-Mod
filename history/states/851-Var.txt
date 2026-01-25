@@ -1,0 +1,56 @@
+state={
+	id=851
+	name="STATE_851"
+	provinces={
+		911 956 3928 3961 9909 
+	}
+
+	resources = {
+		steel = 8 
+	}
+
+	history = {
+
+		owner = FRA
+		1936.01.02 = {
+			add_core_of = OCC 
+			#add_core_of =
+			#add_core_of = 
+		}
+		add_core_of = FRA
+
+		victory_points = {
+			911 1 # Toulon
+		}
+		victory_points = {
+			9909 5 # Nice
+		}
+
+		buildings = {
+			infrastructure = 3
+			dockyard = 3
+			911 = {
+				naval_base = 10
+				coastal_bunker = 1
+			}
+			# Malpasset Dam
+			#3928 = { dam = 1 }
+			9909 = {
+				naval_base = 2
+			}
+		}
+		
+		1939.1.1 = {
+			buildings = {
+				dockyard = 1
+				911 = {
+					naval_facility = 1 # Toulon arsenal
+				}
+			}
+		}
+	}
+	manpower=485000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

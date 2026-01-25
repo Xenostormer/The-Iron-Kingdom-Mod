@@ -1,0 +1,23 @@
+state = {
+	id = 1026
+	name = "STATE_1026"
+	manpower = 751793 
+	
+	state_category = wasteland
+	impassable = yes
+
+	resources = {
+
+	}
+
+	history = {
+		owner = AST
+		add_core_of = AST
+	}
+
+	provinces = {
+		2129 4317 5135 7362 7378 7409 10954 11004 11018 12428 12931
+	}
+
+	local_supplies = 0.0 
+}

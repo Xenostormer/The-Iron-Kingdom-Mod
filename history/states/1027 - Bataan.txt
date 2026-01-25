@@ -1,0 +1,35 @@
+state = {
+
+	id = 1027
+	name = "STATE_1027" # Bataan
+	manpower = 6120345
+	
+	state_category = town
+
+	resources = {
+
+	}
+
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		set_demilitarized_zone = yes
+		victory_points = { 
+			1055 1 
+		}
+		buildings = {
+			infrastructure = 1
+			1055 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		1055 1094 4013 4070 4099 4113 4169 7086 9944 9972 10012 10042 10069 11947
+	}
+
+	local_supplies = 0.0 
+}

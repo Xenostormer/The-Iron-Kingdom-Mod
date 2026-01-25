@@ -1,0 +1,1182 @@
+war_support_measures = {
+	###instant effects
+	massive_call_to_arms_rally = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_nationalism
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			base = 1000
+		}
+		visible = {
+			check_variable = {
+			    mass_cta_r < 5
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = mass_cta_r
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 1000
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mass_cta_r > 0
+					}
+					check_variable = {
+					    mass_cta_r < 2
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 2500
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mass_cta_r > 1
+					}
+					check_variable = {
+					    mass_cta_r < 3
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 5000
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mass_cta_r > 2
+					}
+					check_variable = {
+					    mass_cta_r < 4
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 7500
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mass_cta_r > 3
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 9000
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.35
+			add_to_variable = {
+			    var = mass_cta_r
+			    value = 1
+			}
+		}
+	}
+	moderate_call_to_arms_rally  = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_nationalism
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			base = 1000
+		}
+		visible = {
+			check_variable = {
+			    mid_cta_r < 5
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = mid_cta_r
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 100
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mid_cta_r > 0
+					}
+					check_variable = {
+					    mid_cta_r < 2
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 250
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mid_cta_r > 1
+					}
+					check_variable = {
+					    mid_cta_r < 3
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 500
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mid_cta_r > 2
+					}
+					check_variable = {
+					    mid_cta_r < 4
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 750
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mid_cta_r > 3
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 900
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.2
+			add_to_variable = {
+			    var = mid_cta_r
+			    value = 1
+			}
+		}
+	}
+	minuscule_call_to_arms_rally  = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_nationalism
+		days_re_enable = 180
+		cost = 25 
+		ai_will_do = {
+			base = 1000
+		}
+		visible = {
+			check_variable = {
+			    mini_cta_r < 5
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = mini_cta_r
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mini_cta_r > 0
+					}
+					check_variable = {
+					    mini_cta_r < 2
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 25
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mini_cta_r > 1
+					}
+					check_variable = {
+					    mini_cta_r < 3
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 50
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mini_cta_r > 2
+					}
+					check_variable = {
+					    mini_cta_r < 4
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 75
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+					    mini_cta_r > 3
+					}
+				}
+				any_enemy_country = {
+					casualties_inflicted_by = {
+					    opponent = ROOT
+					    thousands > 90
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			add_to_variable = {
+			    var = mini_cta_r
+			    value = 1
+			}
+		}
+	}
+	national_rally_around_the_flag  = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_form_nation
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			base = 1000
+		}
+		available = {
+			OR = {
+				AND = {
+					has_offensive_war = yes
+					longest_war_length < 3
+				}
+				AND = {
+					has_defensive_war = yes
+					longest_war_length < 6
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.3
+		}
+	}
+	hold_gigantic_military_parade  = {
+		allowed = { always = yes }
+		icon = GFX_decision_ITA_reorganize_ascari
+		days_re_enable = 545
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_manpower > 5000
+			stockpile_ratio = {
+			    archetype = infantry_equipment
+			    ratio > 0.15
+			}
+			OR = {
+				stockpile_ratio = {
+				    archetype = motorized_equipment
+				    ratio > 0.12
+				}
+				stockpile_ratio = {
+				    archetype = armored_car_equipment
+				    ratio > 0.08
+				}
+				stockpile_ratio = {
+				    archetype = mechanized_equipment
+				    ratio > 0.08
+				}
+			}
+			OR = {
+				stockpile_ratio = {
+				    archetype = artillery_equipment
+				    ratio > 0.09
+				}
+				stockpile_ratio = {
+				    archetype = anti_air_equipment
+				    ratio > 0.06
+				}
+				stockpile_ratio = {
+				    archetype = anti_tank_equipment 
+				    ratio > 0.06
+				}
+			}
+			OR = {
+				stockpile_ratio = {
+				    archetype = light_tank_chassis 
+				    ratio > 0.02
+				}
+				stockpile_ratio = {
+				    archetype = medium_tank_chassis 
+				    ratio > 0.02
+				}
+				stockpile_ratio = {
+				    archetype = heavy_tank_chassis
+
+				    ratio > 0.02
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.1
+		}
+	}
+	hold_large_military_parade  = {
+		allowed = { always = yes }
+		icon = GFX_decision_ITA_reorganize_ascari
+		days_re_enable = 365 
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_manpower > 2500
+			stockpile_ratio = {
+			    archetype = infantry_equipment
+			    ratio > 0.25
+			}
+			OR = {
+				stockpile_ratio = {
+				    archetype = motorized_equipment
+				    ratio > 0.1
+				}
+				stockpile_ratio = {
+				    archetype = armored_car_equipment
+				    ratio > 0.04
+				}
+				stockpile_ratio = {
+				    archetype = mechanized_equipment
+				    ratio > 0.04
+				}
+			}
+			OR = {
+				stockpile_ratio = {
+				    archetype = artillery_equipment
+				    ratio > 0.07
+				}
+				stockpile_ratio = {
+				    archetype = anti_air_equipment
+				    ratio > 0.03
+				}
+				stockpile_ratio = {
+				    archetype = anti_tank_equipment 
+				    ratio > 0.03
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+	hold_small_military_parade  = {
+		allowed = { always = yes }
+		icon = GFX_decision_ITA_reorganize_ascari
+		days_re_enable = 180
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_manpower > 1000
+			stockpile_ratio = {
+			    archetype = infantry_equipment
+			    ratio > 0.1
+			}
+			OR = {
+				stockpile_ratio = {
+				    archetype = motorized_equipment
+				    ratio > 0.08
+				}
+				stockpile_ratio = {
+				    archetype = artillery_equipment
+				    ratio > 0.05
+				}
+				stockpile_ratio = {
+				    archetype = armored_car_equipment
+				    ratio > 0.02
+				}
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.025
+		}
+	}
+	release_propaganda_film  = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_pickelhaube
+		days_re_enable = 730
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_tech = electronic_mechanical_engineering 
+		}
+		complete_effect = {
+			add_war_support = 0.15
+		}
+	}
+
+	###modifier effect
+
+	discharge_conscious_objectors = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_independence
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 0
+			modifier = {
+		        add = 0
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.57
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.57
+			}
+		}
+		modifier = {
+			weekly_manpower = -100
+			war_support_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+
+	relax_colonial_draft_laws = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_disband_irregulars
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 0
+			modifier = {
+		        add = 10
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.1
+		    }
+		    modifier = {
+		    	add = -500
+		    	NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		    }
+		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ISR
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.57
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.57
+			}
+		}
+		modifier = {
+			non_core_manpower = -0.1
+			war_support_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+
+	assassinate_pacifist_agitators = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_assassination
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 0
+			modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.1
+		    }
+		}
+		available = {
+			has_stability > 0.1
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.57
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.57
+			}
+		}
+		modifier = {
+			stability_factor = -0.1
+			war_support_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+
+	infiltrate_dissenter_circles = {
+		allowed = { always = yes }
+		icon = GFX_decision_recruit_operative
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 0
+			modifier = {
+		        add = 10
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        has_war_support < 0.1
+		    }
+		}
+		available = {
+			has_stability > 0.02
+			has_intelligence_agency = yes
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.57
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.57
+			}
+		}
+		modifier = {
+			operative_slot = -1
+			agency_upgrade_time = 0.25
+			intel_network_gain_factor = -0.25
+			stability_factor = -0.02
+			war_support_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+
+	increase_officer_salaries = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_army_support
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 0
+			modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.57
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.57
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.57
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.57
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+			war_support_weekly = 0.001
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+
+	increase_draftee_pensions = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_military
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 0
+			modifier = {
+		        add = 10
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        has_war_support < 0.1
+		    }
+		}
+		available = {
+			NOT = {
+				has_idea = disarmed_nation
+				has_idea = volunteer_only
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.57
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.57
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.57
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.57
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.025
+			war_support_weekly = 0.003
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+	increase_regimental_provisions = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_motorized
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+			base = 1
+			modifier = {
+		        add = 0
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = disarmed_nation
+		    		has_idea = volunteer_only
+		    	}
+		        has_war_support < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.57
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.57
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.57
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.57
+			}
+		}
+		modifier = {
+			supply_consumption_factor = 0.2
+			war_support_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.02
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.02
+				}
+			}
+		}
+	}
+}

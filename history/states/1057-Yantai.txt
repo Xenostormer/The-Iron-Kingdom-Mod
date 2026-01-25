@@ -1,0 +1,36 @@
+state={
+	id=1057
+	name="STATE_1057"
+	provinces={
+		1104 1184 1200 4186 4205 7105 10018 
+	}
+
+	resources = {
+		steel = 62 
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+
+		set_demilitarized_zone = yes
+
+		victory_points = {
+			4205 1 
+		}
+		
+		buildings = {
+			infrastructure = 2
+			4205 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	manpower=3197767
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

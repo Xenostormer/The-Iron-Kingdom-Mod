@@ -1,0 +1,27 @@
+state={
+	id=1040
+	name="STATE_1040"
+	provinces={
+		586 3474 9416 11404 
+	}
+	resources = {
+		steel = 4
+		coal = 61
+	}
+	history = {
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			11404 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		
+	}
+	manpower=418026
+	buildings_max_level_factor=1
+	state_category= town
+	local_supplies=0
+}

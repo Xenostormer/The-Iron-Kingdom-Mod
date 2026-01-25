@@ -1,0 +1,37 @@
+state = {
+	id = 923
+	name = "STATE_923"
+	manpower = 182100
+	
+	state_category = rural
+	
+	resources = {
+		tungsten = 5
+		steel = 18
+	}
+
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		1936.01.02 = {
+			add_core_of = SMI
+			#add_core_of = 
+			#add_core_of = 
+			#add_claim_by =  
+		}
+		
+		victory_points = {
+			3048 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+
+	provinces = {
+		173 3048 3088 3126 6071 6111 6187 9208 
+	}
+
+	local_supplies = 0.0
+}

@@ -1,0 +1,22 @@
+state={
+	id=1018
+	name="STATE_1018"
+	provinces={
+		2005 4045 4410 5040 5096 7938 10332 
+	}
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		victory_points = {
+			7938 1  
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+	}
+	manpower=6480766
+	buildings_max_level_factor=1
+	state_category= large_town
+	local_supplies=10
+}

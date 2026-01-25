@@ -1,0 +1,230 @@
+ideas = {
+
+	country = {
+
+		#Spanish Civil War volunteers level 5 - axis majors
+		IKM_spanish_civil_war_volunteers_5_axis = {
+			name = IKM_spanish_civil_war_volunteers
+			picture = IKM_spanish_civil_war_volunteers
+			cancel = {
+			    SPR = {
+			    	has_civil_war = no
+			    }
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 5
+				air_volunteer_cap = 3 
+			}
+		}
+
+		#Spanish Civil War volunteers level 5 - soviet
+		IKM_spanish_civil_war_volunteers_5_soviet = {
+			name = IKM_spanish_civil_war_volunteers
+			picture = IKM_spanish_civil_war_volunteers
+			cancel = {
+			    OR = {
+			    	SPR = {
+				    	has_civil_war = no
+				    }
+				    SPR = {
+				    	has_civil_war = yes
+				    	surrender_progress > 0.75
+				    }
+			    }
+			}
+			on_remove = {
+               ENG = {
+               		add_to_faction = GRE
+               } 
+            }
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 5
+				air_volunteer_cap = 3
+			}
+		}
+
+		#Spanish Civil War volunteers level 4 - japan
+		IKM_spanish_civil_war_volunteers_4 = {
+			name = IKM_spanish_civil_war_volunteers
+			picture = IKM_spanish_civil_war_volunteers
+			cancel = {
+			    SPR = {
+			    	has_civil_war = no
+			    }
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 4
+				air_volunteer_cap = 2
+			}
+		}
+
+		#Spanish Civil War volunteers level 3 - allies majors
+		IKM_spanish_civil_war_volunteers_3 = {
+			name = IKM_spanish_civil_war_volunteers
+			picture = IKM_spanish_civil_war_volunteers
+			cancel = {
+			    OR = {
+			    	SPR = {
+				    	has_civil_war = no
+				    }
+				    SPR = {
+				    	has_civil_war = yes
+				    	surrender_progress > 0.75
+				    }
+			    }
+			}
+			on_remove = {
+               if = {
+               		limit = {
+               			ROOT = {
+               				is_leading_volunteer_group = D01
+               			}
+               		}
+               		ROOT = {
+               			recall_volunteers_from = D01
+               		}
+               }
+            }
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 3
+				air_volunteer_cap = 1
+			}
+		}
+
+		#Spanish Civil War volunteers level 2 - axis minors
+		IKM_spanish_civil_war_volunteers_2 = {
+			name = IKM_spanish_civil_war_volunteers
+			picture = IKM_spanish_civil_war_volunteers
+			cancel = {
+			    SPR = {
+			    	has_civil_war = no
+			    }
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 2 
+			}
+		}
+
+		#Spanish Civil War volunteers level 1 - allies minors
+		IKM_spanish_civil_war_volunteers_1 = {
+			name = IKM_spanish_civil_war_volunteers
+			picture = IKM_spanish_civil_war_volunteers
+			cancel = {
+			    OR = {
+			    	SPR = {
+				    	has_civil_war = no
+				    }
+				    SPR = {
+				    	has_civil_war = yes
+				    	surrender_progress > 0.75
+				    }
+			    }
+			}
+			on_remove = {
+               if = {
+               		limit = {
+               			ROOT = {
+               				is_leading_volunteer_group = D01
+               			}
+               		}
+               		ROOT = {
+               			recall_volunteers_from = D01
+               		}
+               }
+            }
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 1
+			}
+		}
+
+		#Spanish WW2 Volunteers 
+		IKM_spanish_ww2_volunteers = {
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 23
+				air_volunteer_cap = 1
+			}
+		}
+
+		#Generic WW2 Volunteers 
+		IKM_axis_ww2_volunteers = {
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 12
+				air_volunteer_cap = 5
+			}
+		}
+
+		#American Africa Volunteers 
+		IKM_usa_africa_volunteers = {
+			cancel = {
+				has_war = yes
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 7
+			}
+		}
+
+		#American Barbarossa Volunteers 
+		IKM_usa_barbarossa_volunteers = {
+			cancel = {
+				has_war = yes
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 23
+			}
+		}
+
+		#American Barbarossa Volunteers 
+		IKM_usa_barbarossa_volunteers_2 = {
+			cancel = {
+				has_war = yes
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 47
+			}
+		}
+	}
+}

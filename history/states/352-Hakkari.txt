@@ -1,0 +1,28 @@
+state={
+	id=352
+	name="STATE_352"
+	provinces={
+		864 1463 7530 10497 12318 12476 
+	}
+	history={
+		owner = TUR
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = KUR
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			add_core_of = KUR
+		}
+	}
+	impassable = yes
+	manpower=262095
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

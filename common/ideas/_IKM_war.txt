@@ -1,0 +1,214 @@
+ideas = {
+
+	country = {
+
+		#UK, France
+		IKM_phoney_war = { 
+
+		    allowed = { always = no }
+
+		    cancel = {
+			    OR = {
+			    	FRA = {
+			    		surrender_progress > 0.2
+			    	}
+			    	GER = {
+			    		has_war_with = HOL
+			    	}
+			    	GER = {
+			    		has_war_with = BEL
+			    	}
+			    }
+			}
+
+		    modifier = {
+		        army_core_attack_factor = 0.5
+		    	army_core_defence_factor = 0.5
+		    	air_strategic_bomber_bombing_factor = -1
+		    }
+
+		    targeted_modifier = {
+		    	tag = GER
+		    	attack_bonus_against_cores = -0.5
+		    }
+
+		    removal_cost = -1
+
+		}
+
+		#Germany
+		IKM_sitzkrieg = {
+
+		    allowed = { always = no }
+
+		    cancel = {
+			    OR = {
+			    	FRA = {
+			    		surrender_progress > 0.5
+			    	}
+			    	GER = {
+			    		has_war_with = HOL
+			    	}
+			    	GER = {
+			    		has_war_with = BEL
+			    	}
+			    }
+			}
+
+		    modifier = {
+		        army_core_attack_factor = 0.5
+		    	army_core_defence_factor = 0.5
+		    	air_strategic_bomber_bombing_factor = -1
+		    }
+
+		    targeted_modifier = {
+		    	tag = ENG
+		    	attack_bonus_against_cores = -0.5
+		    }
+
+		    targeted_modifier = {
+		    	tag = FRA
+		    	attack_bonus_against_cores = -0.5
+		    }
+
+		    removal_cost = -1
+
+		}
+
+		#Germany
+		IKM_manstein_plan = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					HOL = {
+						has_capitulated = yes
+					}
+					BEL = {
+						has_capitulated = yes
+					}
+					FRA = {
+						surrender_progress > 0.25
+					}
+				}
+				if = {
+					limit = {
+						is_ai = no
+					}
+					is_in_faction_with = ITA
+				}
+			}
+
+			modifier = {
+				ai_focus_aggressive_factor = 1
+			}
+
+			targeted_modifier = { 
+				tag = HOL
+				attack_bonus_against = 0.2 
+			}
+			targeted_modifier = { 
+				tag = BEL
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = FRA
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = { 
+				tag = ENG
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = { 
+				tag = CAN
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = { 
+				tag = SAF
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = { 
+				tag = RAJ
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = { 
+				tag = AUS
+				attack_bonus_against = 0.3
+			}
+		}
+
+		#Germany AI
+		IKM_manstein_plan_AI = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_in_faction_with = ITA
+			}
+
+			modifier = {
+				ai_focus_aggressive_factor = 1
+			}
+
+			targeted_modifier = { 
+				tag = HOL
+				attack_bonus_against = 0.2 
+			}
+			targeted_modifier = { 
+				tag = BEL
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = { 
+				tag = FRA
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = { 
+				tag = ENG
+				attack_bonus_against = 0.25
+			}
+			targeted_modifier = { 
+				tag = CAN
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = { 
+				tag = SAF
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = { 
+				tag = RAJ
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = { 
+				tag = AUS
+				attack_bonus_against = 0.3
+			}
+		}
+
+
+		#Greece
+		IKM_greco_italian_war = {
+			cancel = {
+			    surrender_progress > 0.5
+			}
+			on_remove = {
+               ENG = {
+               		add_to_faction = GRE
+               } 
+            }
+			rule = {
+			    can_join_factions = no
+			}
+			modifier = {
+				army_core_defence_factor = 0.1
+				war_support_factor = 0.4
+			}
+		}
+	
+	}
+}

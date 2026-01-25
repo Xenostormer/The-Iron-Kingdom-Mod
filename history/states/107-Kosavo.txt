@@ -1,0 +1,34 @@
+state={
+	id=107
+	name="STATE_107"
+	provinces={
+		797 3609 3956 3984 6634 9599 11583 11586 13434 
+	}
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 16
+			air_base = 5
+
+		}
+		victory_points = {
+			11586 15 
+		}
+		victory_points = {
+			13434 1  
+		}
+		add_core_of = YUG
+		1936.01.02 = {
+			add_core_of = SER 
+			#add_core_of = 
+			#add_core_of = 
+		}
+
+	}
+	manpower=1279121
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=4.000
+}

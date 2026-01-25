@@ -1,0 +1,185 @@
+characters={
+
+	# USA
+
+	RAJ_Sir_Samuel_Hoare = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					bond_salesman 
+				}
+		}
+		name="Sir Samuel Hoare"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_7"
+			}
+		}
+	}
+
+	RAJ_Sir_Ardeshir_Dalal = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					warbond_salesman  
+				}
+		}
+		name="Sir Ardeshir Dalal"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_10"
+			}
+		}
+	}
+
+	RAJ_Sir_Mir_Osman_Ali_Khan = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					genius_buisness_tycoon 
+				}
+		}
+		name="Sir Mir Osman Ali Khan"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_3"
+			}
+		}
+	}
+
+	RAJ_Govind_Ballabh_Pant = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					rationing_administrator
+				}
+		}
+		name="Govind Ballabh Pant"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_6"
+			}
+		}
+	}
+
+	RAJ_Mohandas_Gandhi = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					civil_sector_advocate 
+				}
+		}
+		name="Mohandas Gandhi"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_4"
+			}
+		}
+	}
+
+	RAJ_Geoffrey_Miles = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					militarism_enforcer
+				}
+		}
+		name="Geoffrey Miles"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_5"
+			}
+		}
+	}
+
+	RAJ_Sir_Robert_Cassels = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					military_staff_advocate
+				}
+		}
+		name="Sir Robert Cassels"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_2"
+			}
+		}
+	}
+
+	RAJ_Sir_Tej_Bahadur_Sapru = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					sneaky_accountant
+				}
+		}
+		name="Sir Tej Bahadur Sapru"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_9"
+			}
+		}
+	}
+
+	RAJ_Sir_B_N_Rau = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					union_buster
+				}
+		}
+		name="Sir B.N. Rau"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_1"
+			}
+		}
+	}
+
+	RAJ_Sir_Sikandar_Hayat_Khan = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					protectionism_zealot
+				}
+		}
+		name="Sir Sikandar Hayat Khan"
+		portraits={
+			army={
+				small="GFX_idea_IKM_RAJ_new_advisor_10"
+			}
+		}
+	}
+
+}

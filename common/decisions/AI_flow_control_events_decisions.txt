@@ -1,0 +1,127 @@
+AI_flow_control_events = {
+	spanish_civil_war_volunteers = {
+		allowed = { always = yes }
+		fire_only_once = yes
+		ai_will_do = { base = 1000 }
+		available = {
+			SPR_scw_in_progress = yes
+		}
+		complete_effect = {
+			GER = { country_event = IKM.42 }
+			ITA = { country_event = IKM.42 }
+			SOV = { country_event = IKM.42 }
+			JAP = { country_event = IKM.42 }
+			ENG = { country_event = IKM.42 }
+			FRA = { country_event = IKM.42 }
+			HUN = { country_event = IKM.42 }
+			ROM = { country_event = IKM.42 }
+			MAN = { country_event = IKM.42 }
+			CAN = { country_event = IKM.42 }
+			SAF = { country_event = IKM.42 }
+			RAJ = { country_event = IKM.42 }
+			AST = { country_event = IKM.42 }
+		}
+	}
+
+	american_africa_volunteers = {
+		allowed = { always = yes }
+		fire_only_once = yes
+		ai_will_do = { base = 1000 }
+		available = {
+			FRA = {
+				has_war_with = GER
+				has_capitulated = yes 
+			}
+		}
+		complete_effect = {
+			USA = { country_event = IKM.43 }
+		}
+	}
+
+	american_barbarossa_volunteers = {
+		allowed = { always = yes }
+		fire_only_once = yes
+		ai_will_do = { base = 1000 }
+		available = {
+			SOV = {
+				has_defensive_war_with = GER 
+			}
+			NOT = {
+				USA = {
+					has_defensive_war_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			USA = { country_event = IKM.44 }
+		}
+	}
+
+	american_barbarossa_volunteers_part_2 = {
+		allowed = { always = yes }
+		fire_only_once = yes
+		ai_will_do = { base = 1000 }
+		available = {
+			SOV = {
+				has_defensive_war_with = GER
+				longest_war_length > 3 
+			}
+			NOT = {
+				USA = {
+					has_defensive_war_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			USA = { country_event = IKM.45 }
+		}
+	}
+
+	spanish_volunteers_volunteers = {
+		allowed = { always = yes }
+		fire_only_once = yes
+		ai_will_do = { base = 1000 }
+		available = {
+			SPR = {
+				has_war = no	
+			}
+			GER = {
+				has_war_with_major = yes
+			}
+			
+		}
+		complete_effect = {
+			SPR = { country_event = IKM.46 }
+		}
+	}
+
+	japan_prc_forced_peace = {
+		allowed = { always = yes }
+		fire_only_once = no
+		ai_will_do = { base = 1000 }
+		available = {
+			OR = {
+				JAP = {
+				has_wargoal_against = PRC
+				}
+				PRC = {
+					has_wargoal_against = JAP
+				}
+			}
+		}
+		complete_effect = {
+			JAP = {
+				remove_wargoal = {
+				    type = all
+				    target = PRC
+				}
+			}
+			PRC = {
+				remove_wargoal = {
+				    type = all
+				    target = JAP
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,206 @@
+on_actions = {
+	#british empire strength system
+	on_startup = {
+		effect = {
+			ENG = {
+				set_variable = {
+					var = british_imperial_integrity
+					value = 8
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = ENG
+					}
+					FROM.FROM = {
+						OR = {
+							state = 118
+							state = 116
+							state = 183
+							state = 907
+							state = 658
+							state = 992
+							state = 326
+							state = 336
+						}
+					}
+				}
+				ENG = {
+					subtract_from_variable = {
+					    var = british_imperial_integrity
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = ENG
+					FROM.FROM = {
+						OR = {
+							state = 118
+							state = 116
+							state = 183
+							state = 907
+							state = 658
+							state = 992
+							state = 326
+							state = 336
+						}
+					}
+				}
+				ENG = {
+					add_to_variable = {
+					    var = british_imperial_integrity
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_weekly_ENG = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_8	
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 8
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_8	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_7
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 7
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_7	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_6	
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 6
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_6	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_5
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 5
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_5	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_4
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 4
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_4	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_3
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 3
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_3	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_2
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 2
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_2	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity_1
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 1
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity_1	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = IKM_ENG_imperial_integrity	
+					}
+					check_variable = {
+					    var = british_imperial_integrity
+					    value = 0
+					    compare = equals
+					}
+				}
+				add_ideas = IKM_ENG_imperial_integrity	
+			}
+		}
+	}
+}

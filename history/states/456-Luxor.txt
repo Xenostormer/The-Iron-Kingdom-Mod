@@ -1,0 +1,43 @@
+state={
+	id=456
+	name="STATE_456"
+	provinces={
+		1028 1064 1151 1206 4910 7030 7073 7144 7156 10028 10097 10844 11974 11999 12044 12071 12771 
+	}
+	history = {
+		
+		owner = ENG
+		add_core_of = ISR
+		1936.01.02 = {
+			add_core_of = EGY
+			#add_core_of = 
+			#add_core_of = 
+			#add_claim_by =  
+		}
+
+		buildings = {
+			infrastructure = 2
+
+			# Aswan Low Dam
+			11999 = { dam = 1 }
+
+		}
+
+		victory_points = {
+			12071 3 # Luxor
+		}
+
+		victory_points = {
+			11974 1 # Asyut
+		}
+
+		victory_points = {
+			11999 1 # Aswan
+		}
+
+	}
+	manpower=4224516
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+stability_measures = {
+	icon = GFX_decision_category_power_struggle
+	picture = GFX_decision_cat_picture_chi_political_support
+	allowed = {
+		has_capitulated = no
+	}
+	priority = {
+		base = 2000
+	}
+	visible = {
+		has_stability < 0.5
+		OR = {
+			AND = {
+				has_government = democratic
+				democratic < 1
+			}
+			AND = {
+				has_government = neutrality
+				neutrality < 1
+			}
+			AND = {
+				has_government = fascism
+				fascism < 1
+			}
+			AND = {
+				has_government = communism
+				communism < 1
+			}
+		}
+	}
+}

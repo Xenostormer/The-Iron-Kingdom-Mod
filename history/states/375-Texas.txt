@@ -1,0 +1,44 @@
+state={
+	id=375
+	name="STATE_375"
+	resources={
+		oil=350.000
+	}
+	provinces={
+		805 1500 1927 2042 2082 3960 4577 4884 5001 5022 5061 6785 6968 6987 7628 7981 9829 9920 10337 10504 10778 10861 12341 12369 12410 12486 12782 13574 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 10
+			dockyard = 1 
+			arms_factory = 1 
+			air_base = 3
+			10337 = {
+				naval_base = 3
+			}
+			6785 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			10337 10
+		}
+		victory_points = {
+			3960 10 
+		}
+		victory_points = {
+			12782 1 
+		}
+		victory_points = {
+			13574 1
+		}
+
+	}
+	manpower=4992610
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=9.000
+}

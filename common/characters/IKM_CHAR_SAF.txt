@@ -1,0 +1,185 @@
+characters={
+
+	# USA
+
+	SAF_J_G_Strijdom = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					bond_salesman 
+				}
+		}
+		name="J. G. Strijdom"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_10"
+			}
+		}
+	}
+
+	SAF_Solomon_Isaacs = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					warbond_salesman  
+				}
+		}
+		name="Solomon Isaacs"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_1"
+			}
+		}
+	}
+
+	SAF_Sir_Ernest_Oppenheimer = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					genius_buisness_tycoon 
+				}
+		}
+		name="Sir Ernest Oppenheimer"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_9"
+			}
+		}
+	}
+
+	SAF_A_B_Xuma = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					corruption_crusader
+				}
+		}
+		name="A. B. Xuma"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_8"
+			}
+		}
+	}
+
+	SAF_Walter_Madeley = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					rationing_administrator
+				}
+		}
+		name="Walter Madeley"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_4"
+			}
+		}
+	}
+
+	SAF_Clements_Kadalie = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					civil_sector_advocate 
+				}
+		}
+		name="Clements Kadalie"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_2"
+			}
+		}
+	}
+
+	SAF_Louis_Botha = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					militarism_enforcer
+				}
+		}
+		name="Louis Botha"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_7"
+			}
+		}
+	}
+
+	SAF_Harry_Oppenheimer = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					sneaky_accountant
+				}
+		}
+		name="Harry Oppenheimer"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_7"
+			}
+		}
+	}
+
+	SAF_Charles_Swart = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					union_buster
+				}
+		}
+		name="Charles Swart"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_3"
+			}
+		}
+	}
+
+	SAF_J_H_Hofmeyr = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = SAF 
+				}
+				traits  = {
+					campaign_funder
+				}
+		}
+		name="J. H. Hofmeyr"
+		portraits={
+			army={
+				small="GFX_idea_IKM_SAF_new_advisor_6"
+			}
+		}
+	}
+
+}

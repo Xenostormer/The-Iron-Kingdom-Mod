@@ -1,0 +1,150 @@
+ideas = {
+	
+	markets = {
+
+		law = yes
+		use_list_view = yes
+
+		IKM_laissez-fiare_economy = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    available = {
+		    	NOT = {
+		    		has_government = fascism
+		    		has_government = communism
+		    	}
+		    }
+		    modifier = {
+		    	#political_power_gain = 
+		    	political_power_factor = 0.1
+		    	stability_weekly = 0.004
+		    	war_support_weekly = -0.004
+		    	local_resources_factor = 0.05
+		    	production_speed_buildings_factor = 0.02
+		    	industrial_capacity_factory = 0.15
+		    	industrial_capacity_dockyard = 0.15 
+		    	production_factory_efficiency_gain_factor = 0.05
+		    	production_factory_max_efficiency_factor = 0.01
+		    	repair_speed_factor = -0.1
+		    	industry_air_damage_factor = 0.15 
+		    	industry_free_repair_factor = -0.2
+		    	#max_fuel_factor =  
+		    	#local_factories = 
+		    }
+		}
+
+		IKM_keynesian_market_economy = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    default = yes
+		    available = {
+		    	NOT = {
+		    		has_government = fascism
+		    		has_government = communism
+		    	}
+		    }
+		    modifier = {
+		    	political_power_gain = 0.1
+		    	political_power_factor = 0.05
+		    	stability_weekly = 0.003
+		    	war_support_weekly = -0.003
+		    	#local_resources_factor = 
+		    	#production_speed_buildings_factor = 
+		    	industrial_capacity_factory = 0.1
+		    	industrial_capacity_dockyard = 0.1
+		    	#production_factory_efficiency_gain_factor = 
+		    	#production_factory_max_efficiency_factor = 
+		    	repair_speed_factor = -0.05
+		    	industry_air_damage_factor = 0.05
+		    	industry_free_repair_factor = -0.1
+		    	max_fuel_factor = 0.05  
+		    	local_factories = 0.03
+		    }
+		}
+
+		IKM_socialist_market_economy = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    available = {
+		    	NOT = {
+		    		has_government = fascism
+		    		has_government = communism
+		    		original_tag = USA
+		    	}
+		    }
+		    modifier = {
+		    	political_power_gain = 0.2
+		    	#political_power_factor = 
+		    	stability_weekly = 0.002
+		    	war_support_weekly = -0.002
+		    	local_resources_factor = -0.05
+		    	production_speed_buildings_factor = -0.02
+		    	industrial_capacity_factory = 0.05
+		    	industrial_capacity_dockyard = 0.05 
+		    	production_factory_efficiency_gain_factor = -0.05 
+		    	production_factory_max_efficiency_factor = -0.01
+		    	#repair_speed_factor = 
+		    	#industry_air_damage_factor = 
+		    	#industry_free_repair_factor =
+		    	max_fuel_factor = 0.1
+		    	local_factories = 0.06
+		    }
+		}
+
+		IKM_mixed_economy = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    available = {
+		    	has_government = fascism
+		    }
+		    modifier = {
+		    	political_power_gain = 0.3
+		    	political_power_factor = -0.05
+		    	stability_weekly = 0.001
+		    	war_support_weekly = -0.001
+		    	local_resources_factor = -0.1
+		    	production_speed_buildings_factor = -0.04
+		    	#industrial_capacity_factory =
+		    	#industrial_capacity_dockyard =  
+		    	production_factory_efficiency_gain_factor = -0.1
+		    	production_factory_max_efficiency_factor = -0.02
+		    	repair_speed_factor = 0.05 
+		    	industry_air_damage_factor = -0.05 
+		    	industry_free_repair_factor = 0.1
+		    	max_fuel_factor = 0.15
+		    	local_factories = 0.09
+		    }
+		}
+
+		IKM_command_economy = {
+			cost = 150
+		    removal_cost = -1
+		    allowed = { always = yes }
+		    available = {
+		    	has_government = communism
+		    }
+		    modifier = {
+		    	political_power_gain = 0.4 
+		    	political_power_factor = -0.1
+		    	#stability_weekly = 
+		    	#war_support_weekly = 
+		    	local_resources_factor = -0.15
+		    	production_speed_buildings_factor = -0.08
+		    	industrial_capacity_factory = -0.05
+		    	industrial_capacity_dockyard = -0.05
+		    	production_factory_efficiency_gain_factor = -0.15
+		    	production_factory_max_efficiency_factor = -0.04
+		    	repair_speed_factor = 0.1
+		    	industry_air_damage_factor = -0.15
+		    	industry_free_repair_factor = 0.2
+		    	max_fuel_factor = 0.2 
+		    	local_factories = 0.12
+		    }
+		}
+
+	}
+}

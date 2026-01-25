@@ -1,0 +1,427 @@
+ideas = {
+	country = {
+		IKM_ITA_imperial_integrity = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ITA_imperial_integrity_4 
+							has_idea = IKM_ITA_imperial_integrity_3
+							has_idea = IKM_ITA_imperial_integrity_2
+							has_idea = IKM_ITA_imperial_integrity_1
+						}
+					}
+					remove_ideas = {
+						IKM_ITA_imperial_integrity_4 
+						IKM_ITA_imperial_integrity_3
+						IKM_ITA_imperial_integrity_2
+						IKM_ITA_imperial_integrity_1
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.45
+				army_core_defence_factor = 0.45
+				surrender_limit = 0.3
+			}
+		}
+		IKM_ITA_imperial_integrity_1 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ITA_imperial_integrity_4 
+							has_idea = IKM_ITA_imperial_integrity_3
+							has_idea = IKM_ITA_imperial_integrity_2
+							has_idea = IKM_ITA_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ITA_imperial_integrity_4 
+						IKM_ITA_imperial_integrity_3
+						IKM_ITA_imperial_integrity_2
+						IKM_ITA_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				surrender_limit = 0.1
+			}
+		}
+		IKM_ITA_imperial_integrity_2 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ITA_imperial_integrity_4 
+							has_idea = IKM_ITA_imperial_integrity_3
+							has_idea = IKM_ITA_imperial_integrity_1
+							has_idea = IKM_ITA_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ITA_imperial_integrity_4 
+						IKM_ITA_imperial_integrity_3
+						IKM_ITA_imperial_integrity_1
+						IKM_ITA_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				surrender_limit = 0.2
+			}
+		}
+		IKM_ITA_imperial_integrity_3 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ITA_imperial_integrity_4 
+							has_idea = IKM_ITA_imperial_integrity_8
+							has_idea = IKM_ITA_imperial_integrity_2
+							has_idea = IKM_ITA_imperial_integrity_1
+							has_idea = IKM_ITA_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ITA_imperial_integrity_4 
+						IKM_ITA_imperial_integrity_2
+						IKM_ITA_imperial_integrity_1
+						IKM_ITA_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.75
+				army_core_defence_factor = 0.75
+				surrender_limit = 0.3
+			}
+		}
+		IKM_ITA_imperial_integrity_4 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = { 
+							has_idea = IKM_ITA_imperial_integrity_3
+							has_idea = IKM_ITA_imperial_integrity_2
+							has_idea = IKM_ITA_imperial_integrity_1
+							has_idea = IKM_ITA_imperial_integrity
+						}
+					}
+					remove_ideas = { 
+						IKM_ITA_imperial_integrity_3
+						IKM_ITA_imperial_integrity_2
+						IKM_ITA_imperial_integrity_1
+						IKM_ITA_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 1
+				army_core_defence_factor = 1
+				surrender_limit = 0.4
+			}
+		}
+		IKM_ENG_imperial_integrity = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity_8
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity_8
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.45
+				army_core_defence_factor = 0.45
+				surrender_limit = 0.3
+			}
+		}
+		IKM_ENG_imperial_integrity_1 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_8
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_8
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				surrender_limit = 0.1
+			}
+		}
+		IKM_ENG_imperial_integrity_2 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_8
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_8
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+				surrender_limit = 0.2
+			}
+		}
+		IKM_ENG_imperial_integrity_3 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_8
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_8
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.45
+				army_core_defence_factor = 0.45
+				surrender_limit = 0.3
+			}
+		}
+		IKM_ENG_imperial_integrity_4 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_8 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_8 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.6
+				army_core_defence_factor = 0.6
+				surrender_limit = 0.4
+			}
+		}
+		IKM_ENG_imperial_integrity_5 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_8
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_8
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.75
+				army_core_defence_factor = 0.75
+				surrender_limit = 0.5
+			}
+		}
+		IKM_ENG_imperial_integrity_6 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_8 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_8 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.9
+				army_core_defence_factor = 0.9
+				surrender_limit = 0.6
+			}
+		}
+		IKM_ENG_imperial_integrity_7 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_8
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_8
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 1.05
+				army_core_defence_factor = 1.05
+				surrender_limit = 0.7
+			}
+		}
+		IKM_ENG_imperial_integrity_8 = {
+			on_add = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = IKM_ENG_imperial_integrity_7 
+							has_idea = IKM_ENG_imperial_integrity_6 
+							has_idea = IKM_ENG_imperial_integrity_5
+							has_idea = IKM_ENG_imperial_integrity_4 
+							has_idea = IKM_ENG_imperial_integrity_3
+							has_idea = IKM_ENG_imperial_integrity_2
+							has_idea = IKM_ENG_imperial_integrity_1
+							has_idea = IKM_ENG_imperial_integrity
+						}
+					}
+					remove_ideas = {
+						IKM_ENG_imperial_integrity_7 
+						IKM_ENG_imperial_integrity_6 
+						IKM_ENG_imperial_integrity_5
+						IKM_ENG_imperial_integrity_4 
+						IKM_ENG_imperial_integrity_3
+						IKM_ENG_imperial_integrity_2
+						IKM_ENG_imperial_integrity_1
+						IKM_ENG_imperial_integrity
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 1.2
+				army_core_defence_factor = 1.2
+				surrender_limit = 0.8
+			}
+		}
+	}
+}

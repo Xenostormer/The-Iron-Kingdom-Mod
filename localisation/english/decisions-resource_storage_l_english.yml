@@ -1,0 +1,32 @@
+﻿l_english:
+ # Unseal Decisions
+ unseal_aluminium_reserves:0 "Unseal Aluminium Reserves"
+ unseal_aluminium_reserves_desc:0 "Begin tapping into our stored aluminium reserves to support production."
+
+ unseal_rubber_reserves:0 "Unseal Rubber Reserves"
+ unseal_rubber_reserves_desc:0 "Begin tapping into our stored rubber reserves to support production."
+
+ unseal_tungsten_reserves:0 "Unseal Tungsten Reserves"
+ unseal_tungsten_reserves_desc:0 "Begin tapping into our stored tungsten reserves to support production."
+
+ unseal_steel_reserves:0 "Unseal Steel Reserves"
+ unseal_steel_reserves_desc:0 "Begin tapping into our stored steel reserves to support production."
+
+ unseal_chromium_reserves:0 "Unseal Chromium Reserves"
+ unseal_chromium_reserves_desc:0 "Begin tapping into our stored chromium reserves to support production."
+
+ # Seal Decisions
+ seal_aluminium_reserves:0 "Reseal Aluminium Reserves"
+ seal_aluminium_reserves_desc:0 "Seal off the aluminium reserves to conserve resources and halt withdrawal."
+
+ seal_rubber_reserves:0 "Reseal Rubber Reserves"
+ seal_rubber_reserves_desc:0 "Seal off the rubber reserves to conserve resources and halt withdrawal."
+
+ seal_tungsten_reserves:0 "Reseal Tungsten Reserves"
+ seal_tungsten_reserves_desc:0 "Seal off the tungsten reserves to conserve resources and halt withdrawal."
+
+ seal_steel_reserves:0 "Reseal Steel Reserves"
+ seal_steel_reserves_desc:0 "Seal off the steel reserves to conserve resources and halt withdrawal."
+
+ seal_chromium_reserves:0 "Reseal Chromium Reserves"
+ seal_chromium_reserves_desc:0 "Seal off the chromium reserves to conserve resources and halt withdrawal."

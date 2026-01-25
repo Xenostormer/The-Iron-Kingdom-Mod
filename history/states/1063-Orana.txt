@@ -1,0 +1,25 @@
+state={
+	id=1063
+	name="STATE_1063"
+
+	resources={
+		tungsten = 42 
+	}
+
+	provinces={
+		2163 4453 4478 4500 4658 7471 7533 7649 8234 10977 10991 12934 12968 13534 13535 13536 
+	}
+	history={
+		owner = AST
+		add_core_of = AST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 3
+		}
+	}
+	manpower=398381
+	state_category= large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

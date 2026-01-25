@@ -1,0 +1,1521 @@
+stability_measures = {
+	###instant effects
+	power_sharing_agreement = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_eng_trade_unions_support 
+		days_re_enable = 365
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.75
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.75
+			}
+		}
+		complete_effect = {
+			add_stability = 0.2
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.2
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.2
+				}
+			}
+		}
+	}
+	crackdown_on_white_collar_crime = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_generic_arrest
+		days_re_enable = 180
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = fascism
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.6
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.6
+			}
+		}
+		complete_effect = {
+			add_stability = 0.1
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.05
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.05
+				}
+			}
+		}
+	}
+	fire_ineffective_politicans = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_SWI_dismiss_council
+		days_re_enable = 90
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = communism
+				has_government = fascism
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.65
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.65
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.65
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.1
+				}
+			}
+		}
+	}
+	arrest_protest_organizers = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_oppression
+		days_re_enable = 180
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+				has_government = neutrality
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.65
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.65
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.65
+			}
+		}
+		complete_effect = {
+			add_stability = 0.1
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.1
+				}
+			}
+		}
+	}
+	reeducation_initiative = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_generic_brainwash
+		days_re_enable = 365
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				communism > 0.7
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				fascism > 0.7
+			}
+		}
+		complete_effect = {
+			add_stability = 0.15
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.15
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.15
+				}
+			}
+		}
+	}
+	blame_instability_on_minorities = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_generic_speech
+		days_re_enable = 365
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			has_government = fascism
+			fascism > 0.65
+			OR = {
+				democratic > party_popularity@neutrality
+				communism > party_popularity@neutrality
+			}
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = 0.1
+			}
+		}
+	}
+	blame_instability_on_kulaks = {
+		allowed = { always = yes }
+		cost = 25
+		icon = GFX_decision_generic_civil_support
+		days_re_enable = 365
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 10
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			has_government = communism
+			fascism > 0.65
+			OR = {
+				democratic > party_popularity@fascism
+				neutrality > party_popularity@fascism
+			}
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.1
+			}
+		}
+	}
+	
+
+	###modifier effect
+
+	buyback_government_bonds = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_welfare
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			has_government = democratic
+		}
+		modifier = {
+			political_power_cost = 0.5
+			stability_weekly = 0.002
+			consumer_goods_factor = 0.02
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = democratic
+			    popularity = -0.05
+			}
+		}
+	}
+
+	decentralize_executive_powers = {
+		allowed = { always = yes }
+		icon = GFX_decision_SWI_no_elected_president
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			has_government = neutrality 
+		}
+		modifier = {
+			political_power_factor = -0.5
+			stability_weekly = 0.002
+		}
+		remove_effect = {
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = -0.05
+			}
+		}
+	}
+
+	increase_government_pensions = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_consumer_goods
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.55
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.55
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.55
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.55
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.025
+			stability_weekly = 0.003
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.005
+				}
+			}
+		}
+	}
+
+	increase_overtime_benefits = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_industry
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.55
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.55
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.55
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.55
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.01
+			stability_weekly = 0.001
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.005
+				}
+			}
+		}
+	}
+
+	decrease_production_quotas = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_wreckers
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.55
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.55
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.55
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.55
+			}
+		}
+		modifier = {
+			industrial_capacity_factory = -0.2
+			industrial_capacity_dockyard = -0.2
+			stability_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.005
+				}
+			}
+		}
+	}
+
+	decrease_employment_requirments = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_break_treaty
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.55
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.55
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.55
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.55
+			}
+		}
+		modifier = {
+			production_factory_efficiency_gain_factor = -0.2
+			stability_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.005
+				}
+			}
+		}
+	}
+
+	pay_medical_leave_for_miners_and_farmers = {
+		allowed = { always = yes }
+		icon = GFX_decision_POL_organize_strike_two
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			OR = {
+				has_resources_in_country = {
+				    resource = oil
+				    amount > 99
+				    extracted = yes
+				}
+				has_resources_in_country = {
+				    resource = aluminum
+				    amount > 99
+				    extracted = yes
+				}
+				has_resources_in_country = {
+				    resource = rubber
+				    amount > 99
+				    extracted = yes
+				}
+				has_resources_in_country = {
+				    resource = tungsten
+				    amount > 99
+				    extracted = yes
+				}
+				has_resources_in_country = {
+				    resource = steel
+				    amount > 99
+				    extracted = yes
+				}
+				has_resources_in_country = {
+				    resource = chromium
+				    amount > 99
+				    extracted = yes
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.55
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.55
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.55
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.55
+			}
+		}
+		modifier = {
+			local_resources_factor = -0.2
+			stability_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.005
+				}
+			}
+		}
+	}
+
+	pay_medical_leave_for_consturction_workers = {
+		allowed = { always = yes }
+		icon = GFX_decision_generic_construction
+		days_re_enable = 365
+		days_remove = 90
+		cost = 25
+		ai_will_do = {
+		    base = 0
+		    modifier = {
+		        add = 20
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.5
+		    }
+		    modifier = {
+		        add = 40
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.4
+		    }
+		    modifier = {
+		        add = 80
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.3
+		    }
+		    modifier = {
+		        add = 160
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.2
+		    }
+		    modifier = {
+		        add = 320
+		        NOT = {
+		    		has_idea = isolation
+		    		has_idea = undisturbed_isolation
+		    	}
+		        has_stability < 0.1
+		    }
+		}
+		available = {
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				democratic > 0.55
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				neutrality > 0.55
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				communism > 0.55
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				fascism > 0.55
+			}
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.2
+			stability_weekly = 0.002
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_government = democratic
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = democratic
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.005
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+					is_ai = no
+				}
+				add_popularity = {
+				    ideology = fascism
+				    popularity = -0.005
+				}
+			}
+		}
+	}
+
+}

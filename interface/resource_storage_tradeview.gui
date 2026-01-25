@@ -1,0 +1,58 @@
+guiTypes = {
+
+	containerWindowType = {
+		position = { x = 0 y = 0 }
+		name = "rubber_storage_info"
+		
+		iconType ={
+			name ="rubber_storage_info_icon"
+			spriteType = "GFX_rubber_storage"
+			position = { x = 252 y = 213  }
+			pdx_tooltip = "rubber_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "steel_storage_info"
+		position = { x = 0 y = 0 }
+		
+		iconType ={
+			name ="steel_storage_info_icon"
+			spriteType = "GFX_steel_storage"
+			position = { x = 388 y = 213 }
+			pdx_tooltip = "steel_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "chromium_storage_info"
+		position = { x = 0 y = 0 }
+		
+		iconType ={
+			name ="chromium_storage_info_icon"
+			spriteType = "GFX_chromium_storage"
+			position = { x = 457 y = 213  }
+			pdx_tooltip = "chromium_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "aluminium_storage_info"
+		position = { x = 0 y = 0 }
+		
+		iconType ={
+			name ="aluminium_storage_info_icon"
+			spriteType = "GFX_aluminium_storage"
+			position = { x = 185 y = 213  }
+			pdx_tooltip = "aluminium_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "tungsten_storage_info"
+		position = { x = 0 y = 0 }
+		
+		iconType ={
+			name ="tungsten_storage_info_icon"
+			spriteType = "GFX_tungsten_storage"
+			position = { x = 321 y = 213  }
+			pdx_tooltip = "tungsten_storage_info_tt"
+		}
+	}
+}

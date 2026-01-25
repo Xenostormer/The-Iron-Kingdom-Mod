@@ -1,0 +1,185 @@
+characters={
+
+	# USA
+
+	AST_Billy_Hughes = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					bond_salesman 
+				}
+		}
+		name="Billy Hughes"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_9"
+			}
+		}
+	}
+
+	AST_Essington_Lewis = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					warbond_salesman  
+				}
+		}
+		name="Essington Lewis"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_1"
+			}
+		}
+	}
+
+	AST_Sidney_Myer = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					genius_buisness_tycoon 
+				}
+		}
+		name="Sidney Myer"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_5"
+			}
+		}
+	}
+
+	AST_Lord_Gowrie = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					rationing_administrator
+				}
+		}
+		name="Lord Gowrie"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_2"
+			}
+		}
+	}
+
+	AST_Dame_Enid_Lyons = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					civil_sector_advocate 
+				}
+		}
+		name="Dame Enid Lyons"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_7"
+			}
+		}
+	}
+
+	AST_Ernest_Squires = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					militarism_enforcer
+				}
+		}
+		name="Ernest Squires"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_3"
+			}
+		}
+	}
+
+	AST_H_C_Coombs = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					military_staff_advocate
+				}
+		}
+		name="H.C. Coombs"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_6"
+			}
+		}
+	}
+
+	AST_John_Monash = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					union_buster
+				}
+		}
+		name="John Monash"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_4"
+			}
+		}
+	}
+
+	AST_Sir_Keith_Murdoch = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					campaign_funder
+				}
+		}
+		name="Sir Keith Murdoch"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_10"
+			}
+		}
+	}
+
+	AST_Richard_Casey = {
+		advisor={
+			slot = political_advisor
+			allowed  = {
+					original_tag  = AST
+				}
+				traits  = {
+					protectionism_zealot
+				}
+		}
+		name="Richard Casey"
+		portraits={
+			army={
+				small="GFX_idea_IKM_AST_new_advisor_8"
+			}
+		}
+	}
+
+}
